@@ -12,91 +12,111 @@ import {useEffect, useRef, useState} from "react";
 
 // Checkbox
 
+
+// function TextArea(props) {
+//     const [visibleHeroes, setVisibleHeroes ] = useState('hi')
+//
+//
+//     return (
+//     return
+//         <div>
+//             <p>{props.heroesList}</p>
+//         </div>
+//     )
+// }
+
+
 let battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur']
 let cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
 let robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
 
-let heroes = [ 'Alice', 'Meduza', 'Sindbad', 'Arthur', 'Robin', 'Bigfoot', 'Red hood', 'Beowulf', 'Jackile', 'Scherlock', 'Drakula', 'Invisible']
+let heroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur', 'Robin', 'Bigfoot', 'Red hood', 'Beowulf', 'Jackile', 'Scherlock', 'Drakula', 'Invisible']
 
-let heroesArr = []
+let heroesArr = ['sukad']
 
 
 // trying checkbox in usestate
 
-const Checkbox = (props) => {
 
-    let [checked, setChecked] = useState(false);
-    heroesArr.flat()
-    const handleChange = (e) => {
-        if (e.target.checked === true) {
-            console.log(checked)
-            heroesArr.push(props.expansionPack)
-            console.log(heroesArr)
-        }
+const HeroesWindow = (props) => {
+    const [heroesWindow, setHeroesWindow] = useState('pustoe okno')
 
-           // if (e.target.checked === false)
-     if (e.target.checked === false)
-
-         {
-             heroesArr.splice( heroesArr.length -1)
-      //       let toRemove = [props.expansionPack]
-      // let newArr =     heroesArr.splice((el) => !toRemove.includes(el));
-
-             console.log(heroesArr)
-            }
+    function newWindow() {
+        setHeroesWindow(props.input)
+    }
 
 
-        setChecked(e => !e);
-    };
+    return (<div>
+        <p>{heroesWindow}</p>
+        <p></p>
+    </div>)
+}
+
+
+const AddExpansionElement = (props) => {
+    const [visibleHeroes, setVisibleHeroes] = useState('zero heroes')
+
+    function addHeroesToArr() {
+        heroesArr.push(...props.expansionPack)
+        console.log(heroesArr)
+
+    }
+
+    const addExpansion = () => {
+        setVisibleHeroes(addHeroesToArr)
+    }
 
     return (
         <div>
-            <label>
-                <p>{props.name}</p>
-                <input
-                    type="checkbox"
-                    checked={checked}
-                    onChange={handleChange}
-                />
-                My Value
-            </label>
+            <div>
+                <button onClick={addExpansion}>{props.name}</button>
+            </div>
+            <div><p>fff</p></div>
+            <div>
 
-            <p> {checked.toString()}</p>
+                <p>{visibleHeroes}</p>
+            </div>
+            {/*<div>*/}
+            {/*    <button onClick={reset}>reset</button>*/}
+            {/*</div>*/}
+            <br/>
+            <br/>
         </div>
     );
 }
 
 
+const ResetButton = (props) => {
+    const [reset, setReset] = useState('zero')
 
+    const resetWindow = () => {
+        setReset(heroesArr = [' '])
+        console.log(heroesArr)
+    }
 
+    return <div>
+
+        <button onClick={resetWindow}>Reset</button>
+    </div>
+}
 
 
 // Generate Hero Function
-function randomHero () {
-
-
-console.log(heroesArr)
+const randomHero = () => {
+    console.log(heroesArr)
     let random = Math.floor(Math.random() * heroesArr.length);
-    let result = heroesArr[random];
-    return result
+    return heroesArr[random];
+
 };
 
-
-
-
-
 const HeroGenerator = () => {
-
-
-
     const [hero, setHero] = useState('who is your hero?')
-const generatedHero = () => {
-
+    const generatedHero = () => {
         setHero(randomHero())
-}
+    }
+
+
     return <div>
-
-
         <div>
             <button onClick={generatedHero}>generate</button>
         </div>
@@ -104,11 +124,32 @@ const generatedHero = () => {
         <br/>
         <br/>
         <br/>
-        <br/>
-        <div><Checkbox name='BoL' expansionPack="'Alice', 'Meduza', 'Sindbad', 'Arthur'"/></div>
-        <div><Checkbox name='Cobble And Fog' expansionPack="'Jackile', 'Scherlock', 'Drakula', 'Invisible'"/></div>
-        <div><Checkbox name='Robin Hood' expansionPack="'Robin', 'Bigfoot'"/></div>
     </div>
 }
 
-export default HeroGenerator
+
+const HeroGeneratorPage = () => {
+    console.log(heroesArr)
+    return (
+        <div>
+            <div>
+                <HeroesWindow input={heroesArr.toString()}/>
+            </div>
+            <HeroGenerator/>
+            <div>
+                <div><AddExpansionElement name='Battle of Legends vol.1' expansionPack={battleOfLegendsHeroes}/></div>
+                <div><AddExpansionElement name='Cobble And Fog' expansionPack={cobbleAndFogHeroes}/></div>
+                <div><AddExpansionElement name='Robin Hood and Bigfoot' expansionPack={robinHoodAndBigfootHeroes}/>
+                </div>
+            </div>
+
+            <div><ResetButton/></div>
+
+        </div>
+    )
+
+
+}
+
+
+export default HeroGeneratorPage

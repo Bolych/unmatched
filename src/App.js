@@ -16,7 +16,7 @@ import RobinHood from "./components/Heroes/RobinAndBigFoot/RobinHood";
 import Bigfoot from "./components/Heroes/RobinAndBigFoot/Bigfoot";
 import RedHood from "./components/Heroes/RedHoodBeowulf/RedHood";
 import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
-import HeroGenerator from "./components/HeroGenerator/HeroGenerator";
+import HeroGeneratorPage from "./components/HeroGenerator/HeroGenerator";
 
 function App(props) {
     console.log(props)
@@ -29,7 +29,7 @@ function App(props) {
                 <div>
                     <Routes>
                         {/*{heroesList}*/}
-                        <Route path='/generator' element={<HeroGenerator/>}/>
+                        <Route path='/generator' element={<HeroGeneratorPage/>}/>
                         <Route path='/calculator' element={<Calculator/>}/>
                         {/*Battle of Legends Heroes:*/}
                         <Route path='/arthur' element={  <Arthur state={props.arthur}/>}/>
