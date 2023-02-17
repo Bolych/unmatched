@@ -16,7 +16,7 @@ import RobinHood from "./components/Heroes/RobinAndBigFoot/RobinHood";
 import Bigfoot from "./components/Heroes/RobinAndBigFoot/Bigfoot";
 import RedHood from "./components/Heroes/RedHoodBeowulf/RedHood";
 import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
-import HeroGeneratorPage from "./components/HeroGenerator/HeroGenerator";
+import HeroGeneratorPage from "./components/HeroGenerator/HeroGeneratorPage";
 
 function App(props) {
     console.log(props)
