@@ -39,31 +39,29 @@ let heroesArr = ['sukad']
 
 
 const HeroesWindow = (props) => {
-    const [heroesWindow, setHeroesWindow] = useState('pustoe okno')
-
-    function newWindow() {
-        setHeroesWindow(props.input)
-    }
 
 
     return (<div>
-        <p>{heroesWindow}</p>
+        <p>{props.input} heroeswindow</p>
         <p></p>
     </div>)
 }
-
+//
 
 const AddExpansionElement = (props) => {
     const [visibleHeroes, setVisibleHeroes] = useState('zero heroes')
 
-    function addHeroesToArr() {
-        heroesArr.push(...props.expansionPack)
-        console.log(heroesArr)
-
-    }
+    // function addHeroesToArr() {
+    //     heroesArr.push(...props.expansionPack)
+    //     console.log(heroesArr)
+    //
+    // }
 
     const addExpansion = () => {
-        setVisibleHeroes(addHeroesToArr)
+        heroesArr.push(...props.expansionPack)
+        setVisibleHeroes(heroesArr)
+        console.log(heroesArr)
+
     }
 
     return (
@@ -74,13 +72,15 @@ const AddExpansionElement = (props) => {
             <div><p>fff</p></div>
             <div>
 
-                <p>{visibleHeroes}</p>
+                <p>{visibleHeroes} there</p>
             </div>
             {/*<div>*/}
             {/*    <button onClick={reset}>reset</button>*/}
             {/*</div>*/}
             <br/>
             <br/>
+            <div> ></div>
+
         </div>
     );
 }
@@ -116,7 +116,7 @@ const HeroGenerator = () => {
     }
 
 
-    return <div>
+    return (<div>
         <div>
             <button onClick={generatedHero}>generate</button>
         </div>
@@ -124,20 +124,18 @@ const HeroGenerator = () => {
         <br/>
         <br/>
         <br/>
-    </div>
+    </div>)
 }
 
 
-const HeroGeneratorPage = () => {
+const HeroGeneratorPage = (props) => {
     console.log(heroesArr)
     return (
         <div>
-            <div>
-                <HeroesWindow input={heroesArr.toString()}/>
-            </div>
+
             <HeroGenerator/>
             <div>
-                <div><AddExpansionElement name='Battle of Legends vol.1' expansionPack={battleOfLegendsHeroes}/></div>
+                <div><AddExpansionElement  name='Battle of Legends vol.1' expansionPack={battleOfLegendsHeroes}/></div>
                 <div><AddExpansionElement name='Cobble And Fog' expansionPack={cobbleAndFogHeroes}/></div>
                 <div><AddExpansionElement name='Robin Hood and Bigfoot' expansionPack={robinHoodAndBigfootHeroes}/>
                 </div>
@@ -150,6 +148,5 @@ const HeroGeneratorPage = () => {
 
 
 }
-
 
 export default HeroGeneratorPage
