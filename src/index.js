@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {Route} from "react-router-dom";
-import Arthur from "./components/Heroes/BattleOfLegends/Arthur";
+
 
 
 const heroesArr =
     [
         {
             id: 1,
+            elo: 1800,
             name: 'Arthur',
             power: "7",
             difficulty: '3',
@@ -20,6 +20,7 @@ const heroesArr =
         },
         {
             id: 2,
+            elo: 2000,
             name: 'Alice',
             power: "8",
             difficulty: 7,
@@ -29,6 +30,7 @@ const heroesArr =
         },
         {
             id: 3,
+            elo: 2400,
             pathName: '/medusa',
             componentName: "<Medusa/>",
             name: 'Medusa',
@@ -40,6 +42,7 @@ const heroesArr =
         },
         {
             id: 4,
+            elo: 2050,
             name: 'Sindbad',
             power: "8",
             difficulty: 6,
@@ -49,6 +52,7 @@ const heroesArr =
         },
         {
             id: 5,
+            elo: 2000,
             name: 'Dracula',
             power: "7",
             difficulty: 7,
@@ -158,7 +162,7 @@ let [arthur, alice, medusa, sindbad, dracula, invisible, jackile, sherlock, beow
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App arthur={arthur} alice={alice} medusa={medusa} sindbad={sindbad} dracula={dracula} invisible={invisible}
+    <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sindbad={sindbad} dracula={dracula} invisible={invisible}
          jackile={jackile} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
          robinhood={robinHood}/>
 );

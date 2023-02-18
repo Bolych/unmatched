@@ -1,14 +1,9 @@
 
 const HeroesWindow = (props) => {
 
-
-   function handleWindowUpdate(e) {
-
-    }
-
     return (
         <div>
-            <p>{props.heroesArr.toString()}</p>
+            <p>Total heroes: {props.heroesArr.toString()}</p>
         </div>
     )
 }

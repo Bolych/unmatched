@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Calculator from "./components/Calculator/Calculator";
+import OddsCalculatorPage from "./components/OddsCalculator/OddsCalculatorPage";
 import Arthur from "./components/Heroes/BattleOfLegends/Arthur";
 import Alice from "./components/Heroes/BattleOfLegends/Alice";
 import Medusa from "./components/Heroes/BattleOfLegends/Medusa";
@@ -30,7 +30,7 @@ function App(props) {
                     <Routes>
                         {/*{heroesList}*/}
                         <Route path='/generator' element={<HeroGeneratorPage/>}/>
-                        <Route path='/calculator' element={<Calculator/>}/>
+                        <Route path='/calculator' element={<OddsCalculatorPage heroesArr={props.heroesArr} />}/>
                         {/*Battle of Legends Heroes:*/}
                         <Route path='/arthur' element={  <Arthur state={props.arthur}/>}/>
                         <Route path='/alice' element={  <Alice state={props.alice}/>}/>

@@ -29,7 +29,9 @@ const HeroGeneratorPage = (props) => {
             </div>
             <div><ResetButton visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes} heroesArr={heroesArr}/>
             </div>
-
+<br/>
+<br/>
+<br/>
             <HeroGenerator heroesArr={heroesArr}/>
             <div>
                 <ExpansionsButtons visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes}
