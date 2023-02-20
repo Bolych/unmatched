@@ -1,0 +1,42 @@
+
+p {
+    font-size: 1.3em;
+}
+
+.header {
+    background-color: #d8b56b;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.main {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.content button {
+    border: 0;
+    outline: 0;
+    background-color: #d8b56b;
+    cursor: pointer;
+    color: rgb(60, 66, 87);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;}
+
+.generateAndResetButtons {
+    display: flex;
+    
+}
+
+.heroResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

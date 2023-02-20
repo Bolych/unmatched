@@ -20,7 +20,8 @@ const EloProbability = (props) => {
         <div>
 
             <p>
-                Chance of Hero one win: {result}%
+                <h4> Chance of Hero one win: {result}%</h4>
+
             </p>
         </div>
     )

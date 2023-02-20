@@ -8,18 +8,17 @@ const HeroGenerator = (props) => {
 
     };
 
-    const [hero, setHero] = useState('')
+
     const generatedHero = () => {
-        setHero(randomHero())
+        props.setHero(randomHero())
     }
     return (<div>
         <div>
-            <button onClick={generatedHero}>generate</button>
+            <button onClick={generatedHero}>Generate</button>
         </div>
 
 
-        <div>Your hero is: {hero}</div>
-        <br/>
+
         <br/>
         <br/>
     </div>)

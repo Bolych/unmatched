@@ -3,26 +3,37 @@
     grid-template-areas: "h h"
 "n c";
     grid-template-rows: 1fr;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 1fr 10fr;
 }
 
 .header {
+    background-image: url("https://restorationgames.com/wp-content/uploads/2020/11/Unmatched-Banner-V2.png");
+   background-size: cover;
+    background-repeat: no-repeat;
     grid-area: h;
-    background-color: blueviolet;
+    background-color: #792813;
     padding: 1em;
-    height: 5em;
+    height: 12em;
 }
 
-.nav {
-    height: 10em;
+.navbar {
+    margin: 0.2em;
+    position: sticky;
+    top: 0;
     grid-area: n;
-    background-color: red;
-    padding: 1em;
-    text-align: justify;
+    height: 100vh;
 }
 
 .content {
     grid-area: c;
-    background-color: antiquewhite;
-    padding: 1em;
 }
+
+
+@media (max-width: 550px) {
+.header {
+    height: 6em;
+}
+    }
+
+
+/*background-color: #fff36b;*/

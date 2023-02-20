@@ -2,17 +2,12 @@ import {NavLink} from "react-router-dom";
 import {useState} from "react";
 
 
-
 const BeowulfAndRedHoodHeroes = () => {
     return <div>
-        <div>
-            <NavLink to='beowulf'>Beowulf</NavLink>
-        </div>
-        <div>
-            <NavLink to='redhood'>Red Hood</NavLink>
-        </div>
-
-
+        <ul>
+            <li><NavLink to='beowulf'>Beowulf</NavLink></li>
+            <li><NavLink to='redhood'>Red Hood</NavLink></li>
+        </ul>
     </div>
 }
 

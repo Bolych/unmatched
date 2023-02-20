@@ -1,4 +1,3 @@
-
 import React, {useState} from "react";
 
 import {NavLink} from "react-router-dom";
@@ -6,19 +5,12 @@ import {NavLink} from "react-router-dom";
 
 const BattleOfLegendsHeroes = (props) => {
     return <div>
-        <div>
-            <NavLink to='arthur'>Arthur</NavLink>
-        </div>
-        <div>
-            <NavLink to='alice'>Alice</NavLink>
-        </div>
-        <div>
-            <NavLink to='medusa'>Medusa</NavLink>
-        </div>
-        <div>
-            <NavLink to='sindbad'>Sindbad</NavLink>
-        </div>
-
+        <ul>
+            <li><NavLink to='arthur'>Arthur</NavLink></li>
+            <li><NavLink to='alice'>Alice</NavLink></li>
+            <li><NavLink to='medusa'>Medusa</NavLink></li>
+            <li><NavLink to='sindbad'>Sindbad</NavLink></li>
+        </ul>
     </div>
 }
 

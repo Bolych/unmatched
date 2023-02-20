@@ -4,32 +4,40 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 
-
+import img2 from './images/decks/arthur/prophecy.png'
 
 const heroesArr =
     [
         {
+            id: 41,
+            elo: 1850,
+            name: 'Arthur(novice)'
+        },
+        {
             id: 1,
             elo: 1950,
             name: 'Arthur',
-            power: "7",
+            attack: "6-8",
+            survivability: "8",
             difficulty: '3',
             origin: 'Novel King Arthur and knights of the Round Table. Author: Thomas Melory ',
-            originDescription: 'Arthur is known by his great deeds',
-            tactics: 'Collect cards and use them on attack enhancement'
-
+            description: 'Legendary King Arthur. He has wife Morgana and loyal friend Merlin. He was an exceptional man.',
+            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            // style:
+            backgroundColor: '',
+            avatar: 'https://cdn.shopify.com/s/files/1/0284/0566/1770/products/Unmatched-Arthur-3_grande.jpg?v=1637185751',
         },
 
         {
-            id: 41,
+            id: 81,
             elo: 2080,
             name: 'Arthur(experienced)'
         },
 
         {
-            id: 81,
-            elo: 1850,
-            name: 'Arthur(novice)'
+            id: 42,
+            elo: 1830,
+            name: 'Alice(novice)'
         },
 
         {
@@ -44,17 +52,16 @@ const heroesArr =
         },
 
         {
-            id: 42,
+            id: 82,
             elo: 2100,
             name: 'Alice(experienced)'
         },
 
         {
-            id: 82,
-            elo: 1830,
-            name: 'Alice(Novice)'
+            id: 43,
+            elo: 1945,
+            name: 'Medusa(novice) '
         },
-
 
         {
             id: 3,
@@ -70,16 +77,19 @@ const heroesArr =
         },
 
         {
-            id: 43,
+            id: 83,
             elo: 2200,
             name: 'Medusa(experienced)'
         },
 
+
+
         {
-            id: 83,
-            elo: 1945,
-            name: 'Medusa(novice) '
+            id: 44,
+            elo: 1970,
+            name: 'Sindbad(novice)'
         },
+
 
         {
             id: 4,
@@ -93,15 +103,17 @@ const heroesArr =
         },
 
         {
-            id: 44,
+            id: 84,
             elo: 2100,
             name: 'Sindbad(experienced)'
         },
 
+
+
         {
-            id: 84,
-            elo: 1970,
-            name: 'Sindbad(novice)'
+            id: 45,
+            elo: 1900,
+            name: 'Dracula(novice)'
         },
 
         {
@@ -116,15 +128,17 @@ const heroesArr =
         },
 
         {
-            id: 45,
+            id: 85,
             elo: 2105,
             name: 'Dracula(experienced)'
         },
 
+
+
         {
-            id: 85,
-            elo: 1900,
-            name: 'Dracula(novice)'
+            id: 46,
+            elo: 1830,
+            name: 'Invisible(novice)'
         },
 
         {
@@ -139,15 +153,14 @@ const heroesArr =
         },
 
         {
-            id: 46,
+            id: 86,
             elo: 2090,
             name: 'Invisible(experienced)'
         },
-
         {
-            id: 86,
-            elo: 1830,
-            name: 'Invisible(novice)'
+            id: 47,
+            elo: 1880,
+            name: 'Jackile and Hide(novice)'
         },
 
         {
@@ -161,15 +174,15 @@ const heroesArr =
 
         },
         {
-            id: 47,
+            id: 87,
             elo: 2070,
             name: 'Jackile and Hide(experienced)'
         },
 
         {
-            id: 87,
-            elo: 1880,
-            name: 'Jackile and Hide(novice)'
+            id: 48,
+            elo: 1950,
+            name: 'Sherlock(novice)'
         },
 
         {
@@ -183,17 +196,17 @@ const heroesArr =
         },
 
         {
-            id: 48,
+            id: 88,
             elo: 2010,
             name: 'Sherlock(experienced)'
         },
 
-        {
-            id: 88,
-            elo: 1950,
-            name: 'Sherlock(novice)'
-        },
 
+        {
+            id: 49,
+            elo: 1950,
+            name: 'Beowulf(novice)'
+        },
 
         {
             id: 9,
@@ -206,17 +219,17 @@ const heroesArr =
         },
 
         {
-            id: 49,
+            id: 89,
             elo: 2100,
-            name: 'Beowulf(Experienced)'
+            name: 'Beowulf(experienced)'
         },
+
 
         {
-            id: 89,
-            elo: 1950,
-            name: 'Beowulf(novice)'
+            id: 50,
+            elo: 1940,
+            name: 'Red Hood(novice)'
         },
-
 
 
         {
@@ -230,15 +243,15 @@ const heroesArr =
         },
 
         {
-            id: 50,
+            id: 90,
             elo: 2150,
-            name: 'Red Hood(Experienced)'
+            name: 'Red Hood(experienced)'
         },
 
         {
-            id: 90,
-            elo: 1940,
-            name: 'Red Hood(Novice)'
+            id: 51,
+            elo: 1990,
+            name: 'Bigfoot(novice)'
         },
 
         {
@@ -252,15 +265,15 @@ const heroesArr =
         },
 
         {
-            id: 51,
+            id: 91,
             elo: 2200,
-            name: 'Bigfoot(Experienced)'
+            name: 'Bigfoot(experienced)'
         },
 
         {
-            id: 91,
-            elo: 1990,
-            name: 'Bigfoot(Novice)'
+            id: 52,
+            elo: 1950,
+            name: 'Robin Hood(novice)'
         },
 
         {
@@ -274,16 +287,12 @@ const heroesArr =
         },
 
         {
-            id: 52,
+            id: 92,
             elo: 2140,
-            name: 'Robin Hood(Experienced)'
+            name: 'Robin Hood(experienced)'
         },
 
-        {
-            id: 92,
-            elo: 1950,
-            name: 'Robin Hood(Novice)'
-        },
+
 
         {
             id: 13,
@@ -363,6 +372,19 @@ const heroesArr =
             tactics: "Puk"
         },
 
+        // additional properties to heroes:
+
+
+
+
+
+
+
+
+
+
+
+
 
     ]
 
@@ -371,7 +393,7 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [arthur, alice, medusa, sindbad, dracula, invisible, jackile, sherlock, beowulf, redHood, bigfoot, robinHood] = heroesArr;
+let [,arthur,,,alice,,,medusa,,, sindbad,,, dracula,,, invisible,,, jackile, sherlock, beowulf, redHood, bigfoot, robinHood, sattler, ingen, raptors, trex] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

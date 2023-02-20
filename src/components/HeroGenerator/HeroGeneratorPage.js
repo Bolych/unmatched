@@ -3,6 +3,7 @@ import ExpansionsButtons from "./ExpansionsButtons/ExpansionsButtons";
 import HeroGenerator from "./HeroGenerator/HeroGenerator";
 import HeroesWindow from "./HeroesOfExpansionsList/HeroesWindow";
 import ResetButton from "./ResetButton/ResetButton";
+import s from './HeroGenerator.module.css'
 
 
 const battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur']
@@ -10,12 +11,12 @@ const cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
 const robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
 const redHoodAndBeowulfHeroes = ['Red Hood', 'Beowulf']
 const battleOfLegendsVolTwoHeroes = ['Sun Wukong', 'Yennenga', 'Bloody Mary', 'Achilles']
-const redemptionRowHeroes = ['Luke Cage', 'Moon Knight','Ghost Rider']
-const marvelHellKitchen = ['Daredevil', 'Elektra', 'Bullseye' ]
-const marvelTeenSpirit = [ 'Squirrel Girl', 'Ms. Marvel', 'Cloak and Dagger']
+const redemptionRowHeroes = ['Luke Cage', 'Moon Knight', 'Ghost Rider']
+const marvelHellKitchen = ['Daredevil', 'Elektra', 'Bullseye']
+const marvelTeenSpirit = ['Squirrel Girl', 'Ms. Marvel', 'Cloak and Dagger']
 const marvelForKingAndCountry = ['Black Widow', 'Black Panther', 'Winter Soldier']
 const jurassicParkRaptorHeroes = ['Robert Muldoon', 'Velociraptors']
-const jurassicParkTrexHeroes = ['Dr Sattler, T-Rex']
+const jurassicParkTrexHeroes = ['Dr Sattler', 'T-Rex']
 const houdiniAndGenie = ['Houdini', 'The Genie']
 const bruceLee = ['Bruce Lee']
 const deadpool = ['Deadpool']
@@ -24,26 +25,25 @@ const deadpool = ['Deadpool']
 let heroesArr = []
 
 
-
 // Generate Hero Function
 
 
 const HeroGeneratorPage = (props) => {
     const [visibleHeroes, setVisibleHeroes] = useState('heroes window')
-
+    const [hero, setHero] = useState('')
     return (
-        <div>
+        <div className={s.content}>
+
+            <div className={s.header}>
+                <h1>Heroes generator</h1>
+            </div>
+            <div className={s.main}>
+
+            <p>Can not decide what hero you should play? Choose Unmatched boxes you have, click "generate" and program
+                will pick a random hero from this list</p>
 
             <div>
-                <HeroesWindow heroesArr={heroesArr} setVisibleHeroes={setVisibleHeroes} visibleHeroes={visibleHeroes}/>
-            </div>
-            <div><ResetButton visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes} heroesArr={heroesArr}/>
-            </div>
-<br/>
-<br/>
-<br/>
-            <HeroGenerator heroesArr={heroesArr}/>
-            <div>
+                <br/>
                 <ExpansionsButtons visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes}
                                    heroesArr={heroesArr} battleOfLegendHeroes={battleOfLegendsHeroes}
                                    cobbleAndFogHeroes={cobbleAndFogHeroes}
@@ -60,9 +60,24 @@ const HeroGeneratorPage = (props) => {
                                    bruceLee={bruceLee}
                                    deadpool={deadpool}
                 />
-
+                <div>
+                    <HeroesWindow heroesArr={heroesArr} setVisibleHeroes={setVisibleHeroes}
+                                  visibleHeroes={visibleHeroes}/>
+                </div>
+                <br/>
+                <br/>
+                <div className={s.generateAndResetButtons}>
+                    <HeroGenerator  setHero={setHero} heroesArr={heroesArr}/>
+                    <ResetButton visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes}
+                                 heroesArr={heroesArr}/>
+                </div>
+                <div className={s.heroResult}>
+                    <div><h2>Your hero is:</h2></div>
+                    <br/>
+                <div><h2>{hero}</h2></div>
+                </div>
             </div>
-
+            </div>
         </div>
     )
 

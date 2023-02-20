@@ -1,8 +1,6 @@
 import {useContext, useState} from "react";
-import DataContext from "../DataContext";
-import OutputWindow from "./ProbabilityCalculatorWindow";
 import EloProbability from "./ProbabilityCalculatorWindow";
-
+import s from './OddsCalculatorPage.module.css'
 
 
 // можно потом зарефакторить и сделать просто HeroToCompare
@@ -64,8 +62,19 @@ console.log(typeof heroOne)
 
 
 
-    return (<div>
+    return (<div className={s.content}>
+            <div className={s.header}>
+                <h1>Odds probability calculator</h1>
+
+            </div>
+
+
             <div>
+                <p>Don't know what hero is stronger? Who to pick for yourself and who to give your newbie friend?</p>
+                <p>Choose heroes and level of players and program will calculate chance of winning.</p>
+                <p>All is approximately, of course, but based on real games.</p>
+                <br/>
+                <h3>Heroes levels:</h3>
                 <div>
                     <p>Novice - unexperienced player or player, who doesn't know deck of this hero (    {` < `}2 games)</p>
                     <p>Without value - average player, who already played for this hero, but doesn't master heroes's mechanics(3-7 games )</p>

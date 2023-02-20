@@ -1,0 +1,61 @@
+
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "l r" "d d";
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2em;
+
+}
+
+.header {
+    background-color: #d8b56b;
+}
+
+.content h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.content h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.rightSide img {
+  width: 100%;
+}
+
+.leftSide {
+grid-area: l;
+}
+
+.leftSide p {
+margin: 1em;
+}
+
+.rightSide {
+    grid-area: r;
+}
+
+.downSide {
+
+    grid-area: d;
+}
+
+.downSide p {
+    margin: 1em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*my color for headings*/
+/*background-color: #d8b56b;*/

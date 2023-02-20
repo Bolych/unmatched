@@ -19,6 +19,7 @@ import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
 import HeroGeneratorPage from "./components/HeroGenerator/HeroGeneratorPage";
 import {useState} from "react";
 import DataContext from "./components/DataContext";
+import AboutPage from "./components/AboutPage/AboutPage";
 
 
 function App(props) {
@@ -31,6 +32,7 @@ const [globalData, setGlobalData] = useState(null)
                 <Navbar/>
                 <div>
                     <Routes>
+                        <Route path='/' element={<AboutPage/>}/>
                         {/*{heroesList}*/}
                         <Route path='/generator' element={<HeroGeneratorPage/>}/>
                         <Route path='/calculator' element={<OddsCalculatorPage heroesArr={props.heroesArr} />}/>

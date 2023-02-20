@@ -1,9 +1,13 @@
 
+import s from './HeroesWindow.module.css'
+
 const HeroesWindow = (props) => {
 
     return (
-        <div>
-            <p>Total heroes: {props.heroesArr.toString()}</p>
+        <div className={s.content}>
+            <p>Total heroes:</p>
+          {props.heroesArr.join(', ')}
+
         </div>
     )
 }

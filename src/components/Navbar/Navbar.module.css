@@ -1,26 +1,58 @@
 
-.main{
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content{
+
+    background-color: #111924;
+    list-style: none;
+    height: 100%;
+    font-size: 1.2em;
+
 }
 
+
+
+.content button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #cdcd97;
+    color: rgb(60, 66, 87);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;}
 
 .navbar {
-
-
+    margin: 0.5em;
 }
+
+li {
+
+margin: 0.5em;
+}
+
+.navigationLinks {
+    margin-top: 1em;
+    font-size: 1.4em;
+}
+
+
+a {
+    color: #e8ccc6;
+  margin: 1em;
+}
+
 
 
 .expansionsList {
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    list-style: none;
 }
 
-.expansionsList li {
-    list-style: none;
+.expansionsList p {
+    margin-top: 1em;
+    color: #e8ccc6;
 }
