@@ -1,45 +1,86 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
+import DataContext from "../DataContext";
+import OutputWindow from "./ProbabilityCalculatorWindow";
+import EloProbability from "./ProbabilityCalculatorWindow";
 
 
-const OutputWindow = () => {
-    return (<div>!Хочу, чтобы выбранный герой передавался в этот компонент!</div>
-    )
-}
 
-const HeroToCompare = (props) => {
-    const [hero, setHero] = useState('')
+// можно потом зарефакторить и сделать просто HeroToCompare
+const HeroOneToCompare = (props) => {
+
+  const  handleChange = (e) => {props.setHeroOne(e.target.value)
+  }
+
     return (
-
         <div>
             <p>{props.name}</p>
             <div>
                 <div>
-                    <select hero={hero} onChange={(e) => setHero(e.target.value)}>
+                    <select value={props.elo} onChange={handleChange}>
                         <option></option>
                         {props.state}
                     </select>
                 </div>
-                <p>Ваш выбор: {hero}</p>
+
             </div>
+        </div>
+    )
+}
+
+const HeroTwoToCompare = (props) => {
+    const  handleChange = (e) => {props.setHeroTwo(e.target.value)
+        console.log(e.target)
+    }
+
+    return (
+        <div>
+            <p>{props.name}</p>
+            <div>
+                <div>
+                    <select value={props.elo} onChange={handleChange}>
+                        <option></option>
+
+                        {props.state}
+                    </select>
+                </div>
+            </div>
+
         </div>
     )
 }
 
 const OddsCalculatorPage = (props) => {
+    const [heroOne, setHeroOne] = useState('Hero one')
+    const [heroTwo, setHeroTwo] = useState('Hero two')
+
+console.log(typeof heroOne)
+
+
+
     const heroesInSelect = props.heroesArr.map(e => {
-            return <option key={e.id}>{e.name.toString()}</option>
+                return <option value={e.elo} key={e.id} >{e.name}</option>
         }
     )
+
+
+
     return (<div>
             <div>
-                <HeroToCompare name='Hero one' state={heroesInSelect}/>
-                <HeroToCompare name='Hero two' state={heroesInSelect}/>
+                <div>
+                    <p>Novice - unexperienced player or player, who doesn't know deck of this hero (    {` < `}2 games)</p>
+                    <p>Without value - average player, who already played for this hero, but doesn't master heroes's mechanics(3-7 games )</p>
+                    <p>Experienced - player who mastered mechanics of this hero ({` > `} 7 games)</p>
+                </div>
+                <br/>
+                <HeroOneToCompare setHeroOne={setHeroOne} name='Hero one' state={heroesInSelect}/>
+                <HeroTwoToCompare setHeroTwo={setHeroTwo} name='Hero two' state={heroesInSelect}/>
             </div>
             <br/>
-            <OutputWindow/>
+            <EloProbability heroOne={heroOne} heroTwo={heroTwo}  state={heroesInSelect}/>
         </div>
     )
 }
+
 
 
 export default OddsCalculatorPage

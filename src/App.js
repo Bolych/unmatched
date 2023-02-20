@@ -17,12 +17,15 @@ import Bigfoot from "./components/Heroes/RobinAndBigFoot/Bigfoot";
 import RedHood from "./components/Heroes/RedHoodBeowulf/RedHood";
 import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
 import HeroGeneratorPage from "./components/HeroGenerator/HeroGeneratorPage";
+import {useState} from "react";
+import DataContext from "./components/DataContext";
+
 
 function App(props) {
-    console.log(props)
+const [globalData, setGlobalData] = useState(null)
+
 
     return (
-        <BrowserRouter>
             <div className="App">
                 <Header/>
                 <Navbar/>
@@ -50,7 +53,7 @@ function App(props) {
                     </Routes>
                 </div>
             </div>
-        </BrowserRouter>
+
     );
 }
 

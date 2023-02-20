@@ -1,5 +1,26 @@
-.navbar {
-    display: grid;
-    grid-template-columns: auto;
+
+.main{
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar {
+
+
+}
+
+
+.expansionsList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.expansionsList li {
+    list-style: none;
 }

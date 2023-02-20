@@ -5,14 +5,24 @@ import HeroesWindow from "./HeroesOfExpansionsList/HeroesWindow";
 import ResetButton from "./ResetButton/ResetButton";
 
 
-let battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur']
-let cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
-let robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
-let redHoodAndBeowulfHeroes = ['Red Hood', 'Beowulf']
+const battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur']
+const cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
+const robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
+const redHoodAndBeowulfHeroes = ['Red Hood', 'Beowulf']
+const battleOfLegendsVolTwoHeroes = ['Sun Wukong', 'Yennenga', 'Bloody Mary', 'Achilles']
+const redemptionRowHeroes = ['Luke Cage', 'Moon Knight','Ghost Rider']
+const marvelHellKitchen = ['Daredevil', 'Elektra', 'Bullseye' ]
+const marvelTeenSpirit = [ 'Squirrel Girl', 'Ms. Marvel', 'Cloak and Dagger']
+const marvelForKingAndCountry = ['Black Widow', 'Black Panther', 'Winter Soldier']
+const jurassicParkRaptorHeroes = ['Robert Muldoon', 'Velociraptors']
+const jurassicParkTrexHeroes = ['Dr Sattler, T-Rex']
+const houdiniAndGenie = ['Houdini', 'The Genie']
+const bruceLee = ['Bruce Lee']
+const deadpool = ['Deadpool']
+
 
 let heroesArr = []
 
-let heroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur', 'Robin', 'Bigfoot', 'Red hood', 'Beowulf', 'Jackile', 'Scherlock', 'Drakula', 'Invisible']
 
 
 // Generate Hero Function
@@ -38,7 +48,19 @@ const HeroGeneratorPage = (props) => {
                                    heroesArr={heroesArr} battleOfLegendHeroes={battleOfLegendsHeroes}
                                    cobbleAndFogHeroes={cobbleAndFogHeroes}
                                    robinHoodAndBigfootHeroes={robinHoodAndBigfootHeroes}
-                                   redHoodAndBeowulfHeroes={redHoodAndBeowulfHeroes}/>
+                                   redHoodAndBeowulfHeroes={redHoodAndBeowulfHeroes}
+                                   battleoFLegendsVolTwoHeroes={battleOfLegendsVolTwoHeroes}
+                                   redemptionRowHeroes={redemptionRowHeroes}
+                                   marvelHellKitchen={marvelHellKitchen}
+                                   marvelForKingAndCountry={marvelForKingAndCountry}
+                                   marvelTeenSpirit={marvelTeenSpirit}
+                                   jurassicParkRaptorHeroes={jurassicParkRaptorHeroes}
+                                   jurassicParkTrexHeroes={jurassicParkTrexHeroes}
+                                   houdiniAndGenie={houdiniAndGenie}
+                                   bruceLee={bruceLee}
+                                   deadpool={deadpool}
+                />
+
             </div>
 
         </div>
