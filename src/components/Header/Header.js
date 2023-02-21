@@ -3,7 +3,11 @@ import React from "react";
 
 const Header = (props) => {
     return <header className='header'>
-        <div><button className='hide-button' onClick={props.handleToggleSidebar}>☰☰☰☰☰</button></div>
+        <div className='hide-button' onClick={props.handleToggleSidebar}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
     </header>
 }

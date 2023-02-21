@@ -16,18 +16,22 @@ import card13 from '../../../images/decks/arthur/swift-strike.png'
 import card14 from '../../../images/decks/arthur/the-aid-of-morgana.png'
 import card15 from '../../../images/decks/arthur/the-holy-grail.png'
 import card16 from '../../../images/decks/arthur/the-lady-of-the-lake.png'
+import {useState} from "react";
 
 
 const Arthur = ({state}) => {
+    const [showCards, setShowCards] = useState(false)
+    const handleToggleCards = () => {
+        setShowCards(!showCards);
+    }
+
     const myStyle = {
         backgroundColor: state.backgroundColor,
         height: '100%'
     };
 
-    console.log(state.avatar)
-    console.log(state.name)
-console.log(state.card1)
     return (<div style={myStyle} className={s.content}>
+
             <div className={s.header}>
             <h1>King Arthur</h1>
             </div>
@@ -49,7 +53,11 @@ console.log(state.card1)
                     <p> {state.description}  </p>
                 </div>
             </div>
-            <h2>Arhur's cards</h2>
+            <h2>Arthur's cards</h2>
+            <button onClick={handleToggleCards}>Show cards</button>
+
+
+            <div className={`cards-wrapper ${showCards ? 'active' : ''}`}>
                 <div className={s.cards}>
                     <img  src={card1} alt="none"/>
                 <img  src={card2} alt="none"/>
@@ -67,9 +75,8 @@ console.log(state.card1)
                 <img  src={card14} alt="none"/>
                 <img  src={card15} alt="none"/>
                 <img  src={card16} alt="none"/>
-
                 </div>
-
+            </div>
         </div>
     )
 

@@ -36,16 +36,14 @@ function App(props) {
 
                 <Header handleToggleSidebar={handleToggleSidebar} />
 
-                <div className={`navbar ${isSidebarOpen ? 'open' : ''}`}>
+                <div className={`navbar ${isSidebarOpen ? 'active' : ''}`}>
 
                     <Navbar />
                     {/* Sidebar content goes here */}
                 </div>
 
 
-
-
-                <div>
+                <div className='main-content'>
                     <Routes>
 
                         <Route path='/' element={<AboutPage/>}/>
