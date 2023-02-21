@@ -7,9 +7,11 @@ import RobinAndBigfoot from "../Heroes/RobinAndBigFoot/RobinAndBigfoot";
 import BeowulfAndRedHood from "../Heroes/RedHoodBeowulf/BeowulfAndRedHood";
 import JurassicPark from "../Heroes/JurassicPark/JurrasicPark";
 
-const Navbar = () => {
-    return <div className={s.content}>
-        <div className='navbar'>
+const Navbar = (props) => {
+    return <div className='navbar'>
+
+
+        <div  className={s.content}>
             <div className={s.navigationLinks}>
                 <li><NavLink to='/'>About </NavLink></li>
                 <li><NavLink to='/generator'>Generator</NavLink></li>

@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import OddsCalculatorPage from "./components/OddsCalculator/OddsCalculatorPage";
 import Arthur from "./components/Heroes/BattleOfLegends/Arthur";
 import Alice from "./components/Heroes/BattleOfLegends/Alice";
@@ -18,20 +18,36 @@ import RedHood from "./components/Heroes/RedHoodBeowulf/RedHood";
 import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
 import HeroGeneratorPage from "./components/HeroGenerator/HeroGeneratorPage";
 import {useState} from "react";
-import DataContext from "./components/DataContext";
 import AboutPage from "./components/AboutPage/AboutPage";
 
 
 function App(props) {
-const [globalData, setGlobalData] = useState(null)
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+    const handleToggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+        console.log(isSidebarOpen)
+    }
 
 
     return (
             <div className="App">
-                <Header/>
-                <Navbar/>
+
+                <Header handleToggleSidebar={handleToggleSidebar} />
+
+                <div className={`navbar ${isSidebarOpen ? 'open' : ''}`}>
+
+                    <Navbar />
+                    {/* Sidebar content goes here */}
+                </div>
+
+
+
+
                 <div>
                     <Routes>
+
                         <Route path='/' element={<AboutPage/>}/>
                         {/*{heroesList}*/}
                         <Route path='/generator' element={<HeroGeneratorPage/>}/>
