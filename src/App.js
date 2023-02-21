@@ -7,7 +7,6 @@ import OddsCalculatorPage from "./components/OddsCalculator/OddsCalculatorPage";
 import Arthur from "./components/Heroes/BattleOfLegends/Arthur";
 import Alice from "./components/Heroes/BattleOfLegends/Alice";
 import Medusa from "./components/Heroes/BattleOfLegends/Medusa";
-import Sindbad from "./components/Heroes/BattleOfLegends/Sindbad";
 import Dracula from "./components/Heroes/CobbleAndFog/Dracula";
 import Invisible from "./components/Heroes/CobbleAndFog/Invisible";
 import Sherlock from "./components/Heroes/CobbleAndFog/Sherlock";
@@ -21,6 +20,7 @@ import {useState} from "react";
 import AboutPage from "./components/AboutPage/AboutPage";
 import SunWukong from "./components/Heroes/BattleOfLegendsVol2/SunWukong";
 import Yennenga from "./components/Heroes/BattleOfLegendsVol2/Yennenga";
+import Sinbad from "./components/Heroes/BattleOfLegends/Sindbad";
 
 
 
@@ -54,9 +54,7 @@ function App(props) {
                 <Header handleToggleSidebar={handleToggleSidebar} />
 
                 <div className={`navbar ${isSidebarOpen ? 'active' : ''}`}>
-
-                    <Navbar />
-                    {/* Sidebar content goes here */}
+                    <Navbar/>
                 </div>
 
 
@@ -71,7 +69,7 @@ function App(props) {
                         <Route path='/arthur' element={  <Arthur state={props.arthur}/>}/>
                         <Route path='/alice' element={  <Alice state={props.alice}/>}/>
                         <Route path='/medusa' element={  <Medusa state={props.medusa}/>}/>
-                        <Route path='/sindbad' element={  <Sindbad state={props.sindbad}/>}/>
+                        <Route path='/sinbad' element={  <Sinbad state={props.sinbad}/>}/>
                         {/*Cobble and Fog Heroes:*/}
                         <Route path='/dracula' element={  <Dracula state={props.dracula}/>}/>
                         <Route path='/invisible' element={  <Invisible state={props.invisible}/>}/>

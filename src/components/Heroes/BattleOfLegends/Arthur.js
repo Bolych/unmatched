@@ -1,4 +1,4 @@
-import s from './BattleOfLegends.module.css'
+import s from '../Heroes.module.css'
 
 import card1 from '../../../images/decks/arthur/aid-the-chosen-one.png'
 import card2 from '../../../images/decks/arthur/bewilderment.png'
@@ -16,7 +16,8 @@ import card13 from '../../../images/decks/arthur/swift-strike.png'
 import card14 from '../../../images/decks/arthur/the-aid-of-morgana.png'
 import card15 from '../../../images/decks/arthur/the-holy-grail.png'
 import card16 from '../../../images/decks/arthur/the-lady-of-the-lake.png'
-import {useState} from "react";
+import React, {useState} from "react";
+
 
 
 const Arthur = ({state}) => {
@@ -33,30 +34,38 @@ const Arthur = ({state}) => {
     return (<div style={myStyle} className={s.content}>
 
             <div className={s.header}>
-            <h1>King Arthur</h1>
+            <h1>{state.name}</h1>
             </div>
             <div  className={s.wrapper}>
                 <div className={s.leftSide}>
-                    <p>Name: {state.name}</p>
-                    <p>Attack: {state.attack}</p>
-                    <p>Survivability: {state.survivability}</p>
-                    <p>Difficulty: {state.difficulty}</p>
-                    <p>Origin: {state.origin}</p>
+                    <p><span className={s.firstWord}> Name:</span> {state.name}</p>
+                    <p> <span className={s.firstWord}>Attack:</span>  {state.attack}</p>
+                    <p> <span className={s.firstWord}>Survivability:</span>  {state.survivability}</p>
+                    <p> <span className={s.firstWord}>Difficulty:</span>  {state.difficulty}</p>
+                    <p> <span className={s.firstWord}>Origin:</span>  {state.origin}</p>
                 </div>
                 <div className={s.rightSide}>
                     <img src={state.avatar}/>
                 </div>
                 <div className={s.downSide}>
+                    <div className={s.header}>
                     <h2>Tactics</h2>
+                    </div>
                     <p>{state.tactics}  </p>
+                    <div className={s.header}>
                     <h2>Description</h2>
+                    </div>
                     <p> {state.description}  </p>
                 </div>
             </div>
 
-            <h2>Arthur's cards</h2>
+            <div>
+                <div className={s.header}>
+            <h2>Hero's cards</h2>
+                </div>
             <div className={s.showCardsButton} onClick={handleToggleCards}>
           <h3>Click to show</h3>
+            </div>
             </div>
 
             <div className={`cards-wrapper ${showCards ? 'active' : ''}`}>
@@ -84,3 +93,6 @@ const Arthur = ({state}) => {
 
 }
 export default Arthur
+
+
+

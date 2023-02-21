@@ -1,5 +1,5 @@
-const Sindbad = () => {
-    return <div><p>Sindbad</p></div>
+const Sinbad = () => {
+    return <div><p>Sinbad</p></div>
 }
 
-export default Sindbad
+export default Sinbad

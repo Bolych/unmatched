@@ -15,8 +15,11 @@ const BattleOfLegendsVol2Heroes = () => {
 
 const BattleOfLegendsVol2 = () => {
     const [show, setShow] = useState(false)
+    const setShowHandler = () => {setShow(!show)
+
+    }
     return (<div>
-        <button onClick={() => setShow(!show)}>Battle of Legends vol.2</button>
+        <button onClick={setShowHandler}>Battle of Legends vol.2</button>
         {show ? <BattleOfLegendsVol2Heroes/> : null}
 
     </div>)

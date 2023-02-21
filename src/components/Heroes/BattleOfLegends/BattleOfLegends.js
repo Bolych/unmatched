@@ -9,7 +9,7 @@ const BattleOfLegendsHeroes = (props) => {
             <li><NavLink to='arthur'>Arthur</NavLink></li>
             <li><NavLink to='alice'>Alice</NavLink></li>
             <li><NavLink to='medusa'>Medusa</NavLink></li>
-            <li><NavLink to='sindbad'>Sindbad</NavLink></li>
+            <li><NavLink to='sinbad'>Sinbad</NavLink></li>
         </ul>
     </div>
 }

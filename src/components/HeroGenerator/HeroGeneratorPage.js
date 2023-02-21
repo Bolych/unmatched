@@ -6,7 +6,7 @@ import ResetButton from "./ResetButton/ResetButton";
 import s from './HeroGenerator.module.css'
 
 
-const battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sindbad', 'Arthur']
+const battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sinbad', 'Arthur']
 const cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
 const robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
 const redHoodAndBeowulfHeroes = ['Red Hood', 'Beowulf']

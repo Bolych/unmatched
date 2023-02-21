@@ -18,14 +18,15 @@ const heroesArr =
             elo: 1950,
             name: 'Arthur',
             attack: "6-8",
+            movement: '1',
             survivability: "8",
             difficulty: '3',
-            origin: 'Novel King Arthur and knights of the Round Table. Author: Thomas Melory ',
+            origin: 'Novel King Arthur and knights of the Round Table. Author: Thomas Melory. ',
             description: 'Legendary King Arthur. He has wife Morgana and loyal friend Merlin. He was an exceptional man.',
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             // style:
-            backgroundColor: '',
-            avatar: 'https://cdn.shopify.com/s/files/1/0284/0566/1770/products/Unmatched-Arthur-3_grande.jpg?v=1637185751',
+            backgroundColor: '#e8ccc6',
+            avatar: 'https://cf.geekdo-images.com/IzwCo4vnGNw9UhtAgkmEBg__imagepage/img/xnG-xG1-qDF2zY2wweev3y4Kpig=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6685043.jpg',
         },
 
         {
@@ -44,10 +45,14 @@ const heroesArr =
             id: 2,
             elo: 2000,
             name: 'Alice',
-            power: "8",
+            attack: "5-9",
+            survivability: "4-7",
             difficulty: 7,
             origin: 'Novel Alice in Wonderland. Author: Lewis Carroll',
-            tactics: "predict Alica's size"
+            description: 'Alice, Alice... Now she is mature and tough',
+            tactics: "Predict Alica's size no matter you are playing for her or against",
+            backgroundColor: "#ADBFCD",
+            avatar: "https://preview.redd.it/nmyqat7tjpc61.jpg?auto=webp&s=88f1b68bd6a93988b034d68aeedc1601f3e9bc83"
 
         },
 
@@ -87,14 +92,14 @@ const heroesArr =
         {
             id: 44,
             elo: 1970,
-            name: 'Sindbad(novice)'
+            name: 'Sinbad(novice)'
         },
 
 
         {
             id: 4,
             elo: 2010,
-            name: 'Sindbad',
+            name: 'Sinbad',
             power: "8",
             difficulty: 6,
             origin: 'Tale',
@@ -105,7 +110,7 @@ const heroesArr =
         {
             id: 84,
             elo: 2100,
-            name: 'Sindbad(experienced)'
+            name: 'Sinbad(experienced)'
         },
 
 
@@ -397,14 +402,14 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [,arthur,,,alice,,,medusa,,, sindbad,,, dracula,,, invisible,,, jackile,,, sherlock,,, beowulf,,, redHood,,, bigfoot,,, robinHood,,, sattler,,, ingen,,, raptors,,, trex,,, achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
+let [,arthur,,,alice,,,medusa,,, sinbad,,, dracula,,, invisible,,, jackile,,, sherlock,,, beowulf,,, redHood,,, bigfoot,,, robinHood,,, sattler,,, ingen,,, raptors,,, trex,,, achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     <BrowserRouter>
 
-    <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sindbad={sindbad} dracula={dracula} invisible={invisible}
+    <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula} invisible={invisible}
          jackile={jackile} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
          robinhood={robinHood}/>
     </BrowserRouter>

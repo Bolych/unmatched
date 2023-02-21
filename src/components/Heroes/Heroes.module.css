@@ -13,6 +13,9 @@
     background-color: #d8b56b;
 }
 
+.firstWord {
+    font-weight: bold;
+}
 
 .content h2 {
     display: flex;
@@ -28,14 +31,20 @@
 
 }
 
+.headerWrapper {
+    background-color: #d8b56b;
+}
+
 .showCardsButton {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+    color: darkred;
 }
 .showCardsButton:hover {
-    color: darkred;
+    color: darkgreen;
 }
 
 .rightSide img {
