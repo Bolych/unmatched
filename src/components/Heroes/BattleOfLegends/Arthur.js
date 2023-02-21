@@ -47,15 +47,17 @@ const Arthur = ({state}) => {
                     <img src={state.avatar}/>
                 </div>
                 <div className={s.downSide}>
-                    <h2>Description</h2>
-                    <p>{state.tactics}  </p>
                     <h2>Tactics</h2>
+                    <p>{state.tactics}  </p>
+                    <h2>Description</h2>
                     <p> {state.description}  </p>
                 </div>
             </div>
-            <h2>Arthur's cards</h2>
-            <button onClick={handleToggleCards}>Show cards</button>
 
+            <h2>Arthur's cards</h2>
+            <div className={s.showCardsButton} onClick={handleToggleCards}>
+          <h3>Click to show</h3>
+            </div>
 
             <div className={`cards-wrapper ${showCards ? 'active' : ''}`}>
                 <div className={s.cards}>

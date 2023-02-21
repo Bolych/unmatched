@@ -28,6 +28,16 @@
 
 }
 
+.showCardsButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showCardsButton:hover {
+    color: darkred;
+}
+
 .rightSide img {
   width: 100%;
 }
@@ -56,6 +66,15 @@ margin: 1em;
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 550px) {
+    .cards img {
+        max-width: 150px;
+    }
+
 }
 
 /*my color for headings*/

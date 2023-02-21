@@ -333,10 +333,28 @@ const heroesArr =
 
         //Battle of Legends vol.2
 
-
-
         {
             id: 17,
+            elo: 1995,
+            name: 'Achilles',
+            power: "6",
+            difficulty: 8,
+            origin: 'Tale',
+            tactics: "Puk"
+        },
+
+        {
+            id: 18,
+            elo: 2020,
+            name: 'Bloody Mary',
+            power: "6",
+            difficulty: 8,
+            origin: 'Tale',
+            tactics: "Puk"
+        },
+
+        {
+            id: 19,
             elo: 2010,
             name: 'Sun Wukong',
             power: "6",
@@ -345,7 +363,7 @@ const heroesArr =
             tactics: "Puk"
         },
         {
-            id: 18,
+            id: 20,
             elo: 2005,
             name: 'Yennenga',
             power: "6",
@@ -353,24 +371,10 @@ const heroesArr =
             origin: 'Tale',
             tactics: "Puk"
         },
-        {
-            id: 19,
-            elo: 2020,
-            name: 'Bloody Mary',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-        {
-            id: 20,
-            elo: 1995,
-            name: 'Achilles',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
+
+
+
+
 
         // additional properties to heroes:
 
@@ -393,7 +397,7 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [,arthur,,,alice,,,medusa,,, sindbad,,, dracula,,, invisible,,, jackile, sherlock, beowulf, redHood, bigfoot, robinHood, sattler, ingen, raptors, trex] = heroesArr;
+let [,arthur,,,alice,,,medusa,,, sindbad,,, dracula,,, invisible,,, jackile,,, sherlock,,, beowulf,,, redHood,,, bigfoot,,, robinHood,,, sattler,,, ingen,,, raptors,,, trex,,, achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

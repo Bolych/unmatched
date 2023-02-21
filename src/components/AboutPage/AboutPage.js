@@ -1,7 +1,7 @@
 const AboutPage = () => {
     return (
         <div>
-            <p>This is About page</p>
+         <h1>Unmatched fan site</h1>
         </div>
     )
 }

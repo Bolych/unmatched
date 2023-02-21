@@ -19,7 +19,22 @@ import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
 import HeroGeneratorPage from "./components/HeroGenerator/HeroGeneratorPage";
 import {useState} from "react";
 import AboutPage from "./components/AboutPage/AboutPage";
+import SunWukong from "./components/Heroes/BattleOfLegendsVol2/SunWukong";
+import Yennenga from "./components/Heroes/BattleOfLegendsVol2/Yennenga";
 
+
+
+function Achilles(props) {
+    return null;
+}
+
+Achilles.propTypes = {};
+
+function BloodyMary(props) {
+    return null;
+}
+
+BloodyMary.propTypes = {};
 
 function App(props) {
 
@@ -29,6 +44,8 @@ function App(props) {
         setIsSidebarOpen(!isSidebarOpen);
         console.log(isSidebarOpen)
     }
+
+
 
 
     return (
@@ -66,6 +83,12 @@ function App(props) {
                         {/*Beowulf and Red Hood*/}
                         <Route path='/beowulf' element={  <Beowulf state={props.beowulf}/>}/>
                         <Route path='/redhood' element={  <RedHood state={props.redhood}/>}/>
+                        {/*Battle of Legends vol.2*/}
+                        <Route path='/achilles' element={  <Achilles state={props.achilles}/>}/>
+                        <Route path='/bloody-mary' element={  <BloodyMary state={props.bloodyMary}/>}/>
+                        <Route path='/yennenga' element={  <SunWukong state={props.sunWukong}/>}/>
+                        <Route path='/sun-wukong' element={  <Yennenga state={props.yennenga}/>}/>
+
                     </Routes>
                 </div>
             </div>

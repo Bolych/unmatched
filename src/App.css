@@ -28,7 +28,6 @@ position: relative;
     grid-area: n;
     height: 100%;
     z-index: 1;
-
 }
 
 .main-content {
@@ -38,10 +37,35 @@ height: 100vh;
 
 .cards-wrapper {
     display: none;
+    background: red;
 }
 
 .cards-wrapper.active {
     display: block;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    height: 100px;
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 
@@ -80,19 +104,23 @@ position: relative;
     }
 
     .navbar {
+
         position: fixed;
         top: 22px;
         transform: translateX(0px); /* the element is returned to where it's supposed to be */
         transition: transform 0.25s ease-in-out;
+
 
     }
 
     .navbar.active {
         transform: translateX(-200px); /* the element is transposed 300px to the left of where it's supposed to be */
         transition: transform 0.25s ease-in-out;
-
     }
 
     }
 
 /*background-color: #fff36b;*/
+
+/*font in navbar color
+ color: #e8ccc6;*/
