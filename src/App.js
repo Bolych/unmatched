@@ -21,6 +21,7 @@ import AboutPage from "./components/AboutPage/AboutPage";
 import SunWukong from "./components/Heroes/BattleOfLegendsVol2/SunWukong";
 import Yennenga from "./components/Heroes/BattleOfLegendsVol2/Yennenga";
 import Sinbad from "./components/Heroes/BattleOfLegends/Sindbad";
+import Merlin from "./components/Heroes/BattleOfLegends/ArthurCompanion";
 
 
 
@@ -86,6 +87,11 @@ function App(props) {
                         <Route path='/bloody-mary' element={  <BloodyMary state={props.bloodyMary}/>}/>
                         <Route path='/yennenga' element={  <SunWukong state={props.sunWukong}/>}/>
                         <Route path='/sun-wukong' element={  <Yennenga state={props.yennenga}/>}/>
+
+                    {/*    Companions:*/}
+                        <Route path='/merlin' element={  <Merlin state={props.arthur}/>}/>
+
+
 
                     </Routes>
                 </div>

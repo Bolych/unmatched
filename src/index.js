@@ -16,7 +16,8 @@ const heroesArr =
         {
             id: 1,
             elo: 1950,
-            name: 'Arthur',
+            heroName: 'Arthur',
+            heroLink: 'arthur',
             attack: "6-8",
             movement: '1',
             survivability: "8",
@@ -26,7 +27,11 @@ const heroesArr =
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             // style:
             backgroundColor: '#e8ccc6',
-            avatar: 'https://cf.geekdo-images.com/IzwCo4vnGNw9UhtAgkmEBg__imagepage/img/xnG-xG1-qDF2zY2wweev3y4Kpig=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6685043.jpg',
+            heroAvatar: 'https://cf.geekdo-images.com/IzwCo4vnGNw9UhtAgkmEBg__imagepage/img/xnG-xG1-qDF2zY2wweev3y4Kpig=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6685043.jpg',
+       // companion:
+            companionName: 'Merlin',
+            companionRoute: 'merlin',
+
         },
 
         {

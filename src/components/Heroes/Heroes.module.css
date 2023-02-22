@@ -35,6 +35,11 @@
     background-color: #d8b56b;
 }
 
+.companionButton{
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .showCardsButton {
     cursor: pointer;
     display: flex;

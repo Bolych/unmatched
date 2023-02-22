@@ -17,6 +17,7 @@ import card14 from '../../../images/decks/arthur/the-aid-of-morgana.png'
 import card15 from '../../../images/decks/arthur/the-holy-grail.png'
 import card16 from '../../../images/decks/arthur/the-lady-of-the-lake.png'
 import React, {useState} from "react";
+import {useNavigate} from "react-router";
 
 
 
@@ -30,22 +31,31 @@ const Arthur = ({state}) => {
         backgroundColor: state.backgroundColor,
         height: '100%'
     };
+    const navigate = useNavigate()
+    function handleClick() {
+        navigate(`/${state.companionRoute}`);
+    }
 
     return (<div style={myStyle} className={s.content}>
 
             <div className={s.header}>
-            <h1>{state.name}</h1>
+            <h1>{state.heroName}</h1>
             </div>
             <div  className={s.wrapper}>
                 <div className={s.leftSide}>
-                    <p><span className={s.firstWord}> Name:</span> {state.name}</p>
+                    <p><span className={s.firstWord}> Name:</span> {state.heroName}</p>
                     <p> <span className={s.firstWord}>Attack:</span>  {state.attack}</p>
                     <p> <span className={s.firstWord}>Survivability:</span>  {state.survivability}</p>
                     <p> <span className={s.firstWord}>Difficulty:</span>  {state.difficulty}</p>
                     <p> <span className={s.firstWord}>Origin:</span>  {state.origin}</p>
+                    <p> <span className={s.firstWord}>Companion:</span> {state.companionName} <span className={s.companionButton} onClick={handleClick}>
+                        click to read about companion.
+                    </span></p>
+
                 </div>
+
                 <div className={s.rightSide}>
-                    <img src={state.avatar}/>
+                    <img src={state.heroAvatar}/>
                 </div>
                 <div className={s.downSide}>
                     <div className={s.header}>
