@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found</title>
+</head>
+<body>
+<script>
+  const url = window.location.href.split('/');
+  const newUrl = url.slice(0, 3).join('/');
+  window.location.replace(newUrl);
+</script>
+</body>
+</html>

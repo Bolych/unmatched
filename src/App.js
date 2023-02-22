@@ -63,6 +63,7 @@ function App(props) {
                     <Routes>
 
                         <Route path='/' element={<AboutPage/>}/>
+                        <Route path=' ' element={<AboutPage/>}/>
                         {/*{heroesList}*/}
                         <Route path='/generator' element={<HeroGeneratorPage/>}/>
                         <Route path='/calculator' element={<OddsCalculatorPage heroesArr={props.heroesArr} />}/>
