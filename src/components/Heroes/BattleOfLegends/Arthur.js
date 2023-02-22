@@ -54,7 +54,8 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}> Name:</span> {state.companionName}</p>
                     <p><span className={s.firstWord}> Range:</span> {state.companionRange}</p>
                     <p><span className={s.firstWord}> Start health:</span> {state.companionHealth}</p>
-                    <button className={s.companionButton} onClick={handleClick}>Click to read more about companion</button>
+                    <button className={s.companionButton} onClick={handleClick}>Click to read more about companion
+                    </button>
                 </div>
 
                 <div className={s.leftSide}>
@@ -64,7 +65,6 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}> Start health:</span> {state.heroHealth}</p>
                     <p><span className={s.firstWord}> Movement:</span> {state.movement}</p>
                     <p><span className={s.firstWord}>Origin:</span> {state.origin}</p>
-
                     <div className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Attack:</span> {state.attack}</p>
                     <p><span className={s.firstWord}>Survivability:</span> {state.survivability}</p>
@@ -73,10 +73,10 @@ const Arthur = ({state}) => {
 
                 <div className={s.rightSide}>
                     <div className={s.imageSlider}>
-                    <ImageSlider imgUrls={imgUrls}/>
+                        <ImageSlider imgUrls={imgUrls}/>
                     </div>
-                    <div className={s.quote}>
-                    <p >{state.heroQuote}</p>
+                    <div>
+                        <p className={s.quote}>{state.heroQuote}</p>
                     </div>
                 </div>
                 <div className={s.downSide}>

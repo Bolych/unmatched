@@ -113,14 +113,12 @@ position: relative;
 
         position: fixed;
         top: 22px;
-        transform: translateX(0px); /* the element is returned to where it's supposed to be */
+        transform: translateX(0em); /* the element is returned to where it's supposed to be */
         transition: transform 0.25s ease-in-out;
-
-
     }
 
     .navbar.active {
-        transform: translateX(-200px); /* the element is transposed 300px to the left of where it's supposed to be */
+        transform: translateX(-15em); /* the element is transposed 300px to the left of where it's supposed to be */
         transition: transform 0.25s ease-in-out;
     }
 

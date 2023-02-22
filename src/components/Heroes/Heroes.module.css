@@ -88,27 +88,27 @@
 }
 
 .rightSide img {
-    max-width: 400px;
-max-height: 600px;
+    max-width: 25em;
+max-height: 37.5em;
 
 }
 
 .imageSlider {
-    width: 350px;
+    width: 21em;
 
 
 }
 
 .imageSlider img {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 22em;
+    max-height: 22em;
 
 }
 
 .fanStatsHeader {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 12.5em;
     margin-top: 2em;
     background-color: #d8b56b;
     border-bottom-right-radius: 10px;
@@ -150,7 +150,9 @@ font-size: 1em;
         max-height: 200px;
     }
 .quote{
-    font-size: 13px;
+
+    font-size: 0.9em;
+    margin-right: 10px;
 }
 
 
