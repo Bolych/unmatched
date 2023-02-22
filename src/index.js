@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 
-import img2 from './images/decks/arthur/prophecy.png'
+import img2 from './images/decks/battleOfLegendsVol1/arthur/prophecy.png'
 
 const heroesArr =
     [
@@ -18,20 +18,25 @@ const heroesArr =
             elo: 1950,
             heroName: 'Arthur',
             heroLink: 'arthur',
+            heroRange: 'melee',
             attack: "6-8",
-            movement: '1',
+            movement: '2',
+            heroHealth: '18',
             survivability: "8",
             difficulty: '3',
-            origin: 'Novel King Arthur and knights of the Round Table. Author: Thomas Melory. ',
+            heroTrait: 'When Arthur attacks, you can enhance his attack. Put the ENHANCEMENT card face down with your attack card. If your opponent cancels effects of your attack card, card with ENHANCEMENT will be discarded without effect ',
+            origin: 'Novel "King Arthur and knights of the Round Table". Author: Thomas Melory. ',
             description: 'Legendary King Arthur. He has wife Morgana and loyal friend Merlin. He was an exceptional man.',
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
             // style:
             backgroundColor: '#e8ccc6',
-            heroAvatar: 'https://cf.geekdo-images.com/IzwCo4vnGNw9UhtAgkmEBg__imagepage/img/xnG-xG1-qDF2zY2wweev3y4Kpig=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6685043.jpg',
+            heroAvatar: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
        // companion:
             companionName: 'Merlin',
+            companionRange: 'ranged',
             companionRoute: 'merlin',
-
+companionHealth: '7'
         },
 
         {
@@ -57,7 +62,7 @@ const heroesArr =
             description: 'Alice, Alice... Now she is mature and tough',
             tactics: "Predict Alica's size no matter you are playing for her or against",
             backgroundColor: "#ADBFCD",
-            avatar: "https://preview.redd.it/nmyqat7tjpc61.jpg?auto=webp&s=88f1b68bd6a93988b034d68aeedc1601f3e9bc83"
+            avatar: "https://images.coplusk.net/project_images/173028/image/101750_2F2014-05-16-015127-imagejpeg_3c-1b.jpg"
 
         },
 
@@ -413,10 +418,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     <BrowserRouter>
-
+        <div className='wrapper'>
     <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula} invisible={invisible}
          jackile={jackile} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
          robinhood={robinHood}/>
+    </div>
+
     </BrowserRouter>
+
 );
 

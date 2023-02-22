@@ -21,8 +21,8 @@ const Merlin = (props) => {
                 <h1>{props.state.companionName}</h1>
             </div>
             Page about companion
-            <p>{props.state.companionName}</p>
-            <button onClick={handleClick}>Button</button>
+            <p className={s.quote}>{props.state.companionName}</p>
+            <button className={s.companionButton} onClick={handleClick}>Back</button>
         </div>
     )
 }

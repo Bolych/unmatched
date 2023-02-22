@@ -1,3 +1,5 @@
+
+
 .App {
     display: grid;
     grid-template-areas: "h h"
@@ -14,7 +16,6 @@
     background-repeat: no-repeat;
     grid-area: h;
     background-color: #792813;
-    padding: 1em;
     height: 12em;
     z-index: 1;
 }

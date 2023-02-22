@@ -15,10 +15,11 @@
     background-color: #cdcd97;
     color: rgb(60, 66, 87);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 800;
     padding: 4px 8px;
     display: inline-block;
+    overflow: auto;
     min-height: 28px;}
 
 .navbar {
