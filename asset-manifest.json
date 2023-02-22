@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/unmatched/static/css/main.da6d1baa.css",
+    "main.js": "/unmatched/static/js/main.abb7a285.js",
+    "static/media/the-other-side-of-the-mushroom.png": "/unmatched/static/media/the-other-side-of-the-mushroom.ab64818cc74b7f24d902.png",
+    "static/media/looking-glass.png": "/unmatched/static/media/looking-glass.97781ffb38a4d0a6f895.png",
+    "static/media/eat-me.png": "/unmatched/static/media/eat-me.5d6a79544a0eff812dba.png",
+    "static/media/drink-me.png": "/unmatched/static/media/drink-me.5953a1f36a4411f5993e.png",
+    "static/media/jaws-that-bite.png": "/unmatched/static/media/jaws-that-bite.b4c14b694af2e2e7c6d7.png",
+    "static/media/feint.png": "/unmatched/static/media/feint.315fb544b539365cca64.png",
+    "static/media/snicker-snack.png": "/unmatched/static/media/snicker-snack.92c6a003c95e79267d6c.png",
+    "static/media/skirmish.png": "/unmatched/static/media/skirmish.ff1d154f6c7245cde5c6.png",
+    "static/media/momentous-shift.png": "/unmatched/static/media/momentous-shift.eff5a1a6de3c2eb0c3ca.png",
+    "static/media/claws-that-catch.png": "/unmatched/static/media/claws-that-catch.b0862cee7e43fdef08f3.png",
+    "static/media/i-m-late-i-m-late.png": "/unmatched/static/media/i-m-late-i-m-late.9e099d9121cadbf88c5c.png",
+    "static/media/regroup.png": "/unmatched/static/media/regroup.a50e7d05e862460cf004.png",
+    "static/media/mad-as-a-hatter.png": "/unmatched/static/media/mad-as-a-hatter.f958df6fc014be041286.png",
+    "static/media/o-frabjous-day.png": "/unmatched/static/media/o-frabjous-day.5983c40ac38277fa5a30.png",
+    "static/media/manxome-foe.png": "/unmatched/static/media/manxome-foe.bf9f72b860e2011a532b.png",
+    "static/media/command-the-storms.png": "/unmatched/static/media/command-the-storms.e08f56314fd01403787d.png",
+    "static/media/the-holy-grail.png": "/unmatched/static/media/the-holy-grail.5a011fea45679059b271.png",
+    "static/media/noble-sacrifice.png": "/unmatched/static/media/noble-sacrifice.760f13f3b433aa2c8fcc.png",
+    "static/media/bewilderment.png": "/unmatched/static/media/bewilderment.a1f5a36dee1df65dc278.png",
+    "static/media/skirmish (1).png": "/unmatched/static/media/skirmish (1).c411a79d294ed16bb8b9.png",
+    "static/media/the-lady-of-the-lake.png": "/unmatched/static/media/the-lady-of-the-lake.ee6ad2418a4845d75415.png",
+    "static/media/prophecy.png": "/unmatched/static/media/prophecy.23a9eabaffd9f6b1eba7.png",
+    "static/media/restless-spirits.png": "/unmatched/static/media/restless-spirits.e905a085388b1503a606.png",
+    "static/media/swift-strike.png": "/unmatched/static/media/swift-strike.f635dcabe7058f3b6ac4.png",
+    "static/media/excalibur.png": "/unmatched/static/media/excalibur.4deefd746952692ea657.png",
+    "static/media/aid-the-chosen-one.png": "/unmatched/static/media/aid-the-chosen-one.cc0fcb4aa8a8a2579c90.png",
+    "static/media/the-aid-of-morgana.png": "/unmatched/static/media/the-aid-of-morgana.ef7a8f71fd8b5470a211.png",
+    "static/media/divine-intervention.png": "/unmatched/static/media/divine-intervention.20213534cf3c0769422e.png",
+    "index.html": "/unmatched/index.html",
+    "main.da6d1baa.css.map": "/unmatched/static/css/main.da6d1baa.css.map",
+    "main.abb7a285.js.map": "/unmatched/static/js/main.abb7a285.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da6d1baa.css",
+    "static/js/main.abb7a285.js"
+  ]
+}
