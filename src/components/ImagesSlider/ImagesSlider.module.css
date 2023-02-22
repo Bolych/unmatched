@@ -1,0 +1,23 @@
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.imagesSliderWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sliderButton {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background-color: #d8b56b;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: 800;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+}

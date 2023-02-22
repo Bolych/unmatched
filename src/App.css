@@ -9,7 +9,6 @@
 }
 
 
-
 .header {
     background-image: url("https://restorationgames.com/wp-content/uploads/2020/11/Unmatched-Banner-V2.png");
    background-size: cover;
@@ -24,6 +23,9 @@
     position: absolute;
     display: none;
 }
+
+
+
 
 .navbar {
     background-color: #111924;

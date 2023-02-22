@@ -31,7 +31,9 @@ const heroesArr =
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
             // style:
             backgroundColor: '#e8ccc6',
-            heroAvatar: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
+            img2: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
+            heroAvatar: 'https://cdn.arstechnica.net/wp-content/uploads/2019/09/UM-BoLv1-card-character_King-Arthur.png',
+            img3: 'https://i2-prod.somersetlive.co.uk/incoming/article8107940.ece/ALTERNATES/s1200c/0_Tommy_4k_photorealistic_fantasy_King_Arthur_portrait_avalon_mag_5dc7a652-88d5-4174-9a89-2169ccb9d39c.png',
        // companion:
             companionName: 'Merlin',
             companionRange: 'ranged',

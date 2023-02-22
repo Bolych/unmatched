@@ -18,6 +18,7 @@ import card15 from '../../../images/decks/battleOfLegendsVol1/arthur/the-holy-gr
 import card16 from '../../../images/decks/battleOfLegendsVol1/arthur/the-lady-of-the-lake.png'
 import React, {useState} from "react";
 import {useNavigate} from "react-router";
+import ImageSlider from "../../ImagesSlider/ImagesSlider";
 
 
 const Arthur = ({state}) => {
@@ -25,6 +26,12 @@ const Arthur = ({state}) => {
     const handleToggleCards = () => {
         setShowCards(!showCards);
     }
+
+    let img1 = state.heroAvatar;
+    let img2 = state.img2;
+    let img3 = state.img3;
+
+    let imgUrls = [img1, img2, img3]
 
     const myStyle = {
         backgroundColor: state.backgroundColor,
@@ -62,12 +69,15 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}>Attack:</span> {state.attack}</p>
                     <p><span className={s.firstWord}>Survivability:</span> {state.survivability}</p>
                     <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
-
                 </div>
 
                 <div className={s.rightSide}>
-                    <img src={state.heroAvatar}/>
-                    <p className={s.quote}>{state.heroQuote}</p>
+                    <div className={s.imageSlider}>
+                    <ImageSlider imgUrls={imgUrls}/>
+                    </div>
+                    <div className={s.quote}>
+                    <p >{state.heroQuote}</p>
+                    </div>
                 </div>
                 <div className={s.downSide}>
                     <div className={s.header}>

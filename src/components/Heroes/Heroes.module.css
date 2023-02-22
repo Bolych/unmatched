@@ -88,8 +88,21 @@
 }
 
 .rightSide img {
-    max-width: 500px;
-max-height: 500px;
+    max-width: 400px;
+max-height: 600px;
+
+}
+
+.imageSlider {
+    width: 350px;
+
+
+}
+
+.imageSlider img {
+    max-width: 350px;
+    max-height: 350px;
+
 }
 
 .fanStatsHeader {
@@ -136,7 +149,9 @@ font-size: 1em;
     .rightSide img {
         max-height: 200px;
     }
-
+.quote{
+    font-size: 13px;
+}
 
 
     .wrapper {
