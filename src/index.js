@@ -65,13 +65,13 @@ const heroesArr =
                 'When Alice is BIG, add 2 to the value of her attack cards.\n' +
                 'When Alice is SMALL, add 1 to the value of her defense cards.',
             origin: ' Novel "Alice in wonderland". Author: Lewis Carroll',
-            description: "",
+            description: "Lena Osipova is the best",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“We\'re all mad here".',
             // style:
             backgroundColor: 'lightblue',
-            img2: 'https://bloody-disgusting.com/wp-content/uploads/2022/01/Alice-Madness-Returns-1280x720-1.jpeg',
-            heroAvatar: 'https://cdn.vox-cdn.com/thumbor/s6IzDkkjcSnf4Tszl26U10KYNcg=/480x0/cdn.vox-cdn.com/uploads/chorus_asset/file/18842376/UM_BoLv1_card_back_Alice.png',
+           heroAvatar: 'https://bloody-disgusting.com/wp-content/uploads/2022/01/Alice-Madness-Returns-1280x720-1.jpeg',
+           img2: 'https://cdn.vox-cdn.com/thumbor/s6IzDkkjcSnf4Tszl26U10KYNcg=/480x0/cdn.vox-cdn.com/uploads/chorus_asset/file/18842376/UM_BoLv1_card_back_Alice.png',
             img3: 'https://preview.redd.it/my-take-on-alice-v0-5awtznqqvt191.jpg?width=640&crop=smart&auto=webp&s=d5397d52ffe0fc0d9c98ad14366856309546a82c',
             //fan stats:
             attack: "7-9",

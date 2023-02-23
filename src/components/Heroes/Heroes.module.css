@@ -2,6 +2,7 @@
 
 
 .wrapper {
+    white-space: pre-wrap;
     display: grid;
     grid-template-areas:
             "left1 middle right"
@@ -14,35 +15,39 @@
 
 }
 .leftSidePartOne {
+
+    justify-items: start;
+    display: flex;
+    gap: 0.2em;
+    flex-direction: column;
     grid-area: left1;
 }
 
 .leftSidePartTwo {
+    display: flex;
+    flex-direction: column;
  grid-area: left2;
+    gap: 0.5em;
+
 }
 
 
 .rightSide {
     grid-area: right;
-    display: flex;
-    flex-direction: column;
+
     align-items: center;
 }
 
 .middleSide {
+    display: flex;
+    flex-direction: column;
     grid-area: middle;
+    gap: 0.2em;
 }
 
 .downSide {
     grid-area: down;
 }
-
-.middleSide p {
-
-    margin: 0.4em;
-}
-
-
 
 .header {
     background-color: #d8b56b;
@@ -50,6 +55,11 @@
 
 .firstWord {
     font-weight: bold;
+}
+
+.firstMainWord{
+    display: flex;
+    justify-content: start;
 }
 
 
@@ -138,7 +148,7 @@ margin: 0.4em;
 }
 
 .downSide p {
-    margin: 1em;
+    margin: 0.5em;
 }
 
 .cards {
@@ -157,6 +167,13 @@ font-size: 1em;
 @media (max-width: 550px) {
     .cards img {
         max-width: 150px;
+    }
+
+    .firstMainWord{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.2em;
+        margin-top: 0.2em;
     }
 
     .rightSide img {
@@ -202,10 +219,12 @@ grid-area: right;
 
     .leftSidePartOne {
         grid-area: left;
+        margin-left: 0.1em;
     }
 
     .leftSidePartTwo {
    grid-area: left2;
+
 
     }
 
@@ -214,7 +233,10 @@ grid-area: right;
 }
 
     .middleSide {
+        margin-top: 1em;
         grid-area: middle;
+
+
     }
 
     .downSide {

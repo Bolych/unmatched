@@ -22,23 +22,11 @@ import SunWukong from "./components/Heroes/BattleOfLegendsVol2/SunWukong";
 import Yennenga from "./components/Heroes/BattleOfLegendsVol2/Yennenga";
 import Sinbad from "./components/Heroes/BattleOfLegends/Sindbad";
 import Merlin from "./components/Heroes/BattleOfLegends/ArthurCompanion";
+import Achilles from "./components/Heroes/BattleOfLegendsVol2/Achilles";
+import BloodyMary from "./components/Heroes/BattleOfLegendsVol2/BloodyMary";
 
-
-
-function Achilles(props) {
-    return null;
-}
-
-Achilles.propTypes = {};
-
-function BloodyMary(props) {
-    return null;
-}
-
-BloodyMary.propTypes = {};
 
 function App(props) {
-
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     const handleToggleSidebar = () => {
@@ -47,17 +35,12 @@ function App(props) {
     }
 
 
-
-
     return (
             <div className="App">
-
                 <Header handleToggleSidebar={handleToggleSidebar} />
-
                 <div className={`navbar ${isSidebarOpen ? 'active' : ''}`}>
                     <Navbar/>
                 </div>
-
 
                 <div className='main-content'>
                     <Routes>

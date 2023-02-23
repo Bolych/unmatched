@@ -48,7 +48,7 @@ const Arthur = ({state}) => {
             <div className={s.header}>
                 <h1>{state.heroName}</h1>
             </div>
-            <div className={s.wrapper}>
+            <div  className={s.wrapper}>
                 <div className={s.middleSide}>
                     <p className={s.firstWord}>Companion:</p>
                     <p><span className={s.firstWord}> Name:</span> {state.companionName}</p>
@@ -62,7 +62,7 @@ const Arthur = ({state}) => {
                 </div>
 
                 <div className={s.leftSidePartOne}>
-                    <p className={s.firstWord}>Hero:</p>
+
                     <p><span className={s.firstWord}> Name:</span> {state.heroName}</p>
                     <p><span className={s.firstWord}> Range:</span> {state.heroRange}</p>
                     <p><span className={s.firstWord}> Start health:</span> {state.heroHealth}</p>

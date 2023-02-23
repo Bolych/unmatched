@@ -62,7 +62,6 @@ const Alice = ({state}) => {
                 </div>
 
                 <div className={s.leftSidePartOne}>
-                    <p className={s.firstWord}>Hero:</p>
                     <p><span className={s.firstWord}> Name:</span> {state.heroName}</p>
                     <p><span className={s.firstWord}> Range:</span> {state.heroRange}</p>
                     <p><span className={s.firstWord}> Start health:</span> {state.heroHealth}</p>
