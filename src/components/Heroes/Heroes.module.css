@@ -3,37 +3,46 @@
 
 .wrapper {
     display: grid;
-    grid-template-areas: "l m r" "d d d";
+    grid-template-areas:
+            "left1 middle right"
+            "left2 middle right" "down down down";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
+    grid-gap: 1em;
+    /*grid-gap: 2em;*/
 
 
 }
-.leftSide {
-    grid-area: l;
+.leftSidePartOne {
+    grid-area: left1;
 }
+
+.leftSidePartTwo {
+ grid-area: left2;
+}
+
 
 .rightSide {
-    grid-area: r;
+    grid-area: right;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .middleSide {
-    grid-area: m;
-
-}
-
-.middleSide p {
-    margin: 0.4em;
+    grid-area: middle;
 }
 
 .downSide {
-
-    grid-area: d;
+    grid-area: down;
 }
+
+.middleSide p {
+
+    margin: 0.4em;
+}
+
+
 
 .header {
     background-color: #d8b56b;
@@ -66,12 +75,13 @@
     outline: 0;
     cursor: pointer;
     background-color: #d8b56b;
-    border-radius: 50px;
+    border-radius: 15px;
     font-size: 0.9em;
     font-weight: 800;
     padding: 4px 8px;
     display: inline-block;
-    min-height: 28px;}
+    max-width: 12em;
+    }
 
 
 .showCardsButton {
@@ -137,8 +147,10 @@ margin: 0.4em;
 }
 
 .quote{
+    margin-top: 1em;
     font-style: italic;
 font-size: 1em;
+    max-width: 14em;
 }
 
 @media (max-width: 550px) {
@@ -147,25 +159,59 @@ font-size: 1em;
     }
 
     .rightSide img {
-        max-height: 200px;
+        height: 200px;
     }
-.quote{
 
-    font-size: 0.9em;
-    margin-right: 10px;
-}
+    .quote {
 
+        font-size: 0.9em;
+        margin-right: 10px;
+    }
+
+
+  .imageSlider {
+width: 10em;
+  }
+
+    /*Adaptive grid*/
 
     .wrapper {
         display: grid;
-        grid-template-areas:
-                "l r"
-                "l  m"
-                "d d";
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
 
+        grid-template-areas:
+                "left right"
+                "middle right "
+                "left2 left2"
+                "down down";
+        grid-template-rows: 1fr;
+        grid-template-columns: 10.1em 1fr;
+        grid-gap: 0;
+    }
+
+    .rightSide {
+grid-area: right;
+
+    }
+
+    .leftSidePartOne {
+        grid-area: left;
+    }
+
+    .leftSidePartTwo {
+   grid-area: left2;
+
+    }
+
+.companionButton{
+    padding: 5px 8px;
+}
+
+    .middleSide {
+        grid-area: middle;
+    }
+
+    .downSide {
+        grid-area: down;
     }
 
 

@@ -109,6 +109,15 @@ position: relative;
         height: 45px;
     }
 
+    .zoomable-image {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .zoomable-image.zoomed {
+        transform: scale(2);
+    }
+
     .navbar {
 
         position: fixed;

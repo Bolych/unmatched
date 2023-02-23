@@ -28,7 +28,7 @@ let heroesArr = []
 // Generate Hero Function
 
 
-const HeroGeneratorPage = (props) => {
+const HeroGeneratorPage = () => {
     const [visibleHeroes, setVisibleHeroes] = useState('heroes window')
     const [hero, setHero] = useState('')
     return (
@@ -67,7 +67,7 @@ const HeroGeneratorPage = (props) => {
                 <br/>
                 <br/>
                 <div className={s.generateAndResetButtons}>
-                    <HeroGenerator  setHero={setHero} heroesArr={heroesArr}/>
+                    <HeroGenerator hero={hero} setHero={setHero} heroesArr={heroesArr}/>
                     <ResetButton visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes}
                                  heroesArr={heroesArr}/>
                 </div>
@@ -75,6 +75,9 @@ const HeroGeneratorPage = (props) => {
                     <div><h2>Your hero is:</h2></div>
                     <br/>
                 <div><h2>{hero}</h2></div>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </div>
             </div>

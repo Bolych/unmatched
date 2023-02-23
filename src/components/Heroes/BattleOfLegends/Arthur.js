@@ -54,17 +54,19 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}> Name:</span> {state.companionName}</p>
                     <p><span className={s.firstWord}> Range:</span> {state.companionRange}</p>
                     <p><span className={s.firstWord}> Start health:</span> {state.companionHealth}</p>
-                    <button className={s.companionButton} onClick={handleClick}>Click to read more about companion
+                    <button className={s.companionButton} onClick={handleClick}>More about companion
                     </button>
                 </div>
 
-                <div className={s.leftSide}>
+                <div className={s.leftSidePartOne}>
                     <p className={s.firstWord}>Hero:</p>
                     <p><span className={s.firstWord}> Name:</span> {state.heroName}</p>
                     <p><span className={s.firstWord}> Range:</span> {state.heroRange}</p>
                     <p><span className={s.firstWord}> Start health:</span> {state.heroHealth}</p>
                     <p><span className={s.firstWord}> Movement:</span> {state.movement}</p>
                     <p><span className={s.firstWord}>Origin:</span> {state.origin}</p>
+                </div>
+                <div className={s.leftSidePartTwo}>
                     <div className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Attack:</span> {state.attack}</p>
                     <p><span className={s.firstWord}>Survivability:</span> {state.survivability}</p>
@@ -104,8 +106,9 @@ const Arthur = ({state}) => {
                     <h3>Click to show</h3>
                 </div>
             </div>
-
+<br/>
             <div className={`cards-wrapper ${showCards ? 'active' : ''}`}>
+
                 <div className={s.cards}>
                     <img src={card1} alt="none"/>
                     <img src={card2} alt="none"/>
