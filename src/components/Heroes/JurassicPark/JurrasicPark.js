@@ -1,23 +1,23 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
-const JurassicParkHeroes = () => {
+const JurassicParkHeroes = (props) => {
     return <div>
 
         <ul>
-            <li><NavLink to='drsattler'>Dr Sattler</NavLink></li>
-            <li><NavLink to='ingen'>InGen</NavLink></li>
-            <li><NavLink to='raptors'>Raptors</NavLink></li>
-            <li><NavLink to='trex'>T-rex</NavLink></li>
+            <li><NavLink to='drsattler' onClick={props.closeNavbar}>Dr Sattler</NavLink></li>
+            <li><NavLink to='ingen' onClick={props.closeNavbar}>InGen</NavLink></li>
+            <li><NavLink to='raptors' onClick={props.closeNavbar}>Raptors</NavLink></li>
+            <li><NavLink to='trex' onClick={props.closeNavbar}>T-rex</NavLink></li>
         </ul>
     </div>
 }
 
-const JurassicPark = () => {
+const JurassicPark = (props) => {
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Jurassic Park</button>
-        {show ? <JurassicParkHeroes/> : null}
+        {show ? <JurassicParkHeroes closeNavbar={props.closeNavbar}/> : null}
 
     </div>)
 }

@@ -1,22 +1,22 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
-const MarvelTeenSpiritHeroes = () => {
+const MarvelTeenSpiritHeroes = (props) => {
     return <div>
 
         <ul>
-            <li><NavLink to='cloak-and-dagger'>Cloak and Dagger</NavLink></li>
-            <li><NavLink to='ms-marvel'>Miss Marvel</NavLink></li>
-            <li><NavLink to='squirrel-girl'>Squirrel Girl</NavLink></li>
+            <li><NavLink to='cloak-and-dagger' onClick={props.closeNavbar}>Cloak and Dagger</NavLink></li>
+            <li><NavLink to='ms-marvel' onClick={props.closeNavbar}>Miss Marvel</NavLink></li>
+            <li><NavLink to='squirrel-girl' onClick={props.closeNavbar}>Squirrel Girl</NavLink></li>
         </ul>
     </div>
 }
 
-const MarvelTeenSpirit = () => {
+const MarvelTeenSpirit = (props) => {
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Marvel's teen spirit</button>
-        {show ? <MarvelTeenSpiritHeroes/> : null}
+        {show ? <MarvelTeenSpiritHeroes closeNavbar={props.closeNavbar}/> : null}
 
     </div>)
 }

@@ -3,20 +3,21 @@ import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
 
-const RobinAndBigfootHeroes = () => {
+const RobinAndBigfootHeroes = (props) => {
     return <div>
         <ul>
-            <li><NavLink to='bigfoot'>Bigfoot</NavLink></li>
-            <li><NavLink to='robin'>Robin Hood</NavLink></li>
+            <li><NavLink to='bigfoot' onClick={props.closeNavbar}>Bigfoot</NavLink></li>
+            <li><NavLink to='robin' onClick={props.closeNavbar}>Robin Hood</NavLink></li>
         </ul>
     </div>
 }
 
-const RobinAndBigfoot = () => {
+const RobinAndBigfoot = (props) => {
+
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Robin Hood and Bigfoot</button>
-        {show ? <RobinAndBigfootHeroes/> : null}
+        {show ? <RobinAndBigfootHeroes closeNavbar={props.closeNavbar}/> : null}
 
     </div>)
 }

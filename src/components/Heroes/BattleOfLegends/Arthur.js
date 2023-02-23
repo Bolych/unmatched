@@ -25,6 +25,8 @@ const Arthur = ({state}) => {
     const [showCards, setShowCards] = useState(false)
     const handleToggleCards = () => {
         setShowCards(!showCards);
+        window.scrollTo({ top: 50000, behavior: 'smooth'})
+
     }
 
     let img1 = state.heroAvatar;

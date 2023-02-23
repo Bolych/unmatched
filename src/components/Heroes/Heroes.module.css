@@ -47,6 +47,7 @@
 
 .downSide {
     grid-area: down;
+    text-align: justify;
 }
 
 .header {

@@ -17,33 +17,35 @@ import BruceLee from "../Heroes/BruceLee/BruceLeeLink";
 import Deadpool from "../Heroes/Deadpool/DeadpoolLink";
 
 const Navbar = (props) => {
-    return <div className='navbar'>
 
+
+    return <div className='navbar'>
+        <div className={s.closeButton} onClick={props.handleToggleSidebar}>✖</div>
 
         <div className={s.content}>
             <div className={s.navigationLinks}>
-                <li><NavLink to='/'>About </NavLink></li>
-                <li><NavLink to='/generator'>Generator</NavLink></li>
-                <li><NavLink to='/calculator'>Calculator </NavLink></li>
+                <li><NavLink to='/' onClick={props.closeNavbar}>About </NavLink></li>
+                <li><NavLink to='/generator' onClick={props.closeNavbar}>Generator</NavLink></li>
+                <li><NavLink to='/calculator' onClick={props.closeNavbar}>Calculator </NavLink></li>
             </div>
 
             <div className={s.expansionsListCover}>
                 <p>Encyclopedia:</p>
                 <ul className={s.expansionsList}>
-                    <li><BattleOfLegends/></li>
-                    <li><CobbleAndFog/></li>
-                    <li><RobinAndBigfoot/></li>
-                    <li><BeowulfAndRedHood/></li>
-                    <li><JurassicPark/></li>
-                    <li><BattleOfLegendsVol2/></li>
-                    <li><Buffy/></li>
-                    <li><MarvelTeenSpirit/></li>
-                    <li><MarvelRedemptionRow/></li>
-                    <li><MarvelHellsKitchen/></li>
-                    <li><MarvelForKingAndCountry/></li>
-                    <li><HoudiniAndGenie/></li>
-                    <li><BruceLee/></li>
-                    <li><Deadpool/></li>
+                    <li> <BattleOfLegends closeNavbar={props.closeNavbar}/></li>
+                    <li><CobbleAndFog closeNavbar={props.closeNavbar}/></li>
+                    <li><RobinAndBigfoot closeNavbar={props.closeNavbar}/></li>
+                    <li><BeowulfAndRedHood closeNavbar={props.closeNavbar}/></li>
+                    <li><JurassicPark closeNavbar={props.closeNavbar}/></li>
+                    <li><BattleOfLegendsVol2 closeNavbar={props.closeNavbar}/></li>
+                    <li><Buffy closeNavbar={props.closeNavbar}/></li>
+                    <li><MarvelTeenSpirit closeNavbar={props.closeNavbar}/></li>
+                    <li><MarvelRedemptionRow closeNavbar={props.closeNavbar}/></li>
+                    <li><MarvelHellsKitchen closeNavbar={props.closeNavbar}/></li>
+                    <li><MarvelForKingAndCountry closeNavbar={props.closeNavbar}/></li>
+                    <li><HoudiniAndGenie closeNavbar={props.closeNavbar}/></li>
+                    <li><BruceLee closeNavbar={props.closeNavbar}/></li>
+                    <li><Deadpool closeNavbar={props.closeNavbar}/></li>
 
                 </ul>
             </div>

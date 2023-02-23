@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import { Route, Routes} from "react-router-dom";
+import {NavLink, Route, Routes} from "react-router-dom";
 import OddsCalculatorPage from "./components/OddsCalculator/OddsCalculatorPage";
 import Arthur from "./components/Heroes/BattleOfLegends/Arthur";
 import Alice from "./components/Heroes/BattleOfLegends/Alice";
@@ -31,15 +31,20 @@ function App(props) {
 
     const handleToggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
-        console.log(isSidebarOpen)
+    }
+
+    function closeNavbar() {
+        setIsSidebarOpen(true);
+        window.scrollTo({ top: 0, behavior: 'smooth'})
     }
 
 
     return (
             <div className="App">
+
                 <Header handleToggleSidebar={handleToggleSidebar} />
                 <div className={`navbar ${isSidebarOpen ? 'active' : ''}`}>
-                    <Navbar/>
+                    <Navbar  handleToggleSidebar={handleToggleSidebar} closeNavbar={closeNavbar}/>
                 </div>
 
                 <div className='main-content'>

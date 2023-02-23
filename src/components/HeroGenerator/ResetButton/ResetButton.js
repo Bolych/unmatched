@@ -3,7 +3,6 @@ const ResetButton = (props) => {
     function reset() {
         props.heroesArr.splice(0)
         props.setVisibleHeroes(props.heroesArr)
-        console.log(props.heroesArr)
     }
 
 

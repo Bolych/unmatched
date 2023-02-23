@@ -2,20 +2,20 @@ import {NavLink} from "react-router-dom";
 import {useState} from "react";
 
 
-const BeowulfAndRedHoodHeroes = () => {
+const BeowulfAndRedHoodHeroes = (props) => {
     return <div>
         <ul>
-            <li><NavLink to='beowulf'>Beowulf</NavLink></li>
-            <li><NavLink to='redhood'>Red Hood</NavLink></li>
+            <li><NavLink to='beowulf' onClick={props.closeNavbar}>Beowulf</NavLink></li>
+            <li><NavLink to='redhood' onClick={props.closeNavbar}>Red Hood</NavLink></li>
         </ul>
     </div>
 }
 
-const BeowulfAndRedHood = () => {
+const BeowulfAndRedHood = (props) => {
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Beowulf and Red Hood</button>
-        {show ? <BeowulfAndRedHoodHeroes/> : null}
+        {show ? <BeowulfAndRedHoodHeroes closeNavbar={props.closeNavbar}/> : null}
 
     </div>)
 }

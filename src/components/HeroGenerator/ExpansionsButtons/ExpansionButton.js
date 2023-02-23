@@ -13,7 +13,7 @@ const ExpansionButton = (props) => {
         props.setVisibleHeroes(
         props.heroesArr.push(...props.expansionPack),
      props.setVisibleHeroes(props.heroesArr))
-        console.log(props.heroesArr)
+
 
     }
 

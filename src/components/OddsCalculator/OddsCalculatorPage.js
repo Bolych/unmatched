@@ -51,7 +51,7 @@ const OddsCalculatorPage = (props) => {
     const [heroOne, setHeroOne] = useState('Hero one')
     const [heroTwo, setHeroTwo] = useState('Hero two')
 
-console.log(typeof heroOne)
+
 
 
 

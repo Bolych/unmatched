@@ -1,22 +1,22 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
-const HoudiniAndGenieHeroes = () => {
+const HoudiniAndGenieHeroes = (props) => {
     return <div>
 
         <ul>
-            <li><NavLink to='hoidini'>Houdini</NavLink></li>
-            <li><NavLink to='genie'>The Genie</NavLink></li>
+            <li><NavLink to='hoidini' onClick={props.closeNavbar}>Houdini</NavLink></li>
+            <li><NavLink to='genie' onClick={props.closeNavbar}>The Genie</NavLink></li>
 
         </ul>
     </div>
 }
 
-const HoudiniAndGenie = () => {
+const HoudiniAndGenie = (props) => {
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Houdini and the Genie</button>
-        {show ? <HoudiniAndGenieHeroes/> : null}
+        {show ? <HoudiniAndGenieHeroes props={props.closeNavbar}/> : null}
 
     </div>)
 }
