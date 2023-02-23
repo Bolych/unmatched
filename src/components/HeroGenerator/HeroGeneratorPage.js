@@ -6,7 +6,28 @@ import ResetButton from "./ResetButton/ResetButton";
 import s from './HeroGenerator.module.css'
 
 
-const battleOfLegendsHeroes = ['Alice', 'Meduza', 'Sinbad', 'Arthur']
+
+// const battleOfLegendsHeroes = [
+//     {name: 'Alice', link: '/alice'},
+//     {name: 'Arthur', link: '/arthur'},
+//     {name: 'Medusa', link: '/medusa'},
+//     {name: 'Sinbad', link: '/sinbad'}
+// ]
+// const cobbleAndFogHeroes = [
+//     {name: 'Dracula', link: '/dracula'},
+//     {name: 'Jackile', link: '/jackile'},
+//     {name: 'Invisible', link: '/invisible'},
+//     {name: 'Sherlock', link: '/sherlock'}
+// ]
+
+
+
+
+
+
+
+
+const battleOfLegendsHeroes = ['Alice', 'Medusa', 'Sinbad', 'Arthur']
 const cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
 const robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
 const redHoodAndBeowulfHeroes = ['Red Hood', 'Beowulf']
@@ -31,6 +52,9 @@ let heroesArr = []
 const HeroGeneratorPage = () => {
     const [visibleHeroes, setVisibleHeroes] = useState('heroes window')
     const [hero, setHero] = useState('')
+
+
+
     return (
         <div className={s.content}>
 
