@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 
-import img2 from './images/decks/battleOfLegendsVol1/arthur/prophecy.png'
 
 const heroesArr =
     [
@@ -24,9 +23,10 @@ const heroesArr =
             heroHealth: '18',
             survivability: "8",
             difficulty: '3',
-            heroTrait: 'When Arthur attacks, you can enhance his attack. Put the ENHANCEMENT card face down with your attack card. If your opponent cancels effects of your attack card, card with ENHANCEMENT will be discarded without effect ',
+            heroTrait: 'When King Arthur attacks, you may BOOST that attack. Play the BOOST card, face down, along with your attack card.\n' +
+                'If your opponent cancels the effects on your attack card, the BOOST is discarded without effect. ',
             origin: 'Novel "King Arthur and knights of the Round Table". Author: Thomas Melory. ',
-            description: 'Legendary King Arthur. He has wife Morgana and loyal friend Merlin. He was an exceptional man.',
+            description: "King Arthur is a legendary British leader who, according to medieval histories and romances, led the defence of Britain against Saxon invaders in the late 5th and early 6th centuries AD. The details of Arthur's story are mainly composed of folklore and literary invention, and his historical existence is debated and disputed by modern historians.\n\nHowever, the legend of King Arthur has endured for centuries and has become an important part of British and world mythology. According to the legends, Arthur was born to King Uther Pendragon and Igraine, and was raised in secret by the wizard Merlin. He later pulled the sword Excalibur from a stone, proving his right to rule as king. With the help of his knights of the Round Table, Arthur fought and defeated many enemies, including the Saxon invaders and his own traitorous nephew Mordred.\n\n \n\nDespite his many successes, Arthur was eventually mortally wounded in battle and taken to the mystical island of Avalon, where he is said to rest until the day he will return to save Britain once again.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
             // style:
@@ -34,11 +34,11 @@ const heroesArr =
             img2: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
             heroAvatar: 'https://cdn.arstechnica.net/wp-content/uploads/2019/09/UM-BoLv1-card-character_King-Arthur.png',
             img3: 'https://i2-prod.somersetlive.co.uk/incoming/article8107940.ece/ALTERNATES/s1200c/0_Tommy_4k_photorealistic_fantasy_King_Arthur_portrait_avalon_mag_5dc7a652-88d5-4174-9a89-2169ccb9d39c.png',
-       // companion:
+            // companion:
             companionName: 'Merlin',
             companionRange: 'ranged',
             companionRoute: 'merlin',
-companionHealth: '7'
+            companionHealth: '7'
         },
 
         {
@@ -55,17 +55,33 @@ companionHealth: '7'
 
         {
             id: 2,
-            elo: 2000,
-            name: 'Alice',
-            attack: "5-9",
-            survivability: "4-7",
-            difficulty: 7,
-            origin: 'Novel Alice in Wonderland. Author: Lewis Carroll',
-            description: 'Alice, Alice... Now she is mature and tough',
-            tactics: "Predict Alica's size no matter you are playing for her or against",
-            backgroundColor: "#ADBFCD",
-            avatar: "https://images.coplusk.net/project_images/173028/image/101750_2F2014-05-16-015127-imagejpeg_3c-1b.jpg"
-
+            elo: 1950,
+            heroName: 'Alice',
+            heroLink: 'alice',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '13',
+            heroTrait: 'When you place Alice, choose whether she starts the game BIG or SMALL.\n' +
+                'When Alice is BIG, add 2 to the value of her attack cards.\n' +
+                'When Alice is SMALL, add 1 to the value of her defense cards.',
+            origin: ' Novel "Alice in wonderland". Author: Lewis Carroll',
+            description: "",
+            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            heroQuote: '“We\'re all mad here".',
+            // style:
+            backgroundColor: 'lightblue',
+            img2: 'https://bloody-disgusting.com/wp-content/uploads/2022/01/Alice-Madness-Returns-1280x720-1.jpeg',
+            heroAvatar: 'https://cdn.vox-cdn.com/thumbor/s6IzDkkjcSnf4Tszl26U10KYNcg=/480x0/cdn.vox-cdn.com/uploads/chorus_asset/file/18842376/UM_BoLv1_card_back_Alice.png',
+            img3: 'https://preview.redd.it/my-take-on-alice-v0-5awtznqqvt191.jpg?width=640&crop=smart&auto=webp&s=d5397d52ffe0fc0d9c98ad14366856309546a82c',
+            //fan stats:
+            attack: "7-9",
+            survivability: "5",
+            difficulty: '7',
+            // companion:
+            companionName: 'The Jabberwock',
+            companionRange: 'melee',
+            companionRoute: 'jabberwock',
+            companionHealth: '8'
         },
 
         {
@@ -100,7 +116,6 @@ companionHealth: '7'
         },
 
 
-
         {
             id: 44,
             elo: 1970,
@@ -126,7 +141,6 @@ companionHealth: '7'
         },
 
 
-
         {
             id: 45,
             elo: 1900,
@@ -149,7 +163,6 @@ companionHealth: '7'
             elo: 2105,
             name: 'Dracula(experienced)'
         },
-
 
 
         {
@@ -310,7 +323,6 @@ companionHealth: '7'
         },
 
 
-
         {
             id: 13,
             elo: 2000,
@@ -390,21 +402,7 @@ companionHealth: '7'
         },
 
 
-
-
-
         // additional properties to heroes:
-
-
-
-
-
-
-
-
-
-
-
 
 
     ]
@@ -414,19 +412,18 @@ companionHealth: '7'
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [,arthur,,,alice,,,medusa,,, sinbad,,, dracula,,, invisible,,, jackile,,, sherlock,,, beowulf,,, redHood,,, bigfoot,,, robinHood,,, sattler,,, ingen,,, raptors,,, trex,,, achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
+let [, arthur, , , alice, , , medusa, , , sinbad, , , dracula, , , invisible, , , jackile, , , sherlock, , , beowulf, , , redHood, , , bigfoot, , , robinHood, , , sattler, , , ingen, , , raptors, , , trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className='wrapper'>
-    <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula} invisible={invisible}
-         jackile={jackile} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
-         robinhood={robinHood}/>
-    </div>
+            <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula}
+                 invisible={invisible}
+                 jackile={jackile} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
+                 robinhood={robinHood}/>
+        </div>
 
     </BrowserRouter>
-
 );
 

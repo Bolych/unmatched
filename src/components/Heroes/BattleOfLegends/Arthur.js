@@ -54,8 +54,11 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}> Name:</span> {state.companionName}</p>
                     <p><span className={s.firstWord}> Range:</span> {state.companionRange}</p>
                     <p><span className={s.firstWord}> Start health:</span> {state.companionHealth}</p>
-                    <button className={s.companionButton} onClick={handleClick}>More about companion
-                    </button>
+
+                    {/*Companion button will be later*/}
+
+                    {/*<button className={s.companionButton} onClick={handleClick}>More about companion*/}
+                    {/*</button>*/}
                 </div>
 
                 <div className={s.leftSidePartOne}>

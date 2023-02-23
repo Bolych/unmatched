@@ -52,6 +52,7 @@
     font-weight: bold;
 }
 
+
 .content h2 {
     display: flex;
     text-align: center;
@@ -110,8 +111,8 @@ max-height: 37.5em;
 }
 
 .imageSlider img {
-    max-width: 22em;
-    max-height: 22em;
+    height: 20em;
+max-width: 40em;
 
 }
 
@@ -172,6 +173,12 @@ font-size: 1em;
   .imageSlider {
 width: 10em;
   }
+
+    .imageSlider img {
+        max-height: 20em;
+        max-width: 40em;
+
+    }
 
     /*Adaptive grid*/
 

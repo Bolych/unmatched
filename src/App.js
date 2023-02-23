@@ -62,7 +62,7 @@ function App(props) {
                 <div className='main-content'>
                     <Routes>
 
-                        <Route path='/' element={<AboutPage/>}/>
+                        <Route exact path='/' element={<AboutPage/>}/>
                         <Route path=' ' element={<AboutPage/>}/>
                         {/*{heroesList}*/}
                         <Route path='/generator' element={<HeroGeneratorPage/>}/>

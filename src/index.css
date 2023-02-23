@@ -10,7 +10,7 @@ width: 100%;
 }
 
 body{
-
+    white-space: pre-line;
     background-color: lightgrey;
     width: 100%;
 
