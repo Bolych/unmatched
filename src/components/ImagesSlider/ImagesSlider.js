@@ -1,6 +1,6 @@
 import s from './ImagesSlider.module.css'
 
-import {useState} from "react";
+import React, {useState} from "react";
 
 
 function ImageSlide(props) {
@@ -29,6 +29,7 @@ function ImageSlide(props) {
                  src={props.url} alt="none"/>
             {isZoomed && (
                 <div onClick={handleClose} className={s['modal']}>
+
           <span className={s['close-button']} onClick={handleModalClose}>
             &times;
           </span>
@@ -51,12 +52,14 @@ function ImageSlider(props) {
     };
 
     return (
-        <div>
+        <div className={s.content}>
             <div className={s.imagesSliderWrapper}>
                 {props.imgUrls.map((url, index) => (
                     <ImageSlide key={index} url={url}/>
                 ))[currentSlide]}
+
             </div>
+            <p className={s.zoomText}>(click on image to zoom)</p>
             <div className={s.buttonsWrapper}>
                 <button className={s.sliderButton} onClick={prevSlide}>Prev</button>
                 <button className={s.sliderButton} onClick={nextSlide}>Next</button>

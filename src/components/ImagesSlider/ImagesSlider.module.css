@@ -1,18 +1,40 @@
 
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
 .buttonsWrapper {
     display: flex;
     justify-content: center;
 }
 
 .imagesSliderWrapper {
-    display: flex;
-    justify-content: center;
+align-self: center;
+  height: 15em;
+    overflow: hidden;
+
 }
 
+.imagesSliderWrapper img {
+ height: 15em;
+}
 
+.zoomTextWrapper {
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
 
-.imagesSliderWrapper {
-    overflow: hidden;
+}
+
+.zoomText {
+    font-size: 1em;
+    margin-bottom: 0.5em;
 }
 
 .sliderButton {
@@ -37,12 +59,12 @@
 /*}*/
 
 .zoomableImage {
-
+    object-fit: contain;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
-.zoomable-image:hover {
+.zoomableImage:hover {
     transform: scale(1.1);
 }
 
@@ -59,13 +81,12 @@
     overflow: auto;
 }
 
-.modal-image {
-margin: auto;
-}
+
 
 .modal img {
     min-width: fit-content;
 max-height: 90%;
+    margin: auto;
 }
 
 .close-button {
@@ -77,4 +98,11 @@ max-height: 90%;
     font-weight: bold;
     padding: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 550px) {
+
+    .imagesSliderWrapper img {
+max-width: 15em;
+    }
 }

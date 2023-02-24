@@ -91,6 +91,7 @@ const Arthur = ({state}) => {
                     <div className={s.imageSlider}>
                         <ImageSlider imgUrls={imgUrls}/>
                     </div>
+
                     <div>
                         <p className={s.quote}>{state.heroQuote}</p>
                     </div>
