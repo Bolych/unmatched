@@ -16,6 +16,8 @@ import card13 from '../../../images/decks/battleOfLegendsVol1/arthur/swift-strik
 import card14 from '../../../images/decks/battleOfLegendsVol1/arthur/the-aid-of-morgana.png'
 import card15 from '../../../images/decks/battleOfLegendsVol1/arthur/the-holy-grail.png'
 import card16 from '../../../images/decks/battleOfLegendsVol1/arthur/the-lady-of-the-lake.png'
+
+
 import React, {useState} from "react";
 import {useNavigate} from "react-router";
 import ImageSlider from "../../ImagesSlider/ImagesSlider";
@@ -25,8 +27,7 @@ const Arthur = ({state}) => {
     const [showCards, setShowCards] = useState(false)
     const handleToggleCards = () => {
         setShowCards(!showCards);
-        window.scrollTo({ top: 50000, behavior: 'smooth'})
-
+        window.scrollTo({top: 50000, behavior: 'smooth'})
     }
 
     let img1 = state.heroAvatar;
@@ -50,25 +51,33 @@ const Arthur = ({state}) => {
             <div className={s.header}>
                 <h1>{state.heroName}</h1>
             </div>
-            <div  className={s.wrapper}>
+            <div className={s.wrapper}>
                 <div className={s.middleSide}>
-                    <p className={s.firstWord}>Companion:</p>
-                    <p><span className={s.firstWord}> Name:</span> {state.companionName}</p>
-                    <p><span className={s.firstWord}> Range:</span> {state.companionRange}</p>
-                    <p><span className={s.firstWord}> Start health:</span> {state.companionHealth}</p>
+                    <p><span className={s.firstWord}>Companion:</span></p>
+                    <p><span className={s.firstWord}>Name:</span> {state.companionName}</p>
+                    <p><span className={s.firstWord}>Range:</span> {state.companionRange}</p>
+                    <p><span className={s.firstWord}>Start health:</span> {state.companionHealth}</p>
 
                     {/*Companion button will be later*/}
 
-                    {/*<button className={s.companionButton} onClick={handleClick}>More about companion*/}
-                    {/*</button>*/}
+                    <button className={s.companionButton} onClick={handleClick}>More about companion
+                    </button>
                 </div>
 
-                <div className={s.leftSidePartOne}>
+                {/*left and right gaps for big displays*/}
+                <div className={s.leftSideGap}>
+                    {/*<img src="" alt=""></img>*/}
+                </div>
+                <div className={s.rightSideGap}>
+                    {/*<img src="" alt=""></img>*/}
+                </div>
 
-                    <p><span className={s.firstWord}> Name:</span> {state.heroName}</p>
-                    <p><span className={s.firstWord}> Range:</span> {state.heroRange}</p>
-                    <p><span className={s.firstWord}> Start health:</span> {state.heroHealth}</p>
-                    <p><span className={s.firstWord}> Movement:</span> {state.movement}</p>
+
+                <div className={s.leftSidePartOne}>
+                    <p><span className={s.firstWord}>Name:</span> {state.heroName}</p>
+                    <p><span className={s.firstWord}>Range:</span> {state.heroRange}</p>
+                    <p><span className={s.firstWord}>Start health:</span> {state.heroHealth}</p>
+                    <p><span className={s.firstWord}>Movement:</span> {state.movement}</p>
                     <p><span className={s.firstWord}>Origin:</span> {state.origin}</p>
                 </div>
                 <div className={s.leftSidePartTwo}>
@@ -111,7 +120,7 @@ const Arthur = ({state}) => {
                     <h3>Click to show</h3>
                 </div>
             </div>
-<br/>
+            <br/>
             <div className={`cards-wrapper ${showCards ? 'active' : ''}`}>
 
                 <div className={s.cards}>

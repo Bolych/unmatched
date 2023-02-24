@@ -24,7 +24,7 @@ function ImageSlide(props) {
         <div className={s['zoomable-modal-image']}>
 
 
-            <img className={s['zoomable-image']}
+            <img className={s.zoomableImage}
                  onClick={handleImageClick}
                  src={props.url} alt="none"/>
             {isZoomed && (

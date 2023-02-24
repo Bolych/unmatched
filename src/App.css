@@ -20,27 +20,18 @@
 }
 
 
-
-
-
-
 .navbar {
     background-color: #111924;
     grid-area: n;
-
     z-index: 1;
-
 }
-
 
 .main-content {
 height: 100%;
 }
 
-
 .cards-wrapper {
     display: none;
-
 }
 
 .cards-wrapper.active {
