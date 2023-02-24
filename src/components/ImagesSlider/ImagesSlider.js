@@ -4,21 +4,16 @@ import React, {useState} from "react";
 
 
 function ImageSlide(props) {
-
     const [isZoomed, setIsZoomed] = useState(false);
-
-
     const handleImageClick = () => {
         setIsZoomed(true);
     };
-
     const handleModalClose = () => {
         setIsZoomed(false);
     };
     const handleClose = () => {
         setIsZoomed(false);
     };
-
 
     return (
         <div className={s['zoomable-modal-image']}>

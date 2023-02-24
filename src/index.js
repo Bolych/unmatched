@@ -31,8 +31,8 @@ const heroesArr =
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
             // style:
             backgroundColor: '#e8ccc6',
-            img2: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
-            heroAvatar: 'https://i.guim.co.uk/img/media/5013247222200a73e1d4b6df6e7860b968570ae4/0_619_2126_1275/master/2126.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=008a11fa8afd5a2b3dcad30c1f78b732',
+            heroAvatar: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
+            img2: 'https://i.guim.co.uk/img/media/5013247222200a73e1d4b6df6e7860b968570ae4/0_619_2126_1275/master/2126.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=008a11fa8afd5a2b3dcad30c1f78b732',
             img3: 'https://www.rabbies.com/application/files/3315/3017/8666/Holy-grail-round-table-bnf-ms_fr-116F-f610v-15th-detail.jpg',
             // companion:
             companionName: 'Merlin',
