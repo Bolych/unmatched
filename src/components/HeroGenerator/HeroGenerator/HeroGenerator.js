@@ -14,7 +14,6 @@ const HeroGenerator = (props) => {
         }
     }
 
-
     return (<div>
         <div>
             <button onClick={generatedHero}>Generate</button>

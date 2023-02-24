@@ -3,7 +3,10 @@ import ExpansionsButtons from "./ExpansionsButtons/ExpansionsButtons";
 import HeroGenerator from "./HeroGenerator/HeroGenerator";
 import HeroesWindow from "./HeroesOfExpansionsList/HeroesWindow";
 import ResetButton from "./ResetButton/ResetButton";
+
 import s from './HeroGenerator.module.css'
+import {NavLink} from "react-router-dom";
+import {useNavigate} from "react-router";
 
 
 
@@ -53,6 +56,10 @@ const HeroGeneratorPage = () => {
     const [visibleHeroes, setVisibleHeroes] = useState('heroes window')
     const [hero, setHero] = useState('')
 
+const navigate = useNavigate()
+    function handleClick() {
+        navigate(`/${hero.toLowerCase().replace(/\s+/g, '-')}`);
+    }
 
 
     return (
@@ -91,14 +98,14 @@ const HeroGeneratorPage = () => {
                 <br/>
                 <br/>
                 <div className={s.generateAndResetButtons}>
-                    <HeroGenerator hero={hero} setHero={setHero} heroesArr={heroesArr}/>
+                    <HeroGenerator  hero={hero} setHero={setHero} heroesArr={heroesArr}/>
                     <ResetButton visibleHeroes={visibleHeroes} setVisibleHeroes={setVisibleHeroes}
                                  heroesArr={heroesArr}/>
                 </div>
                 <div className={s.heroResult}>
                     <div><h2>Your hero is:</h2></div>
                     <br/>
-                <div><h2>{hero}</h2></div>
+                <div className={s.heroLinkResult} onClick={handleClick}><h2>{hero}</h2></div>
                     <br/>
                     <br/>
                     <br/>

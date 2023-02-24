@@ -3,6 +3,7 @@ import s from './HeroesWindow.module.css'
 
 const HeroesWindow = (props) => {
 
+
     return (
         <div className={s.content}>
             <p>Total heroes:</p>

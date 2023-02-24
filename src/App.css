@@ -19,10 +19,7 @@
     z-index: 1;
 }
 
-.hide-button {
-    position: absolute;
-    display: none;
-}
+
 
 
 
@@ -89,19 +86,6 @@ position: relative;
         top: 45px;
     }
 
-    .hide-button {
-        position: absolute;
-        top: 5px;
-        display: block;
-    }
-
-.hide-button div {
-    cursor: pointer;
-        width: 30px;
-        height: 3px;
-        background-color: #e8ccc6;
-        margin: 6px;
-    }
 
     .header{
         position: fixed;

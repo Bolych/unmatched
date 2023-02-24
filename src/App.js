@@ -57,6 +57,7 @@ function App(props) {
                         <Route path='/calculator' element={<OddsCalculatorPage heroesArr={props.heroesArr} />}/>
                         {/*Battle of Legends Heroes:*/}
                         <Route path='/arthur' element={  <Arthur state={props.arthur}/>}/>
+                        <Route path='/arthur' element={  <Arthur state={props.arthur}/>}/>
                         <Route path='/alice' element={  <Alice state={props.alice}/>}/>
                         <Route path='/medusa' element={  <Medusa state={props.medusa}/>}/>
                         <Route path='/sinbad' element={  <Sinbad state={props.sinbad}/>}/>

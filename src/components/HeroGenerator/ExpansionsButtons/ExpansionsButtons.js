@@ -22,6 +22,8 @@ const ExpansionsButtons = (props) => {
 <ExpansionButton visibleHeroes={props.visibleHeroes} setVisibleHeroes={props.setVisibleHeroes} heroesArr={props.heroesArr} name='Houdini and Genie' expansionPack={props.houdiniAndGenie} />
 <ExpansionButton visibleHeroes={props.visibleHeroes} setVisibleHeroes={props.setVisibleHeroes} heroesArr={props.heroesArr} name='Bruce Lee' expansionPack={props.bruceLee} />
 <ExpansionButton visibleHeroes={props.visibleHeroes} setVisibleHeroes={props.setVisibleHeroes} heroesArr={props.heroesArr} name='Deadpool' expansionPack={props.deadpool} />
+
+
     </div>)
 
 }

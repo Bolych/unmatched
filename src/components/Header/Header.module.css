@@ -1,4 +1,45 @@
+.hideButton {
+    position: absolute;
+    display: none;
+}
 
-.headerInModule {
+.backButton {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+
+    font-size: 0.9em;
+    font-weight: 800;
+    /*padding: 4px 8px;*/
+    display: inline-block;
+    max-width: 12em;
+
+    font-size: 2em;
+    float: left;
+    padding: 0.3em;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .backButton {
+        font-size: 1em;
+    }
+
+    .hideButton {
+        position: absolute;
+        top: 5px;
+        display: block;
+    }
+
+
+    .hideButton div {
+        cursor: pointer;
+        width: 30px;
+        height: 3px;
+        background-color: #e8ccc6;
+        margin: 6px;
+    }
 
 }
