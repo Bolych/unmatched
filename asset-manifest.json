@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/unmatched/static/css/main.fe188708.css",
-    "main.js": "/unmatched/static/js/main.de4aeee1.js",
+    "main.css": "/unmatched/static/css/main.508f9603.css",
+    "main.js": "/unmatched/static/js/main.ae633cc8.js",
     "static/media/the-other-side-of-the-mushroom.png": "/unmatched/static/media/the-other-side-of-the-mushroom.ab64818cc74b7f24d902.png",
     "static/media/looking-glass.png": "/unmatched/static/media/looking-glass.97781ffb38a4d0a6f895.png",
     "static/media/eat-me.png": "/unmatched/static/media/eat-me.5d6a79544a0eff812dba.png",
@@ -31,11 +31,11 @@
     "static/media/the-aid-of-morgana.png": "/unmatched/static/media/the-aid-of-morgana.ef7a8f71fd8b5470a211.png",
     "static/media/divine-intervention.png": "/unmatched/static/media/divine-intervention.20213534cf3c0769422e.png",
     "index.html": "/unmatched/index.html",
-    "main.fe188708.css.map": "/unmatched/static/css/main.fe188708.css.map",
-    "main.de4aeee1.js.map": "/unmatched/static/js/main.de4aeee1.js.map"
+    "main.508f9603.css.map": "/unmatched/static/css/main.508f9603.css.map",
+    "main.ae633cc8.js.map": "/unmatched/static/js/main.ae633cc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe188708.css",
-    "static/js/main.de4aeee1.js"
+    "static/css/main.508f9603.css",
+    "static/js/main.ae633cc8.js"
   ]
 }
