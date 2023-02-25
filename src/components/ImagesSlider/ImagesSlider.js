@@ -17,8 +17,6 @@ function ImageSlide(props) {
 
     return (
         <div className={s['zoomable-modal-image']}>
-
-
             <img className={s.zoomableImage}
                  onClick={handleImageClick}
                  src={props.url} alt="none"/>
@@ -37,7 +35,6 @@ function ImageSlide(props) {
 
 function ImageSlider(props) {
     const [currentSlide, setCurrentSlide] = useState(0);
-
     const nextSlide = () => {
         setCurrentSlide(currentSlide === props.imgUrls.length - 1 ? 0 : currentSlide + 1);
     };
@@ -52,7 +49,6 @@ function ImageSlider(props) {
                 {props.imgUrls.map((url, index) => (
                     <ImageSlide key={index} url={url}/>
                 ))[currentSlide]}
-
             </div>
             <p className={s.zoomText}>(click on image to zoom)</p>
             <div className={s.buttonsWrapper}>

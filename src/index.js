@@ -31,9 +31,6 @@ const heroesArr =
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
             // style:
             backgroundColor: '#e8ccc6',
-            heroAvatar: 'https://cdn.britannica.com/79/147179-050-14CCB8B7/King-Arthur-illustration-NC-title-page-Wyeth.jpg',
-            img2: 'https://i.guim.co.uk/img/media/5013247222200a73e1d4b6df6e7860b968570ae4/0_619_2126_1275/master/2126.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=008a11fa8afd5a2b3dcad30c1f78b732',
-            img3: 'https://www.rabbies.com/application/files/3315/3017/8666/Holy-grail-round-table-bnf-ms_fr-116F-f610v-15th-detail.jpg',
             // companion:
             companionName: 'Merlin',
             companionRange: 'ranged',
@@ -70,9 +67,6 @@ const heroesArr =
             heroQuote: '“We\'re all mad here".',
             // style:
             backgroundColor: 'lightblue',
-           heroAvatar: 'https://bloody-disgusting.com/wp-content/uploads/2022/01/Alice-Madness-Returns-1280x720-1.jpeg',
-           img2: 'https://cdn.vox-cdn.com/thumbor/s6IzDkkjcSnf4Tszl26U10KYNcg=/480x0/cdn.vox-cdn.com/uploads/chorus_asset/file/18842376/UM_BoLv1_card_back_Alice.png',
-            img3: 'https://preview.redd.it/my-take-on-alice-v0-5awtznqqvt191.jpg?width=640&crop=smart&auto=webp&s=d5397d52ffe0fc0d9c98ad14366856309546a82c',
             //fan stats:
             attack: "7-9",
             survivability: "5",
@@ -98,14 +92,28 @@ const heroesArr =
 
         {
             id: 3,
-            elo: 2030,
-      heroLink: '/medusa',
-            componentName: "<Medusa/>",
-            name: 'Medusa',
-            power: "10",
-            difficulty: 3,
-            origin: 'Ancient Greek Myths',
-            tactics: "Just go and win"
+            elo: 2050,
+            heroName: 'Medusa',
+            heroLink: '/medusa',
+            heroRange: 'melee',
+            movement: '3',
+            heroHealth: '16',
+            heroTrait: 'At the start of your turn, you may deal 1 damage to an opposing fighter in Medusa\'s zone.',
+            origin: 'Greek mythology. Tales of Perseus',
+            description: "Medusa was once a beautiful woman who served as a priestess in the temple of Athena. However, she was seduced by Poseidon and they had a sexual encounter in the temple. Athena was angered by this and punished Medusa by turning her into a Gorgon.",
+            tactics: 'Just go and win.',
+            heroQuote: '“We\'re all mad here".',
+            // style:
+            backgroundColor: '#bee7ae',
+            //fan stats:
+            attack: "8",
+            survivability: "6",
+            difficulty: '2',
+            // companion:
+            companionName: 'Harpies x3)',
+            companionRange: 'melee',
+            companionRoute: 'harpies',
+            companionHealth: '1'
 
         },
 
@@ -126,12 +134,27 @@ const heroesArr =
         {
             id: 4,
             elo: 2010,
-            name: 'Sinbad',
-            power: "8",
-            difficulty: 6,
-            origin: 'Tale',
-            tactics: "Collect travel cards"
-
+            heroName: 'Sinbad',
+            heroLink: '/sinbad',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '15',
+            heroTrait: 'When you maneuver, you may move your fighters +1 space for each VOYAGE card in your discard pile.',
+            origin: 'Story-cycle of Middle Eastern. "One Thousand and One Nights" tales.',
+            description: "Medusa was once a beautiful woman who served as a priestess in the temple of Athena. However, she was seduced by Poseidon and they had a sexual encounter in the temple. Athena was angered by this and punished Medusa by turning her into a Gorgon.",
+            tactics: 'Be cunning first part of game and feed on wasted journey cards.',
+            heroQuote: '"Give that guy a raise!".',
+            // style:
+            backgroundColor: '#e78e5a',
+            //fan stats:
+            attack: "4 (at the beginning) - 9 (endgame)",
+            survivability: "7",
+            difficulty: '5',
+            // companion:
+            companionName: 'The Porter',
+            companionRange: 'melee',
+            companionRoute: 'porter',
+            companionHealth: '6'
         },
 
         {

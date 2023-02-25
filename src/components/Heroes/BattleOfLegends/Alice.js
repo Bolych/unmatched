@@ -1,25 +1,33 @@
 import s from '../Heroes.module.css'
-import card1 from '../../../images/decks/battleOfLegendsVol1/alice/claws-that-catch.png'
-import card2 from '../../../images/decks/battleOfLegendsVol1/alice/drink-me.png'
-import card3 from '../../../images/decks/battleOfLegendsVol1/alice/eat-me.png'
-import card4 from '../../../images/decks/battleOfLegendsVol1/alice/feint.png'
-import card5 from '../../../images/decks/battleOfLegendsVol1/alice/i-m-late-i-m-late.png'
-import card6 from '../../../images/decks/battleOfLegendsVol1/alice/jaws-that-bite.png'
-import card7 from '../../../images/decks/battleOfLegendsVol1/alice/looking-glass.png'
-import card8 from '../../../images/decks/battleOfLegendsVol1/alice/mad-as-a-hatter.png'
-import card9 from '../../../images/decks/battleOfLegendsVol1/alice/manxome-foe.png'
-import card10 from '../../../images/decks/battleOfLegendsVol1/alice/momentous-shift.png'
-import card11 from '../../../images/decks/battleOfLegendsVol1/alice/o-frabjous-day.png'
-import card12 from '../../../images/decks/battleOfLegendsVol1/alice/regroup.png'
-import card13 from '../../../images/decks/battleOfLegendsVol1/alice/skirmish.png'
-import card14 from '../../../images/decks/battleOfLegendsVol1/alice/snicker-snack.png'
-import card15 from '../../../images/decks/battleOfLegendsVol1/alice/the-other-side-of-the-mushroom.png'
+
+
 import React, {useState} from "react";
 import {useNavigate} from "react-router";
 import ImageSlider from "../../ImagesSlider/ImagesSlider";
-import card16 from "../../../images/decks/battleOfLegendsVol1/arthur/the-lady-of-the-lake.png";
 
 
+//deck
+import card1 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/claws-that-catch.png'
+import card2 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/drink-me.png'
+import card3 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/eat-me.png'
+import card4 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/feint.png'
+import card5 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/i-m-late-i-m-late.png'
+import card6 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/jaws-that-bite.png'
+import card7 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/looking-glass.png'
+import card8 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/mad-as-a-hatter.png'
+import card9 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/manxome-foe.png'
+import card10 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/momentous-shift.png'
+import card11 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/o-frabjous-day.png'
+import card12 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/regroup.png'
+import card13 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/skirmish.png'
+import card14 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/snicker-snack.png'
+import card15 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-deck/the-other-side-of-the-mushroom.png'
+
+//hero-images
+
+import avatar from '../../../images/heroes/battleOfLegendsVol1/alice/alice-images/alice-mad.jpeg'
+import image1 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-images/alice-minifigure.webp'
+import image2 from '../../../images/heroes/battleOfLegendsVol1/alice/alice-images/alice-card-back.png'
 
 const Alice = ({state}) => {
     const [showCards, setShowCards] = useState(false)
@@ -27,11 +35,9 @@ const Alice = ({state}) => {
         setShowCards(!showCards);
     }
 
-    let img1 = state.heroAvatar;
-    let img2 = state.img2;
-    let img3 = state.img3;
 
-    let imgUrls = [img1, img2, img3]
+
+    let imgUrls = [avatar, image1, image2]
 
     const myStyle = {
         backgroundColor: state.backgroundColor,
@@ -127,7 +133,7 @@ const Alice = ({state}) => {
                     <img src={card13} alt="none"/>
                     <img src={card14} alt="none"/>
                     <img src={card15} alt="none"/>
-                    <img src={card16} alt="none"/>
+
                 </div>
             </div>
         </div>

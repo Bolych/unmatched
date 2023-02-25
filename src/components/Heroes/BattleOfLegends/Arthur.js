@@ -1,26 +1,34 @@
 import s from '../Heroes.module.css'
 
-import card1 from '../../../images/decks/battleOfLegendsVol1/arthur/aid-the-chosen-one.png'
-import card2 from '../../../images/decks/battleOfLegendsVol1/arthur/bewilderment.png'
-import card3 from '../../../images/decks/battleOfLegendsVol1/arthur/command-the-storms.png'
-import card4 from '../../../images/decks/battleOfLegendsVol1/arthur/divine-intervention.png'
-import card5 from '../../../images/decks/battleOfLegendsVol1/arthur/excalibur.png'
-import card6 from '../../../images/decks/battleOfLegendsVol1/arthur/feint.png'
-import card7 from '../../../images/decks/battleOfLegendsVol1/arthur/momentous-shift.png'
-import card8 from '../../../images/decks/battleOfLegendsVol1/arthur/noble-sacrifice.png'
-import card9 from '../../../images/decks/battleOfLegendsVol1/arthur/prophecy.png'
-import card10 from '../../../images/decks/battleOfLegendsVol1/arthur/regroup.png'
-import card11 from '../../../images/decks/battleOfLegendsVol1/arthur/restless-spirits.png'
-import card12 from '../../../images/decks/battleOfLegendsVol1/arthur/skirmish (1).png'
-import card13 from '../../../images/decks/battleOfLegendsVol1/arthur/swift-strike.png'
-import card14 from '../../../images/decks/battleOfLegendsVol1/arthur/the-aid-of-morgana.png'
-import card15 from '../../../images/decks/battleOfLegendsVol1/arthur/the-holy-grail.png'
-import card16 from '../../../images/decks/battleOfLegendsVol1/arthur/the-lady-of-the-lake.png'
+//cards
+import card1 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/aid-the-chosen-one.png'
+import card2 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/bewilderment.png'
+import card3 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/command-the-storms.png'
+import card4 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/divine-intervention.png'
+import card5 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/excalibur.png'
+import card6 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/feint.png'
+import card7 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/momentous-shift.png'
+import card8 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/noble-sacrifice.png'
+import card9 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/prophecy.png'
+import card10 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/regroup.png'
+import card11 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/restless-spirits.png'
+import card12 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/skirmish (1).png'
+import card13 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/swift-strike.png'
+import card14 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/the-aid-of-morgana.png'
+import card15 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/the-holy-grail.png'
+import card16 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-deck/the-lady-of-the-lake.png'
 
+//hero-images
+import avatar from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-images/arthur-medieval.webp'
+import image1 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-images/arthur-on-Boat.webp'
+import image2 from '../../../images/heroes/battleOfLegendsVol1/arthur/arthur-images/knights-of-the-round-table.jpg'
 
 import React, {useState} from "react";
 import {useNavigate} from "react-router";
 import ImageSlider from "../../ImagesSlider/ImagesSlider";
+
+
+
 
 
 const Arthur = ({state}) => {
@@ -30,11 +38,7 @@ const Arthur = ({state}) => {
         window.scrollTo({top: 50000, behavior: 'smooth'})
     }
 
-    let img1 = state.heroAvatar;
-    let img2 = state.img2;
-    let img3 = state.img3;
-
-    let imgUrls = [img1, img2, img3]
+    let imgUrls = [avatar, image1, image2]
 
     const myStyle = {
         backgroundColor: state.backgroundColor,
@@ -60,8 +64,8 @@ const Arthur = ({state}) => {
 
                     {/*Companion button will be later*/}
 
-                    <button className={s.companionButton} onClick={handleClick}>More about companion
-                    </button>
+                    {/*<button className={s.companionButton} onClick={handleClick}>More about companion*/}
+                    {/*</button>*/}
                 </div>
 
                 {/*left and right gaps for big displays*/}
