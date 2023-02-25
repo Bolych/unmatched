@@ -65,7 +65,7 @@ const heroesArr =
                 'When Alice is BIG, add 2 to the value of her attack cards.\n' +
                 'When Alice is SMALL, add 1 to the value of her defense cards.',
             origin: ' Novel "Alice in wonderland". Author: Lewis Carroll',
-            description: "Lena Osipova is the best",
+            description: "",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“We\'re all mad here".',
             // style:
