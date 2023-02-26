@@ -28,6 +28,9 @@ import BruceLee from "./components/Heroes/BruceLee/BruceLee";
 import Ingen from "./components/Heroes/IngenVsRaptors/Ingen";
 import Raptors from "./components/Heroes/IngenVsRaptors/Raptors";
 import Angel from "./components/Heroes/Buffy/Angel";
+import Spike from "./components/Heroes/Buffy/Spike";
+import Willow from "./components/Heroes/Buffy/Willow";
+import Buffy from "./components/Heroes/Buffy/Buffy";
 
 
 function App(props) {
@@ -81,9 +84,9 @@ function App(props) {
                         <Route path='/bigfoot' element={  <Bigfoot state={props.bigfoot}/>}/>
                         {/*Buffy*/}
                         <Route path='/angel' element={  <Angel state={props.angel}/>}/>
-                        <Route path='/buffy' element={  <Bigfoot state={props.bigfoot}/>}/>
-                        <Route path='/spike' element={  <Bigfoot state={props.bigfoot}/>}/>
-                        <Route path='/willow' element={  <Bigfoot state={props.bigfoot}/>}/>
+                        <Route path='/buffy' element={  <Buffy state={props.buffy}/>}/>
+                        <Route path='/spike' element={  <Spike state={props.spike}/>}/>
+                        <Route path='/willow' element={  <Willow state={props.willow}/>}/>
                         {/*Beowulf and Red Hood*/}
                         <Route path='/beowulf' element={  <Beowulf state={props.beowulf}/>}/>
                         <Route path='/redhood' element={  <RedHood state={props.redhood}/>}/>

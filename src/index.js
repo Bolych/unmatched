@@ -238,8 +238,8 @@ const heroesArr =
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '"Do they exist? (about people)".',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(119,156,101,0.74)',
+            headersBackgroundColor: '#A23921',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "8",
@@ -279,8 +279,8 @@ const heroesArr =
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '"Robin Hood".',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(159,178,134,0.74)',
+            headersBackgroundColor: '#698552',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "7",
@@ -321,8 +321,8 @@ const heroesArr =
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“We\'re all mad here".',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(204,179,136,0.74) ',
+            headersBackgroundColor: 'brown',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "7-9",
@@ -363,9 +363,9 @@ const heroesArr =
             tactics: 'Be aggressive.',
             heroQuote: '"They\'re lethal at 8 months, and I do mean lethal." - Robert Muldoon.',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
-            fontColor: '#e8ccc6',
+            backgroundColor: 'rgba(119,174,105,0.4)',
+            headersBackgroundColor: '#77CA55',
+            fontColor: '',
             //fan stats:
             attack: "7-9",
             survivability: "5",
@@ -939,7 +939,7 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [, arthur, , , alice, , , medusa, , , sinbad, , , bruceLee ,,, bigfoot, , , robinHood, , , dracula, , , invisible, , , jekyll, , ,  angel, , , buffy , , , spike , , , willow , , ,  sherlock, , , ingen, , , raptors, , , beowulf, , , redHood, , , sattler,, , ,  trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
+let [, arthur, , , alice, , , medusa, , , sinbad, , , bruceLee ,,, bigfoot, , , robinHood, , ,   ingen, , , raptors, , , dracula, , , invisible, , , jekyll, , , sherlock, , ,  angel, , , buffy , , , spike , , , willow , , , beowulf, , , redHood, , , sattler,, , ,  trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -949,7 +949,7 @@ root.render(
                  invisible={invisible}
                  jekyll={jekyll} sherlock={sherlock} bruceLee={bruceLee} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
                  robinhood={robinHood} ingen={ingen} raptors={raptors}
-            angel={angel}/>
+            angel={angel} buffy={buffy} spike={spike} willow={willow}/>
         </div>
 
     </BrowserRouter>

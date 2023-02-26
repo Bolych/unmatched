@@ -13,7 +13,7 @@ const BuffyHeroes = () => {
     </div>
 }
 
-const Buffy = () => {
+const BuffyExpansion = () => {
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Buffy</button>
@@ -22,4 +22,4 @@ const Buffy = () => {
     </div>)
 }
 
-export default Buffy
+export default BuffyExpansion

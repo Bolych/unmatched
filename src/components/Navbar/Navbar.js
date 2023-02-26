@@ -16,6 +16,7 @@ import HoudiniAndGenie from "../Heroes/HoudiniAndGenie/HoudiniAndGenie";
 import BruceLee from "../Heroes/BruceLee/BruceLeeLink";
 import Deadpool from "../Heroes/Deadpool/DeadpoolLink";
 import IngenRaptors from "../Heroes/IngenVsRaptors/IngenRaptors";
+import BuffyExpansion from "../Heroes/Buffy/BuffyHeroes";
 
 const Navbar = (props) => {
 
@@ -35,10 +36,10 @@ const Navbar = (props) => {
                 <ul className={s.expansionsList}>
                     <li> <BattleOfLegends closeNavbar={props.closeNavbar}/></li>
                     <li><BruceLee closeNavbar={props.closeNavbar}/></li>
-                    <li><IngenRaptors closeNavbar={props.closeNavbar}/></li>
-                    <li><Buffy closeNavbar={props.closeNavbar}/></li>
-                    <li><CobbleAndFog closeNavbar={props.closeNavbar}/></li>
                     <li><RobinAndBigfoot closeNavbar={props.closeNavbar}/></li>
+                    <li><IngenRaptors closeNavbar={props.closeNavbar}/></li>
+                    <li><CobbleAndFog closeNavbar={props.closeNavbar}/></li>
+                    <li><BuffyExpansion closeNavbar={props.closeNavbar}/></li>
                     <li><BeowulfAndRedHood closeNavbar={props.closeNavbar}/></li>
                     <li><BattleOfLegendsVol2 closeNavbar={props.closeNavbar}/></li>
                     <li><MarvelTeenSpirit closeNavbar={props.closeNavbar}/></li>
@@ -46,7 +47,6 @@ const Navbar = (props) => {
                     <li><MarvelHellsKitchen closeNavbar={props.closeNavbar}/></li>
                     <li><MarvelForKingAndCountry closeNavbar={props.closeNavbar}/></li>
                     <li><HoudiniAndGenie closeNavbar={props.closeNavbar}/></li>
-
                     <li><Deadpool closeNavbar={props.closeNavbar}/></li>
 
                 </ul>

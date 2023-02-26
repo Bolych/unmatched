@@ -6,6 +6,7 @@
 "n c";
     grid-template-rows: auto;
     grid-template-columns: 1fr 10fr;
+    background-color: rgba(204,179,136,0.74)  ;
 }
 
 

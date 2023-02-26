@@ -21,8 +21,8 @@ import card11 from '../../../images/heroes/ingen-raptors/raptors/raptors-deck/wo
 
 
 //hero images
-import avatar from '../../../images/heroes/ingen-raptors/raptors/raptors-image/raptors-movie-2.jpg'
-import image1 from '../../../images/heroes/ingen-raptors/raptors/raptors-image/raptrors-movie.jpg'
+import image1 from '../../../images/heroes/ingen-raptors/raptors/raptors-image/raptors-movie-2.jpg'
+import avatar from '../../../images/heroes/ingen-raptors/raptors/raptors-image/raptrors-movie.jpg'
 import image2 from '../../../images/heroes/ingen-raptors/raptors/raptors-image/raptors-minifigure.webp'
 
 const Raptors = ({state}) => {
