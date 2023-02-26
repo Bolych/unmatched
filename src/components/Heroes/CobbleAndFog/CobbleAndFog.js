@@ -7,7 +7,7 @@ const CobbleAndFogHeroes = (props) => {
             <li><NavLink to='dracula' onClick={props.closeNavbar}>Dracula</NavLink></li>
             <li><NavLink to='invisible' onClick={props.closeNavbar}>Ivisible</NavLink></li>
             <li><NavLink to='sherlock' onClick={props.closeNavbar}>Sherlock</NavLink></li>
-            <li><NavLink to='jackile' onClick={props.closeNavbar}>Jackile and Hide</NavLink></li>
+            <li><NavLink to='jekyll' onClick={props.closeNavbar}>Jekyll and Hide</NavLink></li>
         </ul>
     </div>
 }

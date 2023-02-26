@@ -11,6 +11,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     /*grid-gap: 2em;*/
+
 }
 
     .leftSideGap {
@@ -88,9 +89,7 @@
     text-align: justify;
 }
 
-.header {
-    background-color: #d8b56b;
-}
+
 
 .firstWord {
     font-weight: bold;
@@ -179,7 +178,6 @@ max-height: 37.5em;
     justify-content: center;
     width: 12.5em;
     margin-top: 2em;
-    background-color: #d8b56b;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -189,11 +187,10 @@ max-height: 37.5em;
 /*margin: 0.4em;*/
 /*}*/
 
-.headerMain {
-    color: #e8ccc6;
-    background-color: #3f35a0;
-
-}
+/*.headerMain {*/
+/*    color: #e8ccc6;*/
+/*    background-color: #3f35a0;*/
+/*}*/
 
 .downSide p {
     margin: 0.5em;
@@ -229,7 +226,6 @@ font-size: 1em;
     }
 
     .quote {
-
         font-size: 0.9em;
         margin-right: 10px;
     }

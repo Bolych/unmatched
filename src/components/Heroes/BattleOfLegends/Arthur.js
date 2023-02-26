@@ -30,7 +30,6 @@ import ImageSlider from "../../ImagesSlider/ImagesSlider";
 
 
 
-
 const Arthur = ({state}) => {
     const [showCards, setShowCards] = useState(false)
     const handleToggleCards = () => {
@@ -40,19 +39,25 @@ const Arthur = ({state}) => {
 
     let imgUrls = [avatar, image1, image2]
 
-    const myStyle = {
+    const myStyleBackground = {
         backgroundColor: state.backgroundColor,
         height: '100%'
     };
+
+    const headersBackground = {
+        backgroundColor: state.headersBackgroundColor,
+        color: state.fontColor
+    }
+
     const navigate = useNavigate()
 
     function handleClick() {
         navigate(`/${state.companionRoute}`);
     }
 
-    return (<div style={myStyle} className={s.content}>
+    return (<div style={myStyleBackground} className={s.content}>
 
-            <div className={s.header}>
+            <div style={headersBackground}>
                 <h1>{state.heroName}</h1>
             </div>
             <div className={s.wrapper}>
@@ -85,15 +90,17 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}>Origin:</span> {state.origin}</p>
                 </div>
                 <div className={s.leftSidePartTwo}>
-                    <div className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
+                    <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Attack:</span> {state.attack}</p>
                     <p><span className={s.firstWord}>Survivability:</span> {state.survivability}</p>
                     <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
+
                 </div>
 
                 <div className={s.rightSide}>
                     <div className={s.imageSlider}>
-                        <ImageSlider imgUrls={imgUrls}/>
+                        <ImageSlider   headersBackground={headersBackground} imgUrls={imgUrls}/>
                     </div>
 
                     <div>
@@ -101,16 +108,16 @@ const Arthur = ({state}) => {
                     </div>
                 </div>
                 <div className={s.downSide}>
-                    <div className={s.header}>
+                    <div style={headersBackground}>
                         <h2>Hero's traits</h2>
                     </div>
                     <p>{state.heroTrait}</p>
 
-                    <div className={s.header}>
+                    <div style={headersBackground}>
                         <h2>Tactics</h2>
                     </div>
                     <p>{state.tactics}  </p>
-                    <div className={s.header}>
+                    <div style={headersBackground}>
                         <h2>Description</h2>
                     </div>
                     <p> {state.description}  </p>
@@ -118,7 +125,7 @@ const Arthur = ({state}) => {
             </div>
 
             <div>
-                <div className={s.header}>
+                <div style={headersBackground}>
                     <h2>Hero's cards</h2>
                 </div>
                 <div className={s.showCardsButton} onClick={handleToggleCards}>

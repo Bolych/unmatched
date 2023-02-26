@@ -10,7 +10,7 @@ import Medusa from "./components/Heroes/BattleOfLegends/Medusa";
 import Dracula from "./components/Heroes/CobbleAndFog/Dracula";
 import Invisible from "./components/Heroes/CobbleAndFog/Invisible";
 import Sherlock from "./components/Heroes/CobbleAndFog/Sherlock";
-import Jackile from "./components/Heroes/CobbleAndFog/Jackile";
+import Jekyll from "./components/Heroes/CobbleAndFog/Jekyll";
 import RobinHood from "./components/Heroes/RobinAndBigFoot/RobinHood";
 import Bigfoot from "./components/Heroes/RobinAndBigFoot/Bigfoot";
 import RedHood from "./components/Heroes/RedHoodBeowulf/RedHood";
@@ -27,6 +27,7 @@ import BloodyMary from "./components/Heroes/BattleOfLegendsVol2/BloodyMary";
 
 
 function App(props) {
+
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     const handleToggleSidebar = () => {
@@ -65,7 +66,7 @@ function App(props) {
                         <Route path='/dracula' element={  <Dracula state={props.dracula}/>}/>
                         <Route path='/invisible' element={  <Invisible state={props.invisible}/>}/>
                         <Route path='/sherlock' element={  <Sherlock state={props.sherlock}/>}/>
-                        <Route path='/jackile' element={  <Jackile state={props.jackile}/>}/>
+                        <Route path='/jekyll' element={  <Jekyll state={props.jekyll}/>}/>
                         {/*Robin and Bigfoot:*/}
                         <Route path='/robin' element={  <RobinHood state={props.robinhood}/>}/>
                         <Route path='/bigfoot' element={  <Bigfoot state={props.bigfoot}/>}/>

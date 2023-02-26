@@ -23,6 +23,7 @@ const heroesArr =
             heroHealth: '18',
             survivability: "8",
             difficulty: '3',
+            overallPower: '6',
             heroTrait: 'When King Arthur attacks, you may BOOST that attack. Play the BOOST card, face down, along with your attack card.\n' +
                 'If your opponent cancels the effects on your attack card, the BOOST is discarded without effect. ',
             origin: 'Novel "King Arthur and knights of the Round Table". Author: Thomas Melory. ',
@@ -31,6 +32,8 @@ const heroesArr =
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
             // style:
             backgroundColor: '#e8ccc6',
+            headersBackgroundColor: '#d8b56b',
+            fontColor: '',
             // companion:
             companionName: 'Merlin',
             companionRange: 'ranged',
@@ -67,10 +70,13 @@ const heroesArr =
             heroQuote: '“We\'re all mad here".',
             // style:
             backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
             //fan stats:
             attack: "7-9",
             survivability: "5",
             difficulty: '7',
+            overallPower: '7',
             // companion:
             companionName: 'The Jabberwock',
             companionRange: 'melee',
@@ -105,10 +111,13 @@ const heroesArr =
             heroQuote: '“We\'re all mad here".',
             // style:
             backgroundColor: '#bee7ae',
+            headersBackgroundColor: '#3D5169',
+            fontColor: '#e8ccc6',
             //fan stats:
             attack: "8",
             survivability: "6",
             difficulty: '2',
+            overallPower: '9,5',
             // companion:
             companionName: 'Harpies x3)',
             companionRange: 'melee',
@@ -146,10 +155,14 @@ const heroesArr =
             heroQuote: '"Give that guy a raise!".',
             // style:
             backgroundColor: '#e78e5a',
+            headersBackgroundColor: '#3D5169',
+            fontColor: '#e8ccc6',
+
             //fan stats:
             attack: "4 (at the beginning) - 9 (endgame)",
             survivability: "7",
             difficulty: '5',
+            overallPower: '8',
             // companion:
             companionName: 'The Porter',
             companionRange: 'melee',
@@ -172,13 +185,32 @@ const heroesArr =
 
         {
             id: 5,
-            elo: 1990,
-            name: 'Dracula',
-            power: "7",
-            difficulty: 7,
-            origin: 'Tale',
-            tactics: "Puk"
+            elo: 2010,
+            heroName: 'Dracula',
+            heroLink: '/dracula',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '13',
+            heroTrait: 'At the start of your turn, you may deal 1 damage to a fighter adjacent to Dracula. If you do, draw a card.',
+            origin: 'Novel "Dracula". Author: Bram Stoker. Inspired by  inspired by 15th-century Romanian prince Vlad Tepes.',
+            description: "Vlad Dracula, also known as Vlad the Impaler, was a 15th-century ruler of Wallachia known for his cruelty and use of impalement as punishment. He ruled Wallachia three times and was a skilled military leader who defended his country against the Ottoman Empire. Vlad is celebrated as a hero in Romania for his efforts to protect his people, but is also infamous for his brutality. He is often associated with the myth of vampires, which was popularized in Bram Stoker's novel \"Dracula\" but is not based on historical fact. Vlad Dracula remains a controversial and complex figure in Romanian history.",
+            tactics: 'Dracula has very low life and defensive cards. Just smash your opponent at right moment.',
+            heroQuote: '"Blood is the life ... and it shall be mine".',
+            // style:
+            backgroundColor: 'darkgrey',
+            headersBackgroundColor: 'darkred',
+            fontColor: '#e8ccc6',
 
+            //fan stats:
+            attack: "8,5",
+            survivability: "4",
+            difficulty: '7',
+            overallPower: '7',
+            // companion:
+            companionName: 'The sisters x3',
+            companionRange: 'melee',
+            companionRoute: 'sisters',
+            companionHealth: '1'
         },
 
         {
@@ -196,15 +228,35 @@ const heroesArr =
 
         {
             id: 6,
-            elo: 1960,
-            name: 'Invisible',
-            power: "4",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
+            elo: 2010,
+            heroName: 'Invisible',
+            heroLink: '/invisible',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '15',
+            heroTrait: 'At the start of the game, after you place Invisible Man, place 3 fog tokens in separate spaces in his zone.\n' +
+                '\n' +
+                'When Invisible Man is on a space with a fog token, add 1 to the value of his defense cards.\n' +
+                '\n' +
+                'Invisible Man may move between two spaces with fog tokens as if they were adjacent.',
+            origin: 'Novel "The Invisible Man". Author: H.G. Wells.',
+            description: "The Invisible Man is a science fiction novel by H.G. Wells. The story follows Griffin, a scientist who has discovered the secret of invisibility but is unable to reverse the process. He becomes an outcast, isolated from society and consumed by his own power. Griffin struggles with the consequences of his actions, including the inability to interact with others and the temptation to use his power for personal gain. As the novel progresses, Griffin becomes increasingly unstable and violent, leading to a dramatic and tragic conclusion. The Invisible Man is a commentary on the dangers of unchecked scientific progress and the isolation and alienation that can result from pursuing knowledge at any cost.",
+            tactics: 'Hit and run.',
+            heroQuote: '""The fact is, I\'m all here:head, hands, legs, and all the rest of it, but it happens I\'m invisible. It\'s a confounded nuisance, but I am.".',
+            // style:
+            backgroundColor: 'lightgrey',
+            headersBackgroundColor: 'darkgrey',
+            fontColor: '#e8ccc6',
+
+            //fan stats:
+            attack: "4",
+            survivability: "5 (9 if you don't want to fight) ",
+            difficulty: '8',
+            overallPower: '5',
+            // companion:
+            companionName: 'None',
 
         },
-
         {
             id: 86,
             elo: 2090,
@@ -213,17 +265,36 @@ const heroesArr =
         {
             id: 47,
             elo: 1880,
-            name: 'Jackile and Hide(novice)'
+            heroName: 'Jekyll and Hyde(novice)'
         },
 
         {
             id: 7,
-            elo: 1965,
-            name: 'Jackile and Hide',
-            power: "8",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
+            elo: 2010,
+            heroName: 'Jekyll and Hide',
+            heroLink: '/jekyll',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '16',
+            heroTrait: 'Start the game as Dr. Jekyll. At the start of your turn, you may transform into Dr. Jekyll or Mr. Hyde.\n' +
+                'While Mr. Hyde: After you Maneuver, take 1 damage.\n' +
+                'Use the transformation token to indicate what he currently is.',
+            origin: 'Novel "Strange Case of Dr Jekyll and Mr Hyde". Author: Robert Louis Stevenson.',
+            description: "Dr. Jekyll and Mr. Hyde is a novella by Robert Louis Stevenson. The story follows Dr. Henry Jekyll, a respected London doctor who experiments with a potion that transforms him into his evil alter-ego, Mr. Edward Hyde. Jekyll is a mild-mannered man with a good reputation, while Hyde is a violent and malevolent persona who commits horrific acts. As the story progresses, Jekyll struggles to control his transformations and ultimately succumbs to the power of Hyde. The tale is a psychological exploration of the duality of human nature and the consequences of repression and desire.",
+            tactics: 'Predict the right time to change your form.',
+            heroQuote: '“You must suffer me to go my own dark way.”',
+            // style:
+            backgroundColor: 'darkgrey',
+            headersBackgroundColor: 'darkgreen',
+            fontColor: '#e8ccc6',
+
+            //fan stats:
+            attack: "8",
+            survivability: "5",
+            difficulty: '8',
+            overallPower: '6',
+            // companion:
+            companionName: 'None',
 
         },
         {
@@ -240,13 +311,35 @@ const heroesArr =
 
         {
             id: 8,
-            elo: 2020,
-            name: 'Sherlock',
-            power: "9",
-            difficulty: 4,
-            origin: 'Tale',
-            tactics: "Puk"
+            elo: 2010,
+            heroName: 'Sherlock Holmes',
+            heroLink: '/sherlock',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '16',
+            heroTrait: 'Effects on HOLMES and DR. WATSON cards cannot be cancelled by an opponent.\n' +
+                '(Effects on ANY cards can be cancelled.)',
+            origin: 'Novels about Sherlock Holmes. Author: Arthur Conan Doyle.',
+            description: "Sherlock Holmes is a fictional detective created by Sir Arthur Conan Doyle. He is known for his exceptional powers of observation, deduction, and reasoning, which he uses to solve complex cases. Holmes has a tall, lean build and piercing grey eyes. He wears a deerstalker hat and an Inverness cape, which have become iconic elements of his appearance. Holmes has a cool and detached demeanor, often expressing a lack of interest in the social niceties of Victorian society. He is a master of disguises and has a deep knowledge of chemistry, anatomy, and other sciences, which he employs in his investigations.",
+            tactics: 'Go and win.',
+            heroQuote: '“There is nothing more deceptive than an obvious fact”.',
+            // style:
+            backgroundColor: 'lightgrey',
+            headersBackgroundColor: '#c1c454',
+            fontColor: '',
+
+            //fan stats:
+            attack: "7",
+            survivability: "7",
+            difficulty: '5',
+            overallPower: '9',
+            // companion:
+            companionName: 'Dr. Watson',
+            companionRange: 'melee',
+            companionRoute: 'watson',
+            companionHealth: '8'
         },
+
 
         {
             id: 88,
@@ -435,7 +528,7 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [, arthur, , , alice, , , medusa, , , sinbad, , , dracula, , , invisible, , , jackile, , , sherlock, , , beowulf, , , redHood, , , bigfoot, , , robinHood, , , sattler, , , ingen, , , raptors, , , trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
+let [, arthur, , , alice, , , medusa, , , sinbad, , , dracula, , , invisible, , , jekyll, , , sherlock, , , beowulf, , , redHood, , , bigfoot, , , robinHood, , , sattler, , , ingen, , , raptors, , , trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -443,7 +536,7 @@ root.render(
         <div className='wrapper'>
             <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula}
                  invisible={invisible}
-                 jackile={jackile} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
+                 jekyll={jekyll} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
                  robinhood={robinHood}/>
         </div>
 

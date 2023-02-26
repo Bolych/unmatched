@@ -52,8 +52,8 @@ function ImageSlider(props) {
             </div>
             <p className={s.zoomText}>(click on image to zoom)</p>
             <div className={s.buttonsWrapper}>
-                <button className={s.sliderButton} onClick={prevSlide}>Prev</button>
-                <button className={s.sliderButton} onClick={nextSlide}>Next</button>
+                <button style={props.headersBackground} className={s.sliderButton} onClick={prevSlide}>Prev</button>
+                <button style={props.headersBackground} className={s.sliderButton} onClick={nextSlide}>Next</button>
             </div>
         </div>
     );
