@@ -31,7 +31,7 @@ import {useNavigate} from "react-router";
 
 
 const battleOfLegendsHeroes = ['Alice', 'Medusa', 'Sinbad', 'Arthur']
-const cobbleAndFogHeroes = ['Jackile', 'Scherlock', 'Drakula', 'Invisible']
+const cobbleAndFogHeroes = ['Jekyll', 'Scherlock', 'Drakula', 'Invisible']
 const robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
 const redHoodAndBeowulfHeroes = ['Red Hood', 'Beowulf']
 const battleOfLegendsVolTwoHeroes = ['Sun Wukong', 'Yennenga', 'Bloody Mary', 'Achilles']
