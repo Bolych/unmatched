@@ -10,7 +10,7 @@ const heroesArr =
         {
             id: 41,
             elo: 1850,
-            name: 'Arthur(novice)'
+            heroName: 'Arthur(novice)'
         },
         {
             id: 1,
@@ -44,13 +44,13 @@ const heroesArr =
         {
             id: 81,
             elo: 2080,
-            name: 'Arthur(experienced)'
+            heroName: 'Arthur(experienced)'
         },
 
         {
             id: 42,
             elo: 1830,
-            name: 'Alice(novice)'
+            heroName: 'Alice(novice)'
         },
 
         {
@@ -87,13 +87,13 @@ const heroesArr =
         {
             id: 82,
             elo: 2100,
-            name: 'Alice(experienced)'
+            heroName: 'Alice(experienced)'
         },
 
         {
             id: 43,
             elo: 1945,
-            name: 'Medusa(novice) '
+            heroName: 'Medusa(novice) '
         },
 
         {
@@ -129,14 +129,14 @@ const heroesArr =
         {
             id: 83,
             elo: 2200,
-            name: 'Medusa(experienced)'
+            heroName: 'Medusa(experienced)'
         },
 
 
         {
             id: 44,
             elo: 1970,
-            name: 'Sinbad(novice)'
+            heroName: 'Sinbad(novice)'
         },
 
 
@@ -173,14 +173,216 @@ const heroesArr =
         {
             id: 84,
             elo: 2100,
-            name: 'Sinbad(experienced)'
+            heroName: 'Sinbad(experienced)'
         },
 
 
         {
+            id: 49,
+            elo: 2010,
+            heroName: 'Sherlock(experienced)'
+        },
+
+        {
+            id: 9,
+            elo: 2010,
+            heroName: 'Bruce Lee',
+            heroLink: '/bruce-lee',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '14',
+            heroTrait: 'At the end of your turn, you may move Bruce Lee 1 space.',
+            origin: 'Bruce Lee.',
+            description: "Martial artist, actor.",
+            tactics: 'K.O.',
+            heroQuote: '“Do not pray for an easy life, pray for the strength to endure a difficult one.”',
+            // style:
+            backgroundColor: ' #ccc167',
+            headersBackgroundColor: '#54137a',
+            fontColor: '#e8ccc6',
+
+            //fan stats:
+            attack: "8,5",
+            survivability: "5",
+            difficulty: '7',
+            overallPower: '7',
+            // companion:
+            companionName: 'None',
+
+        },
+
+        {
+            id: 89,
+            elo: 2010,
+            heroName: 'Bruce Lee(experienced)'
+        },
+
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Bigfoot(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Bigfoot',
+            heroLink: '/bigfoot',
+            heroRange: 'melee',
+            movement: '3',
+            heroHealth: '16',
+            heroTrait: 'At the end of your turn, if there are no opposing fighters in Bigfoot\'s zone, you may draw 1 card.',
+            origin: '"City Legends"',
+            description: "",
+            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            heroQuote: '"Do they exist? (about people)".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "8",
+            survivability: "6",
+            difficulty: '3',
+            overallPower: '8,5',
+            // companion:
+            companionName: 'The Jackalope',
+            companionRange: 'melee',
+            companionRoute: 'jackalope',
+            companionHealth: '6'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Bigfoot (experienced)'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Robin Hood (novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Robin Hood',
+            heroLink: '/robin-hood',
+            heroRange: 'ranged',
+            movement: '2',
+            heroHealth: '13',
+            heroTrait: 'At the start of your turn, you may place a trap. Whenever one of your traps is returned to the box, draw a card. Muldoon starts with 8 traps.',
+            origin: 'English folklore',
+            description: "Robin Hood",
+            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            heroQuote: '"Robin Hood".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "7",
+            survivability: "5",
+            difficulty: '6',
+            overallPower: '6,5',
+            // companion:
+            companionName: 'Outlaws x4',
+            companionRange: 'melee',
+            companionRoute: 'outlaws',
+            companionHealth: '1'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Robin Hood(experienced)'
+        },
+
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Ingen(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Robert Muldoon',
+            heroLink: '/ingen',
+            heroRange: 'ranged',
+            movement: '3',
+            heroHealth: '14',
+            heroTrait: 'At the start of your turn, you may place a trap. Whenever one of your traps is returned to the box, draw a card. Muldoon starts with 8 traps.',
+            origin: 'Movie "Jurassic Park"',
+            description: "",
+            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            heroQuote: '“We\'re all mad here".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "7-9",
+            survivability: "5",
+            difficulty: '7',
+            overallPower: '6',
+            // companion:
+            companionName: 'Ingen workers x3',
+            companionRange: 'ranged',
+            companionRoute: 'workers',
+            companionHealth: '3'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'InGen(experience)'
+        },
+
+        {
+            id: 81,
+            elo: 1950,
+            heroName: 'Raptors(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Raptors',
+            heroLink: '/ingen',
+            heroRange: 'ranged',
+            movement: '3',
+            heroHealth: '7 x3',
+            heroTrait: 'Raptors add 1 to the value of their attack cards for each of your other Raptors adjacent to the\n' +
+                'defender.',
+            origin: 'Movie "Jurassic Park"',
+            description: "Raptors",
+            tactics: 'Be aggressive.',
+            heroQuote: '"They\'re lethal at 8 months, and I do mean lethal." - Robert Muldoon.',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "7-9",
+            survivability: "5",
+            difficulty: '7',
+            overallPower: '7,5',
+            // companion:
+
+        },
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Raptors(experience)'
+        },
+        {
             id: 45,
             elo: 1900,
-            name: 'Dracula(novice)'
+            heroName: 'Dracula(novice)'
         },
 
         {
@@ -216,14 +418,14 @@ const heroesArr =
         {
             id: 85,
             elo: 2105,
-            name: 'Dracula(experienced)'
+            heroName: 'Dracula(experienced)'
         },
 
 
         {
             id: 46,
             elo: 1830,
-            name: 'Invisible(novice)'
+            heroName: 'Invisible(novice)'
         },
 
         {
@@ -260,7 +462,7 @@ const heroesArr =
         {
             id: 86,
             elo: 2090,
-            name: 'Invisible(experienced)'
+            heroName: 'Invisible(experienced)'
         },
         {
             id: 47,
@@ -300,13 +502,13 @@ const heroesArr =
         {
             id: 87,
             elo: 2070,
-            name: 'Jackile and Hide(experienced)'
+            heroName: 'Jackile and Hide(experienced)'
         },
 
         {
             id: 48,
             elo: 1950,
-            name: 'Sherlock(novice)'
+            heroName: 'Sherlock(novice)'
         },
 
         {
@@ -336,7 +538,7 @@ const heroesArr =
             // companion:
             companionName: 'Dr. Watson',
             companionRange: 'melee',
-            companionRoute: 'watson',
+            companionRoute: '/watson',
             companionHealth: '8'
         },
 
@@ -344,20 +546,229 @@ const heroesArr =
         {
             id: 88,
             elo: 2010,
-            name: 'Sherlock(experienced)'
+            heroName: 'Sherlock(experienced)'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Angel(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Angel',
+            heroLink: '/angel',
+            heroRange: 'melee',
+            movement: '3',
+            heroHealth: '14',
+            heroTrait: 'After Angel or Faith attacks, if you lost the combat, draw 1 card.',
+            origin: 'TV show "Buffy the vampire slayer"',
+            description: "",
+            tactics: 'Angel.',
+            heroQuote: '“quote for angel."',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Faith',
+            companionRange: 'melee',
+            companionRoute: '/faith',
+            companionHealth: '8'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Angel(experienced)'
         },
 
 
         {
-            id: 49,
+            id: 50,
             elo: 1950,
-            name: 'Beowulf(novice)'
+            heroName: 'Buffy(novice)'
         },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Buffy',
+            heroLink: '/buffy',
+            heroRange: 'ranged',
+            movement: '3',
+            heroHealth: '14',
+            heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
+            origin: 'TV show "Buffy the vampire slayer"',
+            description: "",
+            tactics: 'Buffu.',
+            heroQuote: '“quote for buffy".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Giles or Xander',
+            companionRange: 'melee',
+            companionRoute: 'giles-or-xander',
+            companionHealth: '6'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Buffy(experienced)'
+        },
+
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Spike(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Spike',
+            heroLink: '/spike',
+            heroRange: 'ranged',
+            movement: '2',
+            heroHealth: '15',
+            heroTrait: 'At the start of your turn, you may place a Shadow token in any space adjacent to Spike or Drusilla.',
+            origin: 'TV show "Buffy the vampire slayer"',
+            description: "",
+            tactics: 'spike.',
+            heroQuote: '“quote for spike".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '4',
+            // companion:
+            companionName: 'Drusila',
+            companionRange: 'melee',
+            companionRoute: '/drusila',
+            companionHealth: '7'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Spike(experienced)'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Willow(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Willow',
+            heroLink: '/willow',
+            heroRange: 'ranged',
+            movement: '2',
+            heroHealth: '14',
+            heroTrait: 'When Willow or Tara is dealt damage, Willow becomes Dark Willow.\n' +
+                '\n' +
+                'At the end of your turn, if Dark Willow is adjacent to Tara, she becomes Willow.',
+            origin: 'TV show "Buffy the vampire slayer"',
+            description: "",
+            tactics: 'Buffu.',
+            heroQuote: '“quote for buffy".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Tara',
+            companionRange: 'rangen',
+            companionRoute: 'tara',
+            companionHealth: '6'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Willow(experienced)'
+        },
+
+
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Buffy(novice)'
+        },
+
+        {
+            id: 2,
+            elo: 1950,
+            heroName: 'Bigfoot',
+            heroLink: '/bigfoot',
+            heroRange: 'ranged',
+            movement: '3',
+            heroHealth: '14',
+            heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
+            origin: 'TV show "Buffy the vampire slayer"',
+            description: "",
+            tactics: 'Buffu.',
+            heroQuote: '“quote for buffy".',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Giles or Xander',
+            companionRange: 'melee',
+            companionRoute: 'giles-or-xander',
+            companionHealth: '6'
+        },
+
+        {
+            id: 50,
+            elo: 1950,
+            heroName: 'Buffy(experienced)'
+        },
+
+
+
+
+
 
         {
             id: 9,
             elo: 2000,
-            name: 'Beowulf',
+            heroName: 'Beowulf',
             power: "8",
             difficulty: 6,
             origin: 'Tale',
@@ -367,21 +778,21 @@ const heroesArr =
         {
             id: 89,
             elo: 2100,
-            name: 'Beowulf(experienced)'
+            heroName: 'Beowulf(experienced)'
         },
 
 
         {
             id: 50,
             elo: 1940,
-            name: 'Red Hood(novice)'
+            heroName: 'Red Hood(novice)'
         },
 
 
         {
             id: 10,
             elo: 2010,
-            name: 'Red Hood',
+            heroName: 'Red Hood',
             power: "8",
             difficulty: 9,
             origin: 'Tale',
@@ -391,19 +802,19 @@ const heroesArr =
         {
             id: 90,
             elo: 2150,
-            name: 'Red Hood(experienced)'
+            heroName: 'Red Hood(experienced)'
         },
 
         {
             id: 51,
             elo: 1990,
-            name: 'Bigfoot(novice)'
+            heroName: 'Bigfoot(novice)'
         },
 
         {
             id: 11,
             elo: 2025,
-            name: 'Bigfoot',
+            heroName: 'Bigfoot',
             power: "9",
             difficulty: 2,
             origin: 'Tale',
@@ -413,19 +824,19 @@ const heroesArr =
         {
             id: 91,
             elo: 2200,
-            name: 'Bigfoot(experienced)'
+            heroName: 'Bigfoot(experienced)'
         },
 
         {
             id: 52,
             elo: 1950,
-            name: 'Robin Hood(novice)'
+            heroName: 'Robin Hood(novice)'
         },
 
         {
             id: 12,
             elo: 1995,
-            name: 'Robin Hood',
+            heroName: 'Robin Hood',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -435,14 +846,14 @@ const heroesArr =
         {
             id: 92,
             elo: 2140,
-            name: 'Robin Hood(experienced)'
+            heroName: 'Robin Hood(experienced)'
         },
 
 
         {
             id: 13,
             elo: 2000,
-            name: 'Dr Sattler',
+            heroName: 'Dr Sattler',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -451,7 +862,7 @@ const heroesArr =
         {
             id: 14,
             elo: 2000,
-            name: 'InGen',
+            heroName: 'InGen',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -460,7 +871,7 @@ const heroesArr =
         {
             id: 15,
             elo: 2000,
-            name: 'Raptors',
+            heroName: 'Raptors',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -469,7 +880,7 @@ const heroesArr =
         {
             id: 16,
             elo: 2000,
-            name: 'T-rex',
+            heroName: 'T-rex',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -481,7 +892,7 @@ const heroesArr =
         {
             id: 17,
             elo: 1995,
-            name: 'Achilles',
+            heroName: 'Achilles',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -491,7 +902,7 @@ const heroesArr =
         {
             id: 18,
             elo: 2020,
-            name: 'Bloody Mary',
+            heroName: 'Bloody Mary',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -501,7 +912,7 @@ const heroesArr =
         {
             id: 19,
             elo: 2010,
-            name: 'Sun Wukong',
+            heroName: 'Sun Wukong',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -510,7 +921,7 @@ const heroesArr =
         {
             id: 20,
             elo: 2005,
-            name: 'Yennenga',
+            heroName: 'Yennenga',
             power: "6",
             difficulty: 8,
             origin: 'Tale',
@@ -524,11 +935,11 @@ const heroesArr =
     ]
 
 // export let heroesList = heroes.map(el => (
-//     <Route key={el.id} path={el.pathName} element={el.componentName} name={el.name} power={el.power}
+//     <Route key={el.id} path={el.pathName} element={el.componentName} heroName={el.heroName} power={el.power}
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [, arthur, , , alice, , , medusa, , , sinbad, , , dracula, , , invisible, , , jekyll, , , sherlock, , , beowulf, , , redHood, , , bigfoot, , , robinHood, , , sattler, , , ingen, , , raptors, , , trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
+let [, arthur, , , alice, , , medusa, , , sinbad, , , bruceLee ,,, bigfoot, , , robinHood, , , dracula, , , invisible, , , jekyll, , ,  angel, , , buffy , , , spike , , , willow , , ,  sherlock, , , ingen, , , raptors, , , beowulf, , , redHood, , , sattler,, , ,  trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -536,8 +947,9 @@ root.render(
         <div className='wrapper'>
             <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula}
                  invisible={invisible}
-                 jekyll={jekyll} sherlock={sherlock} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
-                 robinhood={robinHood}/>
+                 jekyll={jekyll} sherlock={sherlock} bruceLee={bruceLee} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
+                 robinhood={robinHood} ingen={ingen} raptors={raptors}
+            angel={angel}/>
         </div>
 
     </BrowserRouter>

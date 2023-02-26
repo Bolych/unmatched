@@ -5,7 +5,7 @@ const BruceLeeHeroes = (props) => {
     return <div>
 
         <ul>
-            <li><NavLink to='bruce-lee' onClick={props.closeNavbar}>BruceLee</NavLink></li>
+            <li><NavLink to='/bruce-lee' onClick={props.closeNavbar}>BruceLee</NavLink></li>
 
         </ul>
     </div>

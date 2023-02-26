@@ -7,7 +7,7 @@ const RobinAndBigfootHeroes = (props) => {
     return <div>
         <ul>
             <li><NavLink to='bigfoot' onClick={props.closeNavbar}>Bigfoot</NavLink></li>
-            <li><NavLink to='robin' onClick={props.closeNavbar}>Robin Hood</NavLink></li>
+            <li><NavLink to='robin-hood' onClick={props.closeNavbar}>Robin Hood</NavLink></li>
         </ul>
     </div>
 }

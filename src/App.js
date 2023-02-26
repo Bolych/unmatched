@@ -24,6 +24,10 @@ import Sinbad from "./components/Heroes/BattleOfLegends/Sindbad";
 import Merlin from "./components/Heroes/BattleOfLegends/ArthurCompanion";
 import Achilles from "./components/Heroes/BattleOfLegendsVol2/Achilles";
 import BloodyMary from "./components/Heroes/BattleOfLegendsVol2/BloodyMary";
+import BruceLee from "./components/Heroes/BruceLee/BruceLee";
+import Ingen from "./components/Heroes/IngenVsRaptors/Ingen";
+import Raptors from "./components/Heroes/IngenVsRaptors/Raptors";
+import Angel from "./components/Heroes/Buffy/Angel";
 
 
 function App(props) {
@@ -62,14 +66,24 @@ function App(props) {
                         <Route path='/alice' element={  <Alice state={props.alice}/>}/>
                         <Route path='/medusa' element={  <Medusa state={props.medusa}/>}/>
                         <Route path='/sinbad' element={  <Sinbad state={props.sinbad}/>}/>
+                        {/*Bruce Lee*/}
+                        <Route path='/bruce-lee' element={  <BruceLee state={props.bruceLee}/>}/>
+                        {/*Ingen vs Raptors*/}
+                        <Route path='/ingen' element={  <Ingen state={props.ingen}/>}/>
+                        <Route path='/raptors' element={  <Raptors state={props.raptors}/>}/>
                         {/*Cobble and Fog Heroes:*/}
                         <Route path='/dracula' element={  <Dracula state={props.dracula}/>}/>
                         <Route path='/invisible' element={  <Invisible state={props.invisible}/>}/>
                         <Route path='/sherlock' element={  <Sherlock state={props.sherlock}/>}/>
                         <Route path='/jekyll' element={  <Jekyll state={props.jekyll}/>}/>
                         {/*Robin and Bigfoot:*/}
-                        <Route path='/robin' element={  <RobinHood state={props.robinhood}/>}/>
+                        <Route path='/robin-hood' element={  <RobinHood state={props.robinhood}/>}/>
                         <Route path='/bigfoot' element={  <Bigfoot state={props.bigfoot}/>}/>
+                        {/*Buffy*/}
+                        <Route path='/angel' element={  <Angel state={props.angel}/>}/>
+                        <Route path='/buffy' element={  <Bigfoot state={props.bigfoot}/>}/>
+                        <Route path='/spike' element={  <Bigfoot state={props.bigfoot}/>}/>
+                        <Route path='/willow' element={  <Bigfoot state={props.bigfoot}/>}/>
                         {/*Beowulf and Red Hood*/}
                         <Route path='/beowulf' element={  <Beowulf state={props.beowulf}/>}/>
                         <Route path='/redhood' element={  <RedHood state={props.redhood}/>}/>

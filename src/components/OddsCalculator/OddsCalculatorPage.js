@@ -32,7 +32,7 @@ const HeroTwoToCompare = (props) => {
 
     return (
         <div>
-            <p>{props.name}</p>
+            <p>{props.heroName}</p>
             <div>
                 <div>
                     <select value={props.elo} onChange={handleChange}>
@@ -56,7 +56,7 @@ const OddsCalculatorPage = (props) => {
 
 
     const heroesInSelect = props.heroesArr.map(e => {
-                return <option value={e.elo} key={e.id} >{e.name}</option>
+                return <option value={e.elo} key={e.id} >{e.heroName}</option>
         }
     )
 
