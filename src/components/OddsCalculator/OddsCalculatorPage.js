@@ -52,6 +52,10 @@ const OddsCalculatorPage = (props) => {
     const [heroOne, setHeroOne] = useState('Hero one')
     const [heroTwo, setHeroTwo] = useState('Hero two')
 
+
+
+
+
     const heroesInSelect = props.heroesArr.map(e => {
                 return <option value={e.elo} key={e.id} >{e.heroName}</option>
         }
@@ -78,6 +82,8 @@ const OddsCalculatorPage = (props) => {
                 <br/>
                 <HeroOneToCompare setHeroOne={setHeroOne}  state={heroesInSelect}/>
                 <HeroTwoToCompare setHeroTwo={setHeroTwo}  state={heroesInSelect}/>
+
+
             </div>
             <br/>
             <EloProbability heroOne={heroOne} heroTwo={heroTwo}  state={heroesInSelect}/>

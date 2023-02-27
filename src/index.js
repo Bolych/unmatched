@@ -9,12 +9,12 @@ const heroesArr =
     [
         {
             id: 101,
-            elo: 1850,
+            elo: 1870,
             heroName: 'Arthur(novice)'
         },
         {
             id: 1,
-            elo: 1951,
+            elo: 2030,
             heroName: 'Arthur',
             heroLink: '/arthur',
             heroRange: 'melee',
@@ -43,19 +43,19 @@ const heroesArr =
 
         {
             id: 1001,
-            elo: 2080,
+            elo: 2090,
             heroName: 'Arthur(experienced)'
         },
 
         {
             id: 102,
-            elo: 1831,
+            elo: 1840,
             heroName: 'Alice(novice)'
         },
 
         {
             id: 2,
-            elo: 1950,
+            elo: 2075,
             heroName: 'Alice',
             heroLink: '/alice',
             heroRange: 'melee',
@@ -86,19 +86,19 @@ const heroesArr =
 
         {
             id: 1002,
-            elo: 2100,
+            elo: 2201,
             heroName: 'Alice(experienced)'
         },
 
         {
             id: 103,
-            elo: 1945,
+            elo: 1950,
             heroName: 'Medusa(novice) '
         },
 
         {
             id: 3,
-            elo: 2050,
+            elo: 2180,
             heroName: 'Medusa',
             heroLink: '/medusa',
             heroRange: 'melee',
@@ -128,21 +128,21 @@ const heroesArr =
 
         {
             id: 1003,
-            elo: 2200,
+            elo: 2286,
             heroName: 'Medusa(experienced)'
         },
 
 
         {
             id: 104,
-            elo: 1970,
+            elo: 1915,
             heroName: 'Sinbad(novice)'
         },
 
 
         {
             id: 4,
-            elo: 2010,
+            elo: 2100,
             heroName: 'Sinbad',
             heroLink: '/sinbad',
             heroRange: 'melee',
@@ -172,20 +172,20 @@ const heroesArr =
 
         {
             id: 1004,
-            elo: 2100,
+            elo: 2180,
             heroName: 'Sinbad(experienced)'
         },
 
 
         {
             id: 105,
-            elo: 2010,
+            elo: 1840,
             heroName: 'Bruce Lee (novice)'
         },
 
         {
             id: 5,
-            elo: 2010,
+            elo: 2035,
             heroName: 'Bruce Lee',
             heroLink: '/bruce-lee',
             heroRange: 'melee',
@@ -213,20 +213,20 @@ const heroesArr =
 
         {
             id: 1005,
-            elo: 2010,
+            elo: 2151,
             heroName: 'Bruce Lee(experienced)'
         },
 
 
         {
             id: 106,
-            elo: 1950,
+            elo: 1940,
             heroName: 'Bigfoot(novice)'
         },
 
         {
             id: 6,
-            elo: 1950,
+            elo: 2160,
             heroName: 'Bigfoot',
             heroLink: '/bigfoot',
             heroRange: 'melee',
@@ -255,19 +255,19 @@ const heroesArr =
 
         {
             id: 1006,
-            elo: 1950,
+            elo: 2270,
             heroName: 'Bigfoot (experienced)'
         },
 
         {
             id: 107,
-            elo: 1950,
+            elo: 1810,
             heroName: 'Robin Hood (novice)'
         },
 
         {
             id: 7,
-            elo: 1950,
+            elo: 2025,
             heroName: 'Robin Hood',
             heroLink: '/robin-hood',
             heroRange: 'ranged',
@@ -296,20 +296,20 @@ const heroesArr =
 
         {
             id: 1007,
-            elo: 1950,
+            elo: 2140,
             heroName: 'Robin Hood(experienced)'
         },
 
 
         {
             id: 108,
-            elo: 1950,
+            elo: 1845,
             heroName: 'Ingen(novice)'
         },
 
         {
             id: 8,
-            elo: 1950,
+            elo: 2065,
             heroName: 'Robert Muldoon',
             heroLink: '/ingen',
             heroRange: 'ranged',
@@ -338,21 +338,21 @@ const heroesArr =
 
         {
             id: 1008,
-            elo: 1950,
-            heroName: 'InGen(experience)'
+            elo: 2191,
+            heroName: 'InGen(experienced)'
         },
 
         {
             id: 109,
-            elo: 1950,
+            elo: 1870,
             heroName: 'Raptors(novice)'
         },
 
         {
             id: 9,
-            elo: 1950,
+            elo: 2060,
             heroName: 'Raptors',
-            heroLink: '/ingen',
+            heroLink: '/raptors',
             heroRange: 'ranged',
             movement: '3',
             heroHealth: '7 x3',
@@ -376,18 +376,18 @@ const heroesArr =
         },
         {
             id: 1009,
-            elo: 1950,
-            heroName: 'Raptors(experience)'
+            elo: 2160,
+            heroName: 'Raptors(experienced)'
         },
         {
             id: 110,
-            elo: 1900,
+            elo: 1865,
             heroName: 'Dracula(novice)'
         },
 
         {
             id: 10,
-            elo: 2010,
+            elo: 2090,
             heroName: 'Dracula',
             heroLink: '/dracula',
             heroRange: 'melee',
@@ -417,20 +417,20 @@ const heroesArr =
 
         {
             id: 1010,
-            elo: 2105,
+            elo: 2216,
             heroName: 'Dracula(experienced)'
         },
 
 
         {
             id: 111,
-            elo: 1830,
+            elo: 1815,
             heroName: 'Invisible(novice)'
         },
 
         {
             id: 11,
-            elo: 2010,
+            elo: 2000,
             heroName: 'Invisible',
             heroLink: '/invisible',
             heroRange: 'melee',
@@ -461,18 +461,18 @@ const heroesArr =
         },
         {
             id: 1011,
-            elo: 2090,
+            elo: 2111,
             heroName: 'Invisible(experienced)'
         },
         {
             id: 112,
-            elo: 1880,
+            elo: 1790,
             heroName: 'Jekyll and Hyde(novice)'
         },
 
         {
             id: 12,
-            elo: 2010,
+            elo: 2005,
             heroName: 'Jekyll and Hide',
             heroLink: '/jekyll',
             heroRange: 'melee',
@@ -501,19 +501,19 @@ const heroesArr =
         },
         {
             id: 1012,
-            elo: 2070,
+            elo: 2080,
             heroName: 'Jackile and Hide(experienced)'
         },
 
         {
             id: 113,
-            elo: 1950,
+            elo: 1925,
             heroName: 'Sherlock(novice)'
         },
 
         {
             id: 13,
-            elo: 2010,
+            elo: 2150,
             heroName: 'Sherlock Holmes',
             heroLink: '/sherlock',
             heroRange: 'melee',
@@ -545,7 +545,7 @@ const heroesArr =
 
         {
             id: 1013,
-            elo: 2010,
+            elo: 2090,
             heroName: 'Sherlock(experienced)'
         },
 
@@ -557,7 +557,7 @@ const heroesArr =
 
         {
             id: 14,
-            elo: 1950,
+            elo: 2010,
             heroName: 'Buffy',
             heroLink: '/buffy',
             heroRange: 'ranged',
@@ -586,20 +586,20 @@ const heroesArr =
 
         {
             id: 1014,
-            elo: 1950,
+            elo: 2120,
             heroName: 'Buffy(experienced)'
         },
 
 
         {
             id: 115,
-            elo: 1950,
+            elo: 1760,
             heroName: 'Angel(novice)'
         },
 
         {
             id: 15,
-            elo: 1950,
+            elo: 1980,
             heroName: 'Angel',
             heroLink: '/angel',
             heroRange: 'melee',
@@ -628,20 +628,20 @@ const heroesArr =
 
         {
             id: 1015,
-            elo: 1950,
+            elo: 2015,
             heroName: 'Angel(experienced)'
         },
 
 
         {
             id: 116,
-            elo: 1950,
+            elo: 1755,
             heroName: 'Spike(novice)'
         },
 
         {
             id: 16,
-            elo: 1950,
+            elo: 1985,
             heroName: 'Spike',
             heroLink: '/spike',
             heroRange: 'ranged',
@@ -670,19 +670,19 @@ const heroesArr =
 
         {
             id: 1016,
-            elo: 1950,
+            elo: 2020,
             heroName: 'Spike(experienced)'
         },
 
         {
             id: 117,
-            elo: 1950,
+            elo: 1760,
             heroName: 'Willow(novice)'
         },
 
         {
             id: 17,
-            elo: 1950,
+            elo: 1995,
             heroName: 'Willow',
             heroLink: '/willow',
             heroRange: 'ranged',
@@ -713,20 +713,20 @@ const heroesArr =
 
         {
             id: 1017,
-            elo: 1950,
+            elo: 2040,
             heroName: 'Willow(experienced)'
         },
 
 
         {
             id: 118,
-            elo: 1950,
+            elo: 1820,
             heroName: 'Beowulf(novice)'
         },
 
         {
             id: 18,
-            elo: 1950,
+            elo: 2060,
             heroName: 'Beowulf',
             heroLink: '/beowulf',
             heroRange: 'melee',
@@ -757,20 +757,20 @@ const heroesArr =
 
         {
             id: 1018,
-            elo: 1950,
+            elo: 2186,
             heroName: 'Beowulf(experienced)'
         },
 
 
         {
             id: 119,
-            elo: 1950,
+            elo: 1840,
             heroName: 'Little Red Riding Hood(novice)'
         },
 
         {
             id: 19,
-            elo: 1950,
+            elo: 2100,
             heroName: 'Little Red Riding Hood',
             heroLink: '/red-hood',
             heroRange: 'melee',
@@ -799,19 +799,19 @@ const heroesArr =
 
         {
             id: 1019,
-            elo: 1950,
+            elo: 2225,
             heroName: 'Little Red Riding Hood (experienced)'
         },
 
         {
             id: 120,
-            elo: 1950,
+            elo: 1790,
             heroName: 'Deadpool (novice)'
         },
 
         {
             id: 20,
-            elo: 1950,
+            elo: 1990,
             heroName: 'Deadpool',
             heroLink: '/deadpool',
             heroRange: 'melee',
@@ -840,20 +840,20 @@ const heroesArr =
 
         {
             id: 1020,
-            elo: 1950,
+            elo: 2020,
             heroName: 'Deadpool (experienced)'
         },
 
 
         {
             id: 121,
-            elo: 1950,
+            elo: 1895,
             heroName: 'Achilles (novice)'
         },
 
         {
             id: 21,
-            elo: 1950,
+            elo: 2135,
             heroName: 'Achilles',
             heroLink: '/achilles',
             heroRange: 'melee',
@@ -882,19 +882,19 @@ const heroesArr =
 
         {
             id: 1021,
-            elo: 1950,
+            elo: 2235,
             heroName: 'Achilles (experienced)'
         },
 
         {
             id: 122,
-            elo: 1950,
+            elo: 1865,
             heroName: 'Bloody Mary (novice)'
         },
 
         {
             id: 22,
-            elo: 1950,
+            elo: 2045,
             heroName: 'Bloody Mary',
             heroLink: '/bloody-mary',
             heroRange: 'melee',
@@ -920,19 +920,19 @@ const heroesArr =
 
         {
             id: 1022,
-            elo: 1950,
+            elo: 2130,
             heroName: 'Bloody Mary(experienced)'
         },
 
         {
             id: 123,
-            elo: 1950,
+            elo: 1905,
             heroName: 'Sun Wukong (novice)'
         },
 
         {
             id: 23,
-            elo: 1950,
+            elo: 2140,
             heroName: 'Sun Wukong',
             heroLink: '/sun-wukong',
             heroRange: 'melee',
@@ -962,20 +962,20 @@ const heroesArr =
 
         {
             id: 1023,
-            elo: 1950,
+            elo: 2251,
             heroName: 'Sun Wukong (experienced)'
         },
 
 
         {
             id: 124,
-            elo: 1950,
+            elo: 1850,
             heroName: 'Yennenga (novice)'
         },
 
         {
             id: 24,
-            elo: 1950,
+            elo: 2090,
             heroName: 'Yennenga',
             heroLink: '/yennenga',
             heroRange: 'ranged',
@@ -1008,19 +1008,19 @@ const heroesArr =
 
         {
             id: 1024,
-            elo: 1950,
+            elo: 2276,
             heroName: 'Yennenga (experienced)'
         },
 
         {
             id: 125,
-            elo: 1950,
+            elo: 1860,
             heroName: 'Luke Cage (novice)'
         },
 
         {
             id: 25,
-            elo: 1950,
+            elo: 2110,
             heroName: 'Luke Cage',
             heroLink: '/luke-cage',
             heroRange: 'melee',
@@ -1052,19 +1052,19 @@ const heroesArr =
 
         {
             id: 1025,
-            elo: 1950,
+            elo: 2231,
             heroName: 'Luke Cage (experienced)'
         },
 
         {
             id: 126,
-            elo: 1950,
+            elo: 1850,
             heroName: 'Ghost Rider(novice)'
         },
 
         {
             id: 26,
-            elo: 1950,
+            elo: 2080,
             heroName: 'Ghost Rider',
             heroLink: '/ghost-rider',
             heroRange: 'melee',
@@ -1094,19 +1094,19 @@ const heroesArr =
 
         {
             id: 1026,
-            elo: 1950,
+            elo: 2171,
             heroName: 'Ghost Rider (experienced)'
         },
 
         {
             id: 127,
-            elo: 1950,
+            elo: 1860,
             heroName: 'Moon Knight (novice)'
         },
 
         {
             id: 27,
-            elo: 1950,
+            elo: 2085,
             heroName: 'Moon Knight',
             heroName2: 'Khonshu',
             heroName3: 'Mr. Knight',
@@ -1123,7 +1123,7 @@ const heroesArr =
                 'Mr. Knight\n' +
                 'Mr. Knight adds +1 to all his defense values.\n' +
                 '\n' +
-                'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).\ ',
+                'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).',
             description: "Moon",
             tactics: 'Moon',
             heroQuote: '"Can\'t fight the moonlight." ',
@@ -1143,19 +1143,19 @@ const heroesArr =
 
         {
             id: 1027,
-            elo: 1950,
+            elo: 2211,
             heroName: 'Moon Knight (experienced)'
         },
 
         {
             id: 128,
-            elo: 1950,
+            elo: 1840,
             heroName: 'Daredevil (novice)'
         },
 
         {
             id: 28,
-            elo: 1950,
+            elo: 2120,
             heroName: 'Daredevil',
             heroLink: '/daredevil',
             heroRange: 'melee',
@@ -1185,20 +1185,20 @@ const heroesArr =
 
         {
             id: 1028,
-            elo: 1950,
+            elo: 2241,
             heroName: 'Daredevil (experienced)'
         },
 
 
         {
             id: 129,
-            elo: 1950,
+            elo: 1810,
             heroName: 'Bullseye(novice)'
         },
 
         {
             id: 29,
-            elo: 1950,
+            elo: 2040,
             heroName: 'Bullseye',
             heroLink: '/bullseye',
             heroRange: 'ranged',
@@ -1229,22 +1229,22 @@ const heroesArr =
 
         {
             id: 1029,
-            elo: 1950,
+            elo: 2166,
             heroName: 'Bullseye (experienced)'
         },
 
         {
             id: 130,
-            elo: 1950,
+            elo: 1915,
             heroName: 'Electra (novice)'
         },
 
         {
             id: 30,
-            elo: 1950,
-            heroName: 'Electra',
-            heroName2: 'Electra Resurrected',
-            heroLink: '/electra',
+            elo: 2160,
+            heroName: 'Elektra',
+            heroName2: 'Elektra Resurrected',
+            heroLink: '/elektra',
             heroRange: 'melee',
             movement: '2',
             heroHealth: '7',
@@ -1253,10 +1253,7 @@ const heroesArr =
                 '\n' +
                 'When Elektra Resurrects: Flip your health dial. Shuffle your discard pile into your deck.\n' +
                 '\n' +
-                'Place Elektra and all Hand back onto the board with each fighter in a different zone. (You must resolve effects with the RESURRECTED symbol.)\n' +
-                '\n' +
-                'Notes\n' +
-                'When resurrecting, only your discard pile is shuffled into your deck, not your hand of cards. When placing your fighters after you resurrect, you may place them in zones containing opposing fighters, you just cannot place two of your own fighters in the same zone as each other.',
+                'Place Elektra and all Hand back onto the board with each fighter in a different zone. (You must resolve effects with the RESURRECTED symbol).',
             description: "Luke",
             tactics: 'Luke',
             heroQuote: '"I am Luke and i am your son." ',
@@ -1265,10 +1262,10 @@ const heroesArr =
             headersBackgroundColor: '#91111c',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            attack: "7",
+            survivability: "9",
+            difficulty: '6',
+            overallPower: '9,5',
             // companion:
             companionName: 'The Hand x4',
             companionRange: 'melee',
@@ -1279,19 +1276,19 @@ const heroesArr =
 
         {
             id: 1030,
-            elo: 1950,
+            elo: 2301,
             heroName: 'Electra(experienced)'
         },
 
         {
-            id: 130,
-            elo: 1950,
+            id: 131,
+            elo: 1830,
             heroName: 'Dr. Sattler (novice)'
         },
 
         {
-            id: 30,
-            elo: 1950,
+            id: 31,
+            elo: 2050,
             heroName: 'Dr. Sattler',
             heroFullName: 'Dr. Ellie Sattler',
             heroLink: '/dr-sattler',
@@ -1325,20 +1322,20 @@ const heroesArr =
         },
 
         {
-            id: 1030,
-            elo: 1950,
+            id: 1031,
+            elo: 2176,
             heroName: 'Dr. Sattler (experienced)'
         },
 
         {
-            id: 130,
-            elo: 1950,
+            id: 132,
+            elo: 1935,
             heroName: 'T-rex (novice)'
         },
 
         {
-            id: 30,
-            elo: 1950,
+            id: 32,
+            elo: 2155,
             heroName: 'T-rex',
             heroLink: '/t-rex',
             heroRange: 'melee',
@@ -1369,20 +1366,20 @@ const heroesArr =
         },
 
         {
-            id: 1030,
-            elo: 1950,
+            id: 1032,
+            elo: 2266,
             heroName: 'T-rex (experienced)'
         },
 
         {
-            id: 130,
-            elo: 1950,
+            id: 133,
+            elo: 1825,
             heroName: 'Houdini (novice)'
         },
 
         {
-            id: 30,
-            elo: 1950,
+            id: 33,
+            elo: 2080,
             heroName: 'Houdini',
             heroFullName: 'Harry Houdini',
             heroLink: '/houdini',
@@ -1411,22 +1408,22 @@ const heroesArr =
         },
 
         {
-            id: 1030,
-            elo: 1950,
+            id: 1033,
+            elo: 2200,
             heroName: 'Houdini (experienced)'
         },
 
 
         {
-            id: 130,
-            elo: 1950,
+            id: 134,
+            elo: 1830,
             heroName: 'The Genie(novice)'
         },
 
 
         {
-            id: 30,
-            elo: 1950,
+            id: 34,
+            elo: 2085,
             heroName: 'The Genie',
             heroLink: '/genie',
             heroRange: 'ranged',
@@ -1455,8 +1452,8 @@ const heroesArr =
         },
 
         {
-            id: 1030,
-            elo: 1950,
+            id: 1034,
+            elo: 2200,
             heroName: 'The Genie(experienced)'
         },
 
