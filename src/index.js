@@ -1107,7 +1107,9 @@ const heroesArr =
         {
             id: 27,
             elo: 1950,
-            heroName: 'Moon Knight, Khonshu, Mr. Knight',
+            heroName: 'Moon Knight',
+            heroName2: 'Khonshu',
+            heroName3: 'Mr. Knight',
             heroLink: '/moon-knight',
             heroRange: 'melee',
             movement: '2',
@@ -1121,10 +1123,7 @@ const heroesArr =
                 'Mr. Knight\n' +
                 'Mr. Knight adds +1 to all his defense values.\n' +
                 '\n' +
-                'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).\n' +
-                '\n' +
-                'Notes\n' +
-                'Start the game as Moon Knight. You must change to your next form at the end of your turn. Moon Knight, Khonshu, and Mr. Knight all share the same health dial.',
+                'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).\ ',
             description: "Moon",
             tactics: 'Moon',
             heroQuote: '"Can\'t fight the moonlight." ',
@@ -1171,8 +1170,8 @@ const heroesArr =
             tactics: 'Moon',
             heroQuote: '"Can\'t fight the moonlight." ',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: '#dc7272',
+            headersBackgroundColor: '#af0d0d',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -1215,8 +1214,8 @@ const heroesArr =
             tactics: 'Moon',
             heroQuote: '"Can\'t fight the moonlight." ',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: '#c6c4ea',
+            headersBackgroundColor: '#212e9a',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -1262,8 +1261,8 @@ const heroesArr =
             tactics: 'Luke',
             heroQuote: '"I am Luke and i am your son." ',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: '#FFDFC4',
+            headersBackgroundColor: '#91111c',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -1294,7 +1293,7 @@ const heroesArr =
             id: 30,
             elo: 1950,
             heroName: 'Dr. Sattler',
-            heroFullName : 'Dr. Ellie Sattler',
+            heroFullName: 'Dr. Ellie Sattler',
             heroLink: '/dr-sattler',
             heroRange: 'melee',
             movement: '2',
@@ -1309,8 +1308,8 @@ const heroesArr =
             tactics: 'Luke',
             heroQuote: '"Sattler." ',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: '#9a8298',
+            headersBackgroundColor: '#a93e6b',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -1355,8 +1354,8 @@ const heroesArr =
             tactics: 'Luke',
             heroQuote: '"..." ',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: '#918491',
+            headersBackgroundColor: '#524e4e',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -1395,8 +1394,8 @@ const heroesArr =
             tactics: 'Luke',
             heroQuote: '"Houdini." ',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(213,195,184,0.88)',
+            headersBackgroundColor: '#304b1e',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -1416,7 +1415,6 @@ const heroesArr =
             elo: 1950,
             heroName: 'Houdini (experienced)'
         },
-
 
 
         {
@@ -1442,7 +1440,7 @@ const heroesArr =
                 'I\'m a genie in a bottle\n' +
                 'You gotta rub me the right way"',
             // style:
-            backgroundColor: 'lightblue',
+            backgroundColor: '#e1c483',
             headersBackgroundColor: '#810181',
             fontColor: '#e8ccc6',
             //fan stats:
@@ -1463,7 +1461,6 @@ const heroesArr =
         },
 
 
-
         // additional properties to heroes:
 
 
@@ -1474,7 +1471,7 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [, arthur, , , alice,,,medusa,,,sinbad, , , bruceLee, , , bigfoot, , , robinHood, , , ingen, , , raptors, , , dracula, , , invisible, , , jekyll, , , sherlock, , , buffy, , , angel, , , spike, , , willow, , , beowulf, , , redHood, , , deadpool, , , achilles, , , bloodyMary,,,sunWukong,,,yennenga,,,lukeCage,,,ghostRider,,,moonKnight,,,daredevil,,,bullseye,,,elektra,,,sattler,,,trex,,,houdini,,,genie,,] = heroesArr;
+let [, arthur, , , alice, , , medusa, , , sinbad, , , bruceLee, , , bigfoot, , , robinHood, , , ingen, , , raptors, , , dracula, , , invisible, , , jekyll, , , sherlock, , , buffy, , , angel, , , spike, , , willow, , , beowulf, , , redHood, , , deadpool, , , achilles, , , bloodyMary, , , sunWukong, , , yennenga, , , lukeCage, , , ghostRider, , , moonKnight, , , daredevil, , , bullseye, , , elektra, , , sattler, , , trex, , , houdini, , , genie, ,] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

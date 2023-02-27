@@ -68,6 +68,8 @@ const MoonKnight = ({state}) => {
 
                 <div className={s.leftSidePartOne}>
                     <p><span className={s.firstWord}>Name:</span> {state.heroName}</p>
+                    <p><span className={s.firstWord}>Name:</span> {state.heroName2}</p>
+                    <p><span className={s.firstWord}>Name:</span> {state.heroName3}</p>
                     <p><span className={s.firstWord}>Range:</span> {state.heroRange}</p>
                     <p><span className={s.firstWord}>Start health:</span> {state.heroHealth}</p>
                     <p><span className={s.firstWord}>Movement:</span> {state.movement}</p>

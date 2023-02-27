@@ -70,6 +70,7 @@ const Elektra = ({state}) => {
                     <p><span className={s.firstWord}>Name:</span> {state.heroName}</p>
                     <p><span className={s.firstWord}>Range:</span> {state.heroRange}</p>
                     <p><span className={s.firstWord}>Start health:</span> {state.heroHealth}</p>
+                    <p><span className={s.firstWord}>Resurrected Electra's health:</span> {state.heroHealth2}</p>
                     <p><span className={s.firstWord}>Movement:</span> {state.movement}</p>
                     <p><span className={s.firstWord}>Origin:</span> {state.origin}</p>
                 </div>

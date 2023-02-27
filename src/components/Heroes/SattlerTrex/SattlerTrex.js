@@ -14,7 +14,7 @@ const SattlerTrexHeroes = (props) => {
 const SattlerTrex = (props) => {
     const [show, setShow] = useState(false)
     return (<div>
-        <button onClick={() => setShow(!show)}>Ingen vs Raptors</button>
+        <button onClick={() => setShow(!show)}>Dr. Sattler vs T-rex</button>
         {show ? <SattlerTrexHeroes closeNavbar={props.closeNavbar}/> : null}
 
     </div>)
