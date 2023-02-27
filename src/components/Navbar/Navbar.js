@@ -4,19 +4,18 @@ import s from './Navbar.module.css'
 import BattleOfLegends from "../Heroes/BattleOfLegends/BattleOfLegends";
 import CobbleAndFog from "../Heroes/CobbleAndFog/CobbleAndFog";
 import RobinAndBigfoot from "../Heroes/RobinAndBigFoot/RobinAndBigfoot";
-import BeowulfAndRedHood from "../Heroes/RedHoodBeowulf/BeowulfAndRedHood";
-import JurassicPark from "../Heroes/IngenVsRaptors/IngenRaptors";
+import BeowulfAndRedHood from "../Heroes/BeowulfRedHood/BeowulfAndRedHood";
 import BattleOfLegendsVol2 from "../Heroes/BattleOfLegendsVol2/BattleOfLegendsVol2";
-import Buffy from "../Heroes/Buffy/BuffyHeroes";
 import MarvelTeenSpirit from "../Heroes/MarvelTeenSpirit/MarvelTeenSpirit";
 import MarvelRedemptionRow from "../Heroes/MarvelRedemptionRow/MarvelRedemptionRow";
 import MarvelHellsKitchen from "../Heroes/MarvelHellsKitchen/MarvelHellsKitchen";
 import MarvelForKingAndCountry from "../Heroes/MarvelForKingAndCountry/MarvelForKingAndCountry";
 import HoudiniAndGenie from "../Heroes/HoudiniAndGenie/HoudiniAndGenie";
 import BruceLee from "../Heroes/BruceLee/BruceLeeLink";
-import Deadpool from "../Heroes/Deadpool/DeadpoolLink";
 import IngenRaptors from "../Heroes/IngenVsRaptors/IngenRaptors";
-import BuffyExpansion from "../Heroes/Buffy/BuffyHeroes";
+import BuffyExpansion from "../Heroes/Buffy/BuffyExpansion";
+import DeadpoolExpansion from "../Heroes/Deadpool/DeadpoolLink";
+import SattlerTrex from "../Heroes/SattlerTrex/SattlerTrex";
 
 const Navbar = (props) => {
 
@@ -41,13 +40,17 @@ const Navbar = (props) => {
                     <li><CobbleAndFog closeNavbar={props.closeNavbar}/></li>
                     <li><BuffyExpansion closeNavbar={props.closeNavbar}/></li>
                     <li><BeowulfAndRedHood closeNavbar={props.closeNavbar}/></li>
+                    <li><DeadpoolExpansion closeNavbar={props.closeNavbar}/></li>
                     <li><BattleOfLegendsVol2 closeNavbar={props.closeNavbar}/></li>
-                    <li><MarvelTeenSpirit closeNavbar={props.closeNavbar}/></li>
                     <li><MarvelRedemptionRow closeNavbar={props.closeNavbar}/></li>
                     <li><MarvelHellsKitchen closeNavbar={props.closeNavbar}/></li>
-                    <li><MarvelForKingAndCountry closeNavbar={props.closeNavbar}/></li>
+                    <li><SattlerTrex closeNavbar={props.closeNavbar}/></li>
                     <li><HoudiniAndGenie closeNavbar={props.closeNavbar}/></li>
-                    <li><Deadpool closeNavbar={props.closeNavbar}/></li>
+
+                    <p>Coming soon:</p>
+                    <li><MarvelTeenSpirit closeNavbar={props.closeNavbar}/></li>
+                    <li><MarvelForKingAndCountry closeNavbar={props.closeNavbar}/></li>
+
 
                 </ul>
             </div>

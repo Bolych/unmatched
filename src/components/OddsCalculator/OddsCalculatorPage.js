@@ -11,7 +11,7 @@ const HeroOneToCompare = (props) => {
 
     return (
         <div>
-            <p>{props.name}</p>
+            <p>Hero one:</p>
             <div>
                 <div>
                     <select value={props.elo} onChange={handleChange}>
@@ -26,13 +26,14 @@ const HeroOneToCompare = (props) => {
 }
 
 const HeroTwoToCompare = (props) => {
+
     const  handleChange = (e) => {props.setHeroTwo(e.target.value)
         console.log(e.target)
     }
 
     return (
         <div>
-            <p>{props.heroName}</p>
+            <p>Hero two:</p>
             <div>
                 <div>
                     <select value={props.elo} onChange={handleChange}>
@@ -51,16 +52,10 @@ const OddsCalculatorPage = (props) => {
     const [heroOne, setHeroOne] = useState('Hero one')
     const [heroTwo, setHeroTwo] = useState('Hero two')
 
-
-
-
-
     const heroesInSelect = props.heroesArr.map(e => {
                 return <option value={e.elo} key={e.id} >{e.heroName}</option>
         }
     )
-
-
 
     return (<div className={s.content}>
             <div className={s.header}>
@@ -77,12 +72,12 @@ const OddsCalculatorPage = (props) => {
                 <h3>Heroes levels:</h3>
                 <div>
                     <p>Novice - unexperienced player or player, who doesn't know deck of this hero (    {` < `}2 games)</p>
-                    <p>Without value - average player, who already played for this hero, but doesn't master heroes's mechanics(3-7 games )</p>
+                    <p>Without value - average player, who already played for this hero, but doesn't master hero's mechanics (3-7 games)</p>
                     <p>Experienced - player who mastered mechanics of this hero ({` > `} 7 games)</p>
                 </div>
                 <br/>
-                <HeroOneToCompare setHeroOne={setHeroOne} name='Hero one' state={heroesInSelect}/>
-                <HeroTwoToCompare setHeroTwo={setHeroTwo} name='Hero two' state={heroesInSelect}/>
+                <HeroOneToCompare setHeroOne={setHeroOne}  state={heroesInSelect}/>
+                <HeroTwoToCompare setHeroTwo={setHeroTwo}  state={heroesInSelect}/>
             </div>
             <br/>
             <EloProbability heroOne={heroOne} heroTwo={heroTwo}  state={heroesInSelect}/>

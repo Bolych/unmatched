@@ -8,13 +8,13 @@ import {BrowserRouter} from "react-router-dom";
 const heroesArr =
     [
         {
-            id: 41,
+            id: 101,
             elo: 1850,
             heroName: 'Arthur(novice)'
         },
         {
             id: 1,
-            elo: 1950,
+            elo: 1951,
             heroName: 'Arthur',
             heroLink: '/arthur',
             heroRange: 'melee',
@@ -42,14 +42,14 @@ const heroesArr =
         },
 
         {
-            id: 81,
+            id: 1001,
             elo: 2080,
             heroName: 'Arthur(experienced)'
         },
 
         {
-            id: 42,
-            elo: 1830,
+            id: 102,
+            elo: 1831,
             heroName: 'Alice(novice)'
         },
 
@@ -85,13 +85,13 @@ const heroesArr =
         },
 
         {
-            id: 82,
+            id: 1002,
             elo: 2100,
             heroName: 'Alice(experienced)'
         },
 
         {
-            id: 43,
+            id: 103,
             elo: 1945,
             heroName: 'Medusa(novice) '
         },
@@ -127,14 +127,14 @@ const heroesArr =
         },
 
         {
-            id: 83,
+            id: 1003,
             elo: 2200,
             heroName: 'Medusa(experienced)'
         },
 
 
         {
-            id: 44,
+            id: 104,
             elo: 1970,
             heroName: 'Sinbad(novice)'
         },
@@ -171,20 +171,20 @@ const heroesArr =
         },
 
         {
-            id: 84,
+            id: 1004,
             elo: 2100,
             heroName: 'Sinbad(experienced)'
         },
 
 
         {
-            id: 49,
+            id: 105,
             elo: 2010,
-            heroName: 'Sherlock(experienced)'
+            heroName: 'Bruce Lee (novice)'
         },
 
         {
-            id: 9,
+            id: 5,
             elo: 2010,
             heroName: 'Bruce Lee',
             heroLink: '/bruce-lee',
@@ -212,20 +212,20 @@ const heroesArr =
         },
 
         {
-            id: 89,
+            id: 1005,
             elo: 2010,
             heroName: 'Bruce Lee(experienced)'
         },
 
 
         {
-            id: 50,
+            id: 106,
             elo: 1950,
             heroName: 'Bigfoot(novice)'
         },
 
         {
-            id: 2,
+            id: 6,
             elo: 1950,
             heroName: 'Bigfoot',
             heroLink: '/bigfoot',
@@ -254,19 +254,19 @@ const heroesArr =
         },
 
         {
-            id: 50,
+            id: 1006,
             elo: 1950,
             heroName: 'Bigfoot (experienced)'
         },
 
         {
-            id: 50,
+            id: 107,
             elo: 1950,
             heroName: 'Robin Hood (novice)'
         },
 
         {
-            id: 2,
+            id: 7,
             elo: 1950,
             heroName: 'Robin Hood',
             heroLink: '/robin-hood',
@@ -295,20 +295,20 @@ const heroesArr =
         },
 
         {
-            id: 50,
+            id: 1007,
             elo: 1950,
             heroName: 'Robin Hood(experienced)'
         },
 
 
         {
-            id: 50,
+            id: 108,
             elo: 1950,
             heroName: 'Ingen(novice)'
         },
 
         {
-            id: 2,
+            id: 8,
             elo: 1950,
             heroName: 'Robert Muldoon',
             heroLink: '/ingen',
@@ -322,7 +322,7 @@ const heroesArr =
             heroQuote: '“We\'re all mad here".',
             // style:
             backgroundColor: 'rgba(204,179,136,0.74) ',
-            headersBackgroundColor: 'brown',
+            headersBackgroundColor: '#7c4937',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "7-9",
@@ -337,19 +337,19 @@ const heroesArr =
         },
 
         {
-            id: 50,
+            id: 1008,
             elo: 1950,
             heroName: 'InGen(experience)'
         },
 
         {
-            id: 81,
+            id: 109,
             elo: 1950,
             heroName: 'Raptors(novice)'
         },
 
         {
-            id: 2,
+            id: 9,
             elo: 1950,
             heroName: 'Raptors',
             heroLink: '/ingen',
@@ -375,18 +375,18 @@ const heroesArr =
 
         },
         {
-            id: 50,
+            id: 1009,
             elo: 1950,
             heroName: 'Raptors(experience)'
         },
         {
-            id: 45,
+            id: 110,
             elo: 1900,
             heroName: 'Dracula(novice)'
         },
 
         {
-            id: 5,
+            id: 10,
             elo: 2010,
             heroName: 'Dracula',
             heroLink: '/dracula',
@@ -416,20 +416,20 @@ const heroesArr =
         },
 
         {
-            id: 85,
+            id: 1010,
             elo: 2105,
             heroName: 'Dracula(experienced)'
         },
 
 
         {
-            id: 46,
+            id: 111,
             elo: 1830,
             heroName: 'Invisible(novice)'
         },
 
         {
-            id: 6,
+            id: 11,
             elo: 2010,
             heroName: 'Invisible',
             heroLink: '/invisible',
@@ -460,18 +460,18 @@ const heroesArr =
 
         },
         {
-            id: 86,
+            id: 1011,
             elo: 2090,
             heroName: 'Invisible(experienced)'
         },
         {
-            id: 47,
+            id: 112,
             elo: 1880,
             heroName: 'Jekyll and Hyde(novice)'
         },
 
         {
-            id: 7,
+            id: 12,
             elo: 2010,
             heroName: 'Jekyll and Hide',
             heroLink: '/jekyll',
@@ -500,19 +500,19 @@ const heroesArr =
 
         },
         {
-            id: 87,
+            id: 1012,
             elo: 2070,
             heroName: 'Jackile and Hide(experienced)'
         },
 
         {
-            id: 48,
+            id: 113,
             elo: 1950,
             heroName: 'Sherlock(novice)'
         },
 
         {
-            id: 8,
+            id: 13,
             elo: 2010,
             heroName: 'Sherlock Holmes',
             heroLink: '/sherlock',
@@ -544,19 +544,61 @@ const heroesArr =
 
 
         {
-            id: 88,
+            id: 1013,
             elo: 2010,
             heroName: 'Sherlock(experienced)'
         },
 
         {
-            id: 50,
+            id: 114,
+            elo: 1950,
+            heroName: 'Buffy(novice)'
+        },
+
+        {
+            id: 14,
+            elo: 1950,
+            heroName: 'Buffy',
+            heroLink: '/buffy',
+            heroRange: 'ranged',
+            movement: '3',
+            heroHealth: '14',
+            heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
+            origin: 'TV show "Buffy the vampire slayer"',
+            description: "",
+            tactics: 'Buffu.',
+            heroQuote: '“quote for buffy".',
+            // style:
+            backgroundColor: 'rgba(255,199,202,0.99)',
+            headersBackgroundColor: 'rgba(35,7,44,0.84)',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Giles or Xander',
+            companionRange: 'melee',
+            companionRoute: 'giles-or-xander',
+            companionHealth: '6'
+        },
+
+        {
+            id: 1014,
+            elo: 1950,
+            heroName: 'Buffy(experienced)'
+        },
+
+
+        {
+            id: 115,
             elo: 1950,
             heroName: 'Angel(novice)'
         },
 
         {
-            id: 2,
+            id: 15,
             elo: 1950,
             heroName: 'Angel',
             heroLink: '/angel',
@@ -569,8 +611,8 @@ const heroesArr =
             tactics: 'Angel.',
             heroQuote: '“quote for angel."',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(255,199,202,0.99)',
+            headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -585,62 +627,20 @@ const heroesArr =
         },
 
         {
-            id: 50,
+            id: 1015,
             elo: 1950,
             heroName: 'Angel(experienced)'
         },
 
 
         {
-            id: 50,
-            elo: 1950,
-            heroName: 'Buffy(novice)'
-        },
-
-        {
-            id: 2,
-            elo: 1950,
-            heroName: 'Buffy',
-            heroLink: '/buffy',
-            heroRange: 'ranged',
-            movement: '3',
-            heroHealth: '14',
-            heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
-            origin: 'TV show "Buffy the vampire slayer"',
-            description: "",
-            tactics: 'Buffu.',
-            heroQuote: '“quote for buffy".',
-            // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
-            fontColor: '#e8ccc6',
-            //fan stats:
-            attack: "5",
-            survivability: "5",
-            difficulty: '5',
-            overallPower: '3',
-            // companion:
-            companionName: 'Giles or Xander',
-            companionRange: 'melee',
-            companionRoute: 'giles-or-xander',
-            companionHealth: '6'
-        },
-
-        {
-            id: 50,
-            elo: 1950,
-            heroName: 'Buffy(experienced)'
-        },
-
-
-        {
-            id: 50,
+            id: 116,
             elo: 1950,
             heroName: 'Spike(novice)'
         },
 
         {
-            id: 2,
+            id: 16,
             elo: 1950,
             heroName: 'Spike',
             heroLink: '/spike',
@@ -653,8 +653,8 @@ const heroesArr =
             tactics: 'spike.',
             heroQuote: '“quote for spike".',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(255,199,202,0.99)',
+            headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -669,19 +669,19 @@ const heroesArr =
         },
 
         {
-            id: 50,
+            id: 1016,
             elo: 1950,
             heroName: 'Spike(experienced)'
         },
 
         {
-            id: 50,
+            id: 117,
             elo: 1950,
             heroName: 'Willow(novice)'
         },
 
         {
-            id: 2,
+            id: 17,
             elo: 1950,
             heroName: 'Willow',
             heroLink: '/willow',
@@ -696,8 +696,8 @@ const heroesArr =
             tactics: 'Buffu.',
             heroQuote: '“quote for buffy".',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: 'rgba(255,199,202,0.99)',
+            headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -706,41 +706,84 @@ const heroesArr =
             overallPower: '3',
             // companion:
             companionName: 'Tara',
-            companionRange: 'rangen',
+            companionRange: 'ranged',
             companionRoute: 'tara',
             companionHealth: '6'
         },
 
         {
-            id: 50,
+            id: 1017,
             elo: 1950,
             heroName: 'Willow(experienced)'
         },
 
 
-
         {
-            id: 50,
+            id: 118,
             elo: 1950,
-            heroName: 'Buffy(novice)'
+            heroName: 'Beowulf(novice)'
         },
 
         {
-            id: 2,
+            id: 18,
             elo: 1950,
-            heroName: 'Bigfoot',
-            heroLink: '/bigfoot',
-            heroRange: 'ranged',
-            movement: '3',
-            heroHealth: '14',
-            heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
-            origin: 'TV show "Buffy the vampire slayer"',
-            description: "",
-            tactics: 'Buffu.',
-            heroQuote: '“quote for buffy".',
+            heroName: 'Beowulf',
+            heroLink: '/beowulf',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '17',
+            heroTrait: 'Beowulf starts with 1 Rage.\n' +
+                'When Beowulf is dealt damage, he gains 1 Rage.\n' +
+                'Beowulf has a maximum of 3 rage.',
+            origin: 'Folclore"',
+            description: "Beowulf",
+            tactics: 'Rage rage.',
+            heroQuote: '“I shall gain glory or die.”',
             // style:
-            backgroundColor: 'lightblue',
-            headersBackgroundColor: '#810181',
+            backgroundColor: '#b1b6b7',
+            headersBackgroundColor: '#d8b56b',
+            fontColor: '',
+            //fan stats:
+            attack: "5",
+            survivability: "5",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Wiglaf',
+            companionRange: 'melee',
+            companionRoute: 'wiglaf',
+            companionHealth: '9'
+        },
+
+        {
+            id: 1018,
+            elo: 1950,
+            heroName: 'Beowulf(experienced)'
+        },
+
+
+        {
+            id: 119,
+            elo: 1950,
+            heroName: 'Little Red Riding Hood(novice)'
+        },
+
+        {
+            id: 19,
+            elo: 1950,
+            heroName: 'Little Red Riding Hood',
+            heroLink: '/red-hood',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '14',
+            heroTrait: 'Resolve an effect on a card you play if the symbol next to the effect matches the item in your basket. At the start of the game, place LITTLE RED\'s BASKET in your discard pile. Little Red\'s Basket: This starts in your discard pile. It does not count as a card. (🌟 counts as any one 🐺🌹⚔️ symbol.)',
+            origin: 'Folclore"',
+            description: "Beowulf",
+            tactics: 'Red hood tactics',
+            heroQuote: '"Grandmother dear, what big legs you have!" ',
+            // style:
+            backgroundColor: '#7a7373',
+            headersBackgroundColor: '#56091f',
             fontColor: '#e8ccc6',
             //fan stats:
             attack: "5",
@@ -748,185 +791,677 @@ const heroesArr =
             difficulty: '5',
             overallPower: '3',
             // companion:
-            companionName: 'Giles or Xander',
+            companionName: 'Huntsman',
+            companionRange: 'ranged',
+            companionRoute: 'huntsman',
+            companionHealth: '9'
+        },
+
+        {
+            id: 1019,
+            elo: 1950,
+            heroName: 'Little Red Riding Hood (experienced)'
+        },
+
+        {
+            id: 120,
+            elo: 1950,
+            heroName: 'Deadpool (novice)'
+        },
+
+        {
+            id: 20,
+            elo: 1950,
+            heroName: 'Deadpool',
+            heroLink: '/deadpool',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '10',
+            heroTrait: ' After you attack, Deadpool recovers 1 health.\n' +
+                '\n' +
+                'Also, if your opponent\'s real name is Logan, all your attacks are +5.',
+            origin: 'Marvel',
+            description: "Deadpool",
+            tactics: 'deadpool',
+            heroQuote: '"House blowing up builds character." ',
+            // style:
+            backgroundColor: '#b76767',
+            headersBackgroundColor: '#100202',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None',
+
+        },
+
+        {
+            id: 1020,
+            elo: 1950,
+            heroName: 'Deadpool (experienced)'
+        },
+
+
+        {
+            id: 121,
+            elo: 1950,
+            heroName: 'Achilles (novice)'
+        },
+
+        {
+            id: 21,
+            elo: 1950,
+            heroName: 'Achilles',
+            heroLink: '/achilles',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '18',
+            heroTrait: 'When Patroclus is defeated, discard 2 random cards. While Patroclus is defeated: Add +2 to the value of all Achilles\'s attacks. If Achilles wins combat, draw 1 card.',
+            origin: 'Illiad',
+            description: "Achilles",
+            tactics: 'achilles',
+            heroQuote: '"I\'ll tell you a secret. Something they don\'t teach you in your temple. The Gods envy us. They envy us because we\'re mortal, because any moment might be our last." ',
+            // style:
+            backgroundColor: '#b99d77',
+            headersBackgroundColor: '#593010',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Patroclus',
             companionRange: 'melee',
-            companionRoute: 'giles-or-xander',
+            companionRoute: 'patroclus',
             companionHealth: '6'
         },
 
         {
-            id: 50,
+            id: 1021,
             elo: 1950,
-            heroName: 'Buffy(experienced)'
-        },
-
-
-
-
-
-
-        {
-            id: 9,
-            elo: 2000,
-            heroName: 'Beowulf',
-            power: "8",
-            difficulty: 6,
-            origin: 'Tale',
-            tactics: "Puk"
+            heroName: 'Achilles (experienced)'
         },
 
         {
-            id: 89,
-            elo: 2100,
-            heroName: 'Beowulf(experienced)'
-        },
-
-
-        {
-            id: 50,
-            elo: 1940,
-            heroName: 'Red Hood(novice)'
-        },
-
-
-        {
-            id: 10,
-            elo: 2010,
-            heroName: 'Red Hood',
-            power: "8",
-            difficulty: 9,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-
-        {
-            id: 90,
-            elo: 2150,
-            heroName: 'Red Hood(experienced)'
-        },
-
-        {
-            id: 51,
-            elo: 1990,
-            heroName: 'Bigfoot(novice)'
-        },
-
-        {
-            id: 11,
-            elo: 2025,
-            heroName: 'Bigfoot',
-            power: "9",
-            difficulty: 2,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-
-        {
-            id: 91,
-            elo: 2200,
-            heroName: 'Bigfoot(experienced)'
-        },
-
-        {
-            id: 52,
+            id: 122,
             elo: 1950,
-            heroName: 'Robin Hood(novice)'
+            heroName: 'Bloody Mary (novice)'
         },
 
         {
-            id: 12,
-            elo: 1995,
-            heroName: 'Robin Hood',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-
-        {
-            id: 92,
-            elo: 2140,
-            heroName: 'Robin Hood(experienced)'
-        },
-
-
-        {
-            id: 13,
-            elo: 2000,
-            heroName: 'Dr Sattler',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-        {
-            id: 14,
-            elo: 2000,
-            heroName: 'InGen',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-        {
-            id: 15,
-            elo: 2000,
-            heroName: 'Raptors',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-        {
-            id: 16,
-            elo: 2000,
-            heroName: 'T-rex',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-
-        //Battle of Legends vol.2
-
-        {
-            id: 17,
-            elo: 1995,
-            heroName: 'Achilles',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
-        },
-
-        {
-            id: 18,
-            elo: 2020,
+            id: 22,
+            elo: 1950,
             heroName: 'Bloody Mary',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
+            heroLink: '/bloody-mary',
+            heroRange: 'melee',
+            movement: '3',
+            heroHealth: '16',
+            heroTrait: 'At the start of your turn, if you have exactly 3 cards in hand, gain 1 action.',
+            origin: 'City legends',
+            description: "Bloody Mary",
+            tactics: 'bloody mary',
+            heroQuote: '"Bloody Mary. Bloody Mary. Bloody Mary." ',
+            // style:
+            backgroundColor: '#a69293',
+            headersBackgroundColor: '#770b24',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None',
         },
 
         {
-            id: 19,
-            elo: 2010,
-            heroName: 'Sun Wukong',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
+            id: 1022,
+            elo: 1950,
+            heroName: 'Bloody Mary(experienced)'
         },
+
         {
-            id: 20,
-            elo: 2005,
-            heroName: 'Yennenga',
-            power: "6",
-            difficulty: 8,
-            origin: 'Tale',
-            tactics: "Puk"
+            id: 123,
+            elo: 1950,
+            heroName: 'Sun Wukong (novice)'
         },
+
+        {
+            id: 23,
+            elo: 1950,
+            heroName: 'Sun Wukong',
+            heroLink: '/sun-wukong',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '17',
+            heroTrait: 'At the start of your turn, you may take 1 damage to summon a Clone in an empty space adjacent to Sun Wukong.\n' +
+                'Do not start with any Clones on the board.',
+            origin: 'Marvel',
+            description: "Обезьяны круты",
+            tactics: 'Sun wukong',
+            heroQuote: '"Uh-uh-ah-ah" ',
+            // style:
+            backgroundColor: '#d9ae8c',
+            headersBackgroundColor: '#8a0e1e',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Clones x3',
+            companionRange: 'melee',
+            companionRoute: 'clones',
+            companionHealth: '1'
+        },
+
+        {
+            id: 1023,
+            elo: 1950,
+            heroName: 'Sun Wukong (experienced)'
+        },
+
+
+        {
+            id: 124,
+            elo: 1950,
+            heroName: 'Yennenga (novice)'
+        },
+
+        {
+            id: 24,
+            elo: 1950,
+            heroName: 'Yennenga',
+            heroLink: '/yennenga',
+            heroRange: 'ranged',
+            movement: '2',
+            heroHealth: '15',
+            heroTrait: 'If Yennenga would take damage, you may assign any amount of that damage to one or more Archers in her zone instead. (You may not assign more damage to an Archer than their remaining health.)\n' +
+                '\n' +
+                'Notes\n' +
+                'If damage would be dealt to Yennenga and an Archer at the same time, Yennenga cannot assign damage from herself to that Archer if the Archer would already be defeated by the damage it took. (Yennenga cannot use her ability to make damage disappear.)',
+            origin: 'Marvel',
+            description: "Yennenga",
+            tactics: 'yennenga',
+            heroQuote: '"The three things are: to see beauty in the world and say that it is ugly; to get up in the morning and do what you cannot do; and finally to give free rein to your dreams, because whoever dreams too much becomes a victim of his dreams." ',
+            // style:
+            backgroundColor: '#c9c585',
+            headersBackgroundColor: '#4149bb',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Archers x2',
+            companionRange: 'ranged',
+            companionRoute: 'archers',
+            companionHealth: '2'
+
+        },
+
+        {
+            id: 1024,
+            elo: 1950,
+            heroName: 'Yennenga (experienced)'
+        },
+
+        {
+            id: 125,
+            elo: 1950,
+            heroName: 'Luke Cage (novice)'
+        },
+
+        {
+            id: 25,
+            elo: 1950,
+            heroName: 'Luke Cage',
+            heroLink: '/luke-cage',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '13',
+            heroTrait: 'Luke Cage takes 2 less combat damage from attacks.\n' +
+                '\n' +
+                '(When defending, Luke Cage wins combat if he takes no damage, even if he didn\'t play a card.)\n' +
+                '\n',
+            description: "Luke",
+            tactics: 'Luke',
+            heroQuote: '"I am Luke and i am your son." ',
+            // style:
+            backgroundColor: '#b0ab9a',
+            headersBackgroundColor: 'rgba(236,218,69,0.6)',
+            fontColor: '',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Misty Knight',
+            companionRange: 'ranged',
+            companionRoute: 'misty-knight',
+            companionHealth: '6'
+
+        },
+
+        {
+            id: 1025,
+            elo: 1950,
+            heroName: 'Luke Cage (experienced)'
+        },
+
+        {
+            id: 126,
+            elo: 1950,
+            heroName: 'Ghost Rider(novice)'
+        },
+
+        {
+            id: 26,
+            elo: 1950,
+            heroName: 'Ghost Rider',
+            heroLink: '/ghost-rider',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '17',
+            heroTrait: 'Ghost Rider starts the game with 5 Hellfire. When you maneuver you may spend 1 Hellfire. If you do, increase Ghost Rider\'s move value to 4, and he mave move through opposing fighters. Then deal 1 damage to each opposing fighter he moved through.\n' +
+                '\n' +
+                'Notes\n' +
+                'If you spend a Hellfire to use Ghost Rider\'s ability, your movement value is set to 4, and cannot be increased by BOOSTING your maneuver.\n' +
+                '\n',
+            description: "Luke",
+            tactics: 'Luke',
+            heroQuote: '"I am Luke and i am your son." ',
+            // style:
+            backgroundColor: '#837575',
+            headersBackgroundColor: '#f6643c',
+            fontColor: '',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None',
+
+        },
+
+        {
+            id: 1026,
+            elo: 1950,
+            heroName: 'Ghost Rider (experienced)'
+        },
+
+        {
+            id: 127,
+            elo: 1950,
+            heroName: 'Moon Knight (novice)'
+        },
+
+        {
+            id: 27,
+            elo: 1950,
+            heroName: 'Moon Knight, Khonshu, Mr. Knight',
+            heroLink: '/moon-knight',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '16',
+            heroTrait: 'Moon Knight\n' +
+                'At the start of your turn, move up to 2 spaces.\n' +
+                '\n' +
+                'Khonshu\n' +
+                'Khonshu adds +2 to the value of his attack cards. He does not take damage from effects other than combat damage.\n' +
+                '\n' +
+                'Mr. Knight\n' +
+                'Mr. Knight adds +1 to all his defense values.\n' +
+                '\n' +
+                'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).\n' +
+                '\n' +
+                'Notes\n' +
+                'Start the game as Moon Knight. You must change to your next form at the end of your turn. Moon Knight, Khonshu, and Mr. Knight all share the same health dial.',
+            description: "Moon",
+            tactics: 'Moon',
+            heroQuote: '"Can\'t fight the moonlight." ',
+            // style:
+            backgroundColor: '#bbc8ce',
+            headersBackgroundColor: '#174e8a',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None'
+
+        },
+
+        {
+            id: 1027,
+            elo: 1950,
+            heroName: 'Moon Knight (experienced)'
+        },
+
+        {
+            id: 128,
+            elo: 1950,
+            heroName: 'Daredevil (novice)'
+        },
+
+        {
+            id: 28,
+            elo: 1950,
+            heroName: 'Daredevil',
+            heroLink: '/daredevil',
+            heroRange: 'melee',
+            movement: '3',
+            heroHealth: '17',
+            heroTrait: 'DURING COMBAT: If you have 2 or fewer cards in your hand, you may BLIND BOOST your attack or defense.\n' +
+                '(If you have other DURING COMBAT effects, choose the order.)\n' +
+                '\n' +
+                'Notes\n' +
+                'When you BLIND BOOST, you discard the top card of your deck and add its BOOST value onto the card you played in combat. Daredevil\'s ability cannot be canceled. Follow the normal resolution rules: Defender resolves first.',
+            description: "Moon",
+            tactics: 'Moon',
+            heroQuote: '"Can\'t fight the moonlight." ',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None'
+
+        },
+
+        {
+            id: 1028,
+            elo: 1950,
+            heroName: 'Daredevil (experienced)'
+        },
+
+
+        {
+            id: 129,
+            elo: 1950,
+            heroName: 'Bullseye(novice)'
+        },
+
+        {
+            id: 29,
+            elo: 1950,
+            heroName: 'Bullseye',
+            heroLink: '/bullseye',
+            heroRange: 'ranged',
+            movement: '2',
+            heroHealth: '14',
+
+            heroTrait: 'DURING COMBAT: If you have 2 or fewer cards in your hand, you may BLIND BOOST your attack or defense.\n' +
+                '(If you have other DURING COMBAT effects, choose the order.)\n' +
+                '\n' +
+                'Notes\n' +
+                'When you BLIND BOOST, you discard the top card of your deck and add its BOOST value onto the card you played in combat. Daredevil\'s ability cannot be canceled. Follow the normal resolution rules: Defender resolves first.',
+            description: "Moon",
+            tactics: 'Moon',
+            heroQuote: '"Can\'t fight the moonlight." ',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None'
+
+        },
+
+        {
+            id: 1029,
+            elo: 1950,
+            heroName: 'Bullseye (experienced)'
+        },
+
+        {
+            id: 130,
+            elo: 1950,
+            heroName: 'Electra (novice)'
+        },
+
+        {
+            id: 30,
+            elo: 1950,
+            heroName: 'Electra',
+            heroName2: 'Electra Resurrected',
+            heroLink: '/electra',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '7',
+            heroHealth2: '9',
+            heroTrait: 'The first time Elektra would be defeated, remove her and all Hand from the board. She is not defeated. At the start of your next turn, Resurrect her. (Ignore effects with the RESURRECTED symbol.)\n' +
+                '\n' +
+                'When Elektra Resurrects: Flip your health dial. Shuffle your discard pile into your deck.\n' +
+                '\n' +
+                'Place Elektra and all Hand back onto the board with each fighter in a different zone. (You must resolve effects with the RESURRECTED symbol.)\n' +
+                '\n' +
+                'Notes\n' +
+                'When resurrecting, only your discard pile is shuffled into your deck, not your hand of cards. When placing your fighters after you resurrect, you may place them in zones containing opposing fighters, you just cannot place two of your own fighters in the same zone as each other.',
+            description: "Luke",
+            tactics: 'Luke',
+            heroQuote: '"I am Luke and i am your son." ',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'The Hand x4',
+            companionRange: 'melee',
+            companionRoute: 'the-hand',
+            companionHealth: '1'
+
+        },
+
+        {
+            id: 1030,
+            elo: 1950,
+            heroName: 'Electra(experienced)'
+        },
+
+        {
+            id: 130,
+            elo: 1950,
+            heroName: 'Dr. Sattler (novice)'
+        },
+
+        {
+            id: 30,
+            elo: 1950,
+            heroName: 'Dr. Sattler',
+            heroFullName : 'Dr. Ellie Sattler',
+            heroLink: '/dr-sattler',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '13',
+            heroTrait: 'After Dr. Sattler or Dr. Malcolm move, place an insight token in their new space. You have 5 insight tokens.\n' +
+                '\n' +
+                'Notes\n' +
+                'Whenever either of your fighters moves to a new space, place and insight token in their new space. Tokens may be placed in spaces with other tokens, including other insight tokens.\n' +
+                'There tokens have no effect themselves but any of your cards interact with them. When you remove insight tokens from the board, return them to your supply. You can place them on the board again in the future.\n' +
+                'If you would place an insight token but don\'t have any in your supply, nothing happens..',
+            description: "Luke",
+            tactics: 'Luke',
+            heroQuote: '"Sattler." ',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Dr. Malcolm',
+            companionRange: 'melee',
+            companionRoute: 'malcolm',
+            companionHealth: '7'
+
+        },
+
+        {
+            id: 1030,
+            elo: 1950,
+            heroName: 'Dr. Sattler (experienced)'
+        },
+
+        {
+            id: 130,
+            elo: 1950,
+            heroName: 'T-rex (novice)'
+        },
+
+        {
+            id: 30,
+            elo: 1950,
+            heroName: 'T-rex',
+            heroLink: '/t-rex',
+            heroRange: 'melee',
+            movement: '1',
+            heroHealth: '27',
+            heroTrait: 'Special abilities\n' +
+                'T-Rex is a large fighter. (She can attack up to 2 spaces away.) At the end of your turn, draw a card.\n' +
+                '\n' +
+                'Notes\n' +
+                'Large fighters have an extended base that can occupy up to two spaces. Large fighters may start moving from any space they are in. When they do, rotate them so that the head is moving into the new space. Their tail always follows behind their head, entering the space the left. Large fighters also ignore one-way arrows on maps and cannot use secret passages.\n' +
+                'Large fighters can attack up to 2 spaces away, even over fighters that occupy one of those spaces..',
+            description: "Luke",
+            tactics: 'Luke',
+            heroQuote: '"..." ',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None',
+
+
+        },
+
+        {
+            id: 1030,
+            elo: 1950,
+            heroName: 'T-rex (experienced)'
+        },
+
+        {
+            id: 130,
+            elo: 1950,
+            heroName: 'Houdini (novice)'
+        },
+
+        {
+            id: 30,
+            elo: 1950,
+            heroName: 'Houdini',
+            heroFullName: 'Harry Houdini',
+            heroLink: '/houdini',
+            heroRange: 'melee',
+            movement: '2',
+            heroHealth: '14',
+            heroTrait: 'When you take the maneuver action and BOOST, you may place Houdini in any space instead of moving. (Bess moves as normal.)',
+            description: "Luke",
+            tactics: 'Luke',
+            heroQuote: '"Houdini." ',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'Bess',
+            companionRange: 'melee',
+            companionRoute: 'bess',
+            companionHealth: '5'
+
+        },
+
+        {
+            id: 1030,
+            elo: 1950,
+            heroName: 'Houdini (experienced)'
+        },
+
+
+
+        {
+            id: 130,
+            elo: 1950,
+            heroName: 'The Genie(novice)'
+        },
+
+
+        {
+            id: 30,
+            elo: 1950,
+            heroName: 'The Genie',
+            heroLink: '/genie',
+            heroRange: 'ranged',
+            movement: '3',
+            heroHealth: '16',
+            heroTrait: 'At the start of your turn, you may discard 1 card to gain 1 action.',
+            description: "Genie",
+            tactics: 'Luke',
+            heroQuote: '"If you wanna be with me\n' +
+                'Baby, there\'s a price to pay\n' +
+                'I\'m a genie in a bottle\n' +
+                'You gotta rub me the right way"',
+            // style:
+            backgroundColor: 'lightblue',
+            headersBackgroundColor: '#810181',
+            fontColor: '#e8ccc6',
+            //fan stats:
+            attack: "5",
+            survivability: "2",
+            difficulty: '5',
+            overallPower: '3',
+            // companion:
+            companionName: 'None',
+
+
+        },
+
+        {
+            id: 1030,
+            elo: 1950,
+            heroName: 'The Genie(experienced)'
+        },
+
 
 
         // additional properties to heroes:
@@ -939,17 +1474,27 @@ const heroesArr =
 //            difficulty={el.difficulty} origin={el.origin} tactics={el.tactics}/>))
 
 
-let [, arthur, , , alice, , , medusa, , , sinbad, , , bruceLee ,,, bigfoot, , , robinHood, , ,   ingen, , , raptors, , , dracula, , , invisible, , , jekyll, , , sherlock, , ,  angel, , , buffy , , , spike , , , willow , , , beowulf, , , redHood, , , sattler,, , ,  trex, , , achilles, bloodyMary, sunWukong, yennenga] = heroesArr;
+let [, arthur, , , alice,,,medusa,,,sinbad, , , bruceLee, , , bigfoot, , , robinHood, , , ingen, , , raptors, , , dracula, , , invisible, , , jekyll, , , sherlock, , , buffy, , , angel, , , spike, , , willow, , , beowulf, , , redHood, , , deadpool, , , achilles, , , bloodyMary,,,sunWukong,,,yennenga,,,lukeCage,,,ghostRider,,,moonKnight,,,daredevil,,,bullseye,,,elektra,,,sattler,,,trex,,,houdini,,,genie,,] = heroesArr;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className='wrapper'>
-            <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad} dracula={dracula}
-                 invisible={invisible}
-                 jekyll={jekyll} sherlock={sherlock} bruceLee={bruceLee} beowulf={beowulf} redhood={redHood} bigfoot={bigfoot}
-                 robinhood={robinHood} ingen={ingen} raptors={raptors}
-            angel={angel} buffy={buffy} spike={spike} willow={willow}/>
+            <App heroesArr={heroesArr} arthur={arthur} alice={alice} medusa={medusa} sinbad={sinbad}
+                 bruceLee={bruceLee}
+                 bigfoot={bigfoot} robinHood={robinHood}
+                 ingen={ingen} raptors={raptors}
+                 dracula={dracula} invisible={invisible} jekyll={jekyll} sherlock={sherlock}
+                 angel={angel} buffy={buffy} spike={spike} willow={willow}
+                 beowulf={beowulf} redHood={redHood}
+                 deadpool={deadpool}
+                 achilles={achilles} bloodyMary={bloodyMary} sunWukong={sunWukong} yennenga={yennenga}
+                 lukeCage={lukeCage} ghostRider={ghostRider} moonKnight={moonKnight}
+                 daredevil={daredevil} bullseye={bullseye} elektra={elektra}
+                 sattler={sattler} trex={trex}
+                 houdini={houdini} genie={genie}
+
+            />
         </div>
 
     </BrowserRouter>

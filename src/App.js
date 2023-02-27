@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import {NavLink, Route, Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import OddsCalculatorPage from "./components/OddsCalculator/OddsCalculatorPage";
 import Arthur from "./components/Heroes/BattleOfLegends/Arthur";
 import Alice from "./components/Heroes/BattleOfLegends/Alice";
@@ -13,8 +13,8 @@ import Sherlock from "./components/Heroes/CobbleAndFog/Sherlock";
 import Jekyll from "./components/Heroes/CobbleAndFog/Jekyll";
 import RobinHood from "./components/Heroes/RobinAndBigFoot/RobinHood";
 import Bigfoot from "./components/Heroes/RobinAndBigFoot/Bigfoot";
-import RedHood from "./components/Heroes/RedHoodBeowulf/RedHood";
-import Beowulf from "./components/Heroes/RedHoodBeowulf/Beowulf";
+import RedHood from "./components/Heroes/BeowulfRedHood/RedHood";
+import Beowulf from "./components/Heroes/BeowulfRedHood/Beowulf";
 import HeroGeneratorPage from "./components/HeroGenerator/HeroGeneratorPage";
 import {useState} from "react";
 import AboutPage from "./components/AboutPage/AboutPage";
@@ -31,6 +31,23 @@ import Angel from "./components/Heroes/Buffy/Angel";
 import Spike from "./components/Heroes/Buffy/Spike";
 import Willow from "./components/Heroes/Buffy/Willow";
 import Buffy from "./components/Heroes/Buffy/Buffy";
+import Deadpool from "./components/Heroes/Deadpool/Deadpool";
+import LukeCage from "./components/Heroes/MarvelRedemptionRow/LukeCage";
+import GhostRider from "./components/Heroes/MarvelRedemptionRow/GhostRider";
+import MoonKnight from "./components/Heroes/MarvelRedemptionRow/MoonKnight";
+import Daredevil from "./components/Heroes/MarvelHellsKitchen/Daredevil";
+import Bullseye from "./components/Heroes/MarvelHellsKitchen/Bullseye";
+import Elektra from "./components/Heroes/MarvelHellsKitchen/Elektra";
+import Sattler from "./components/Heroes/SattlerTrex/Sattler";
+import Trex from "./components/Heroes/SattlerTrex/Trex";
+import Houdini from "./components/Heroes/HoudiniAndGenie/Houdini";
+import Genie from "./components/Heroes/HoudiniAndGenie/Genie";
+import BlackPanther from "./components/Heroes/MarvelForKingAndCountry/BlackPanther";
+import BlackWidow from "./components/Heroes/MarvelForKingAndCountry/BlackWidow";
+import WinterSoldier from "./components/Heroes/MarvelForKingAndCountry/WinterSoldier";
+import MsMarvel from "./components/Heroes/MarvelTeenSpirit/MsMarvel";
+import SquirrelGirl from "./components/Heroes/MarvelTeenSpirit/SquirrelGirl";
+import CloakAndDagger from "./components/Heroes/MarvelTeenSpirit/CloakAndDagger";
 
 
 function App(props) {
@@ -80,7 +97,7 @@ function App(props) {
                         <Route path='/sherlock' element={  <Sherlock state={props.sherlock}/>}/>
                         <Route path='/jekyll' element={  <Jekyll state={props.jekyll}/>}/>
                         {/*Robin and Bigfoot:*/}
-                        <Route path='/robin-hood' element={  <RobinHood state={props.robinhood}/>}/>
+                        <Route path='/robin-hood' element={  <RobinHood state={props.robinHood}/>}/>
                         <Route path='/bigfoot' element={  <Bigfoot state={props.bigfoot}/>}/>
                         {/*Buffy*/}
                         <Route path='/angel' element={  <Angel state={props.angel}/>}/>
@@ -89,12 +106,36 @@ function App(props) {
                         <Route path='/willow' element={  <Willow state={props.willow}/>}/>
                         {/*Beowulf and Red Hood*/}
                         <Route path='/beowulf' element={  <Beowulf state={props.beowulf}/>}/>
-                        <Route path='/redhood' element={  <RedHood state={props.redhood}/>}/>
+                        <Route path='/red-hood' element={  <RedHood state={props.redHood}/>}/>
+                        {/*Deadpool*/}
+                        <Route path='/deadpool' element={  <Deadpool state={props.deadpool}/>}/>
                         {/*Battle of Legends vol.2*/}
                         <Route path='/achilles' element={  <Achilles state={props.achilles}/>}/>
                         <Route path='/bloody-mary' element={  <BloodyMary state={props.bloodyMary}/>}/>
-                        <Route path='/yennenga' element={  <SunWukong state={props.sunWukong}/>}/>
-                        <Route path='/sun-wukong' element={  <Yennenga state={props.yennenga}/>}/>
+                        <Route path='/sun-wukong' element={  <SunWukong state={props.sunWukong}/>}/>
+                        <Route path='/yennenga' element={  <Yennenga state={props.yennenga}/>}/>
+                        {/*Redemption row*/}
+                        <Route path='/luke-cage' element={  <LukeCage state={props.lukeCage}/>}/>
+                        <Route path='/ghost-rider' element={  <GhostRider state={props.ghostRider}/>}/>
+                        <Route path='/moon-knight' element={  <MoonKnight state={props.moonKnight}/>}/>
+                        {/*Hell's kitchen*/}
+                        <Route path='/daredevil' element={  <Daredevil state={props.daredevil}/>}/>
+                        <Route path='/bullseye' element={  <Bullseye state={props.bullseye}/>}/>
+                        <Route path='/elektra' element={  <Elektra state={props.elektra}/>}/>
+                        {/*Dr Sattler vs T-rex*/}
+                        <Route path='/sattler' element={  <Sattler state={props.sattler}/>}/>
+                        <Route path='/t-rex' element={  <Trex state={props.trex}/>}/>
+                    {/*    Houdini vs the Genie*/}
+                        <Route path='/houdini' element={  <Houdini state={props.houdini}/>}/>
+                        <Route path='/genie' element={  <Genie state={props.genie}/>}/>
+                        {/*For king and country*/}
+                        <Route path='/black-panther' element={  <BlackPanther state={props.blackPanther}/>}/>
+                        <Route path='/black-widow' element={  <BlackWidow state={props.blackWidow}/>}/>
+                        <Route path='/winter-soldier' element={<WinterSoldier state={props.winterSoldier}/>}/>
+                        {/*Teen spirit*/}
+                        <Route path='/ms-marvel' element={  <MsMarvel state={props.msMarvel}/>}/>
+                        <Route path='/squirrel-girl' element={  <SquirrelGirl state={props.squirrelGirl}/>}/>
+                        <Route path='/cloak-and-dagger' element={  <CloakAndDagger state={props.cloakAndDagger}/>}/>
 
                     {/*    Companions:*/}
                         <Route path='/merlin' element={  <Merlin state={props.arthur}/>}/>

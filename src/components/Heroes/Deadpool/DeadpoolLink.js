@@ -11,7 +11,7 @@ const DeadpoolHeroes = (props) => {
     </div>
 }
 
-const Deadpool = (props) => {
+const DeadpoolExpansion = (props) => {
     const [show, setShow] = useState(false)
     return (<div>
         <button onClick={() => setShow(!show)}>Deadpool</button>
@@ -20,4 +20,4 @@ const Deadpool = (props) => {
     </div>)
 }
 
-export default Deadpool
+export default DeadpoolExpansion
