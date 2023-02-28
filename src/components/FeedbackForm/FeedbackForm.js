@@ -5,7 +5,7 @@ import s from './FeedbackForm.module.css'
 function ContactForm() {
     const [state, handleSubmit] = useForm("xlekngwa");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return <p>Thanks for your message!</p>;
     }
     return (
 
