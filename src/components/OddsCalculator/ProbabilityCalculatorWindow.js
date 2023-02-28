@@ -352,9 +352,7 @@ const EloProbability = (props) => {
         }
 
         else
-
             // calculator fo probability based on elo rating
-
             return Math.floor(
                 ((1.0 * 1.0) /
                     (1 + 1.0 * Math.pow(10, (1.0 * (rating1 - rating2)) / 400))) *
@@ -362,8 +360,7 @@ const EloProbability = (props) => {
             );
     }
 
-// otherwise when no value, instead of nothing, outputs NaN
-
+//before this  when no value, instead of nothing, output NaN
     let result = probability(props.heroTwo, props.heroOne);
     if (isNaN(result)) {
         result = ""

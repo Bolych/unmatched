@@ -1,5 +1,3 @@
-
-
 import React, {useState} from "react";
 
 import {useNavigate} from "react-router";
@@ -12,7 +10,8 @@ import ImageSlider from "../../ImagesSlider/ImagesSlider";
 //hero images
 import avatar from '../../../images/heroes/marvel-hells-kitchen/daredevil/daredevil-images/daredevil-movie.webp'
 import image1 from '../../../images/heroes/marvel-hells-kitchen/daredevil/daredevil-images/daredevil-comics.webp'
-import image2 from '../../../images/heroes/marvel-hells-kitchen/daredevil/daredevil-images/hells-kitchen-minifigures.webp'
+import image2
+    from '../../../images/heroes/marvel-hells-kitchen/daredevil/daredevil-images/hells-kitchen-minifigures.webp'
 
 const Daredevil = ({state}) => {
     const [showCards, setShowCards] = useState(false)
@@ -76,12 +75,14 @@ const Daredevil = ({state}) => {
                 <div className={s.leftSidePartTwo}>
                     <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Tier:</span> {state.tier}</p>
-                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
+
                 </div>
 
                 <div className={s.rightSide}>
                     <div className={s.imageSlider}>
-                        <ImageSlider   headersBackground={headersBackground} imgUrls={imgUrls}/>
+                        <ImageSlider headersBackground={headersBackground} imgUrls={imgUrls}/>
                     </div>
 
                     <div>

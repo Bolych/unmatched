@@ -13,8 +13,16 @@
     justify-content: center;
 }
 
+
 .header {
     background-color: #d8b56b;
     display: flex;
     justify-content: center;
+}
+
+.headerEmpty {
+    margin: 2em 0;
+    height: 0.8em;
+    background-color: #d8b56b;
+    display: block;
 }

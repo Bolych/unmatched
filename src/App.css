@@ -6,9 +6,7 @@
 "n c";
     grid-template-rows: auto;
     grid-template-columns: 1fr 10fr;
-
 }
-
 
 .header {
     background-image: url("https://restorationgames.com/wp-content/uploads/2020/11/Unmatched-Banner-V2.png");
@@ -20,15 +18,14 @@
     z-index: 1;
 }
 
+.main-content {
+height: 100%;
+}
 
 .navbar {
     background-color: #111924;
     grid-area: n;
     z-index: 1;
-}
-
-.main-content {
-height: 100%;
 }
 
 .cards-wrapper {
@@ -39,26 +36,21 @@ height: 100%;
     display: block;
 }
 
-/*Scrollbar*/
+/*Custom scrollbar*/
 
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-
-/* Track */
 ::-webkit-scrollbar-track {
     height: 100px;
     background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
-
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -79,6 +71,7 @@ position: relative;
     }
 
 
+    /*Make header smaller on smaller screens*/
     .header{
         position: fixed;
         top: 0;
@@ -86,25 +79,18 @@ position: relative;
         height: 45px;
     }
 
-    .zoomable-image {
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-    }
 
-    .zoomable-image.zoomed {
-        transform: scale(2);
-    }
-
+    /*Make navbar collapsing left on small screens*/
     .navbar {
 height: 100%;
         position: fixed;
         top: 22px;
-        transform: translateX(0em); /* the element is returned to where it's supposed to be */
+        transform: translateX(0em);
         transition: transform 0.25s ease-in-out;
     }
 
     .navbar.active {
-        transform: translateX(-15em); /* the element is transposed 300px to the left of where it's supposed to be */
+        transform: translateX(-15em);
         transition: transform 0.25s ease-in-out;
     }
 

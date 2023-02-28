@@ -1,5 +1,3 @@
-
-
 import React, {useState} from "react";
 
 import {useNavigate} from "react-router";
@@ -14,7 +12,8 @@ import card4 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood
 import card5 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/once-upon-a-time.png'
 import card6 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/stones-in-the-belly.png'
 import card7 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/the-wolf-s-skin.png'
-import card8 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/what-a-terrible-big-mouth-you-have.png'
+import card8
+    from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/what-a-terrible-big-mouth-you-have.png'
 import card9 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/what-big-ears-you-have.png'
 import card10 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/what-big-eyes-you-have.png'
 import card11 from '../../../images/heroes/beowulf-and-red-hood/red-hood/red-hood-deck/what-large-hands-you-have.png'
@@ -88,12 +87,14 @@ const RedHood = ({state}) => {
                 <div className={s.leftSidePartTwo}>
                     <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Tier:</span> {state.tier}</p>
-                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
+
                 </div>
 
                 <div className={s.rightSide}>
                     <div className={s.imageSlider}>
-                        <ImageSlider   headersBackground={headersBackground} imgUrls={imgUrls}/>
+                        <ImageSlider headersBackground={headersBackground} imgUrls={imgUrls}/>
                     </div>
 
                     <div>

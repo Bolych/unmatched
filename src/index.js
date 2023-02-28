@@ -25,10 +25,10 @@ const heroesArr =
             heroTrait: 'When King Arthur attacks, you may BOOST that attack. Play the BOOST card, face down, along with your attack card.\n' +
                 'If your opponent cancels the effects on your attack card, the BOOST is discarded without effect. ',
             origin: 'Novel "King Arthur and knights of the Round Table". Author: Thomas Melory. ',
-            description: "King Arthur is a legendary British leader who, according to medieval histories and romances, led the defence of Britain against Saxon invaders in the late 5th and early 6th centuries AD. " +
+            description: "  King Arthur is a legendary British leader who, according to medieval histories and romances, led the defence of Britain against Saxon invaders in the late 5th and early 6th centuries AD. " +
                 "The details of Arthur's story are mainly composed of folklore and literary invention, and his historical existence is debated and disputed by modern historians.\n  However, the legend of King Arthur has endured for centuries and has become an important part of British and world mythology. " +
                 "According to the legends, Arthur was born to King Uther Pendragon and Igraine, and was raised in secret by the wizard Merlin. He later pulled the sword Excalibur from a stone, proving his right to rule as king. " +
-                "\n   With the help of his Knights of the Round Table, Arthur fought and defeated many enemies, including the Saxon invaders and his traitorous nephew Mordred, but he himself was mortally wounded at the hands of the latter. The dying king was taken by boat to the Isle of Avalon. According to legend, Arthur slumbers on Avalon, waiting for the day of great need, when he will rise from his sleep to save Britain.",
+                "\n  With the help of his Knights of the Round Table, Arthur fought and defeated many enemies, including the Saxon invaders and his traitorous nephew Mordred, but he himself was mortally wounded at the hands of the latter. The dying king was taken by boat to the Isle of Avalon. According to legend, Arthur slumbers on Avalon, waiting for the day of great need, when he will rise from his sleep to save Britain.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
 

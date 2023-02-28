@@ -1,6 +1,3 @@
-
-
-
 import React, {useState} from "react";
 
 import {useNavigate} from "react-router";
@@ -91,12 +88,13 @@ const Achilles = ({state}) => {
                 <div className={s.leftSidePartTwo}>
                     <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Tier:</span> {state.tier}</p>
-                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
+                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
                 </div>
 
                 <div className={s.rightSide}>
                     <div className={s.imageSlider}>
-                        <ImageSlider   headersBackground={headersBackground} imgUrls={imgUrls}/>
+                        <ImageSlider headersBackground={headersBackground} imgUrls={imgUrls}/>
                     </div>
 
                     <div>

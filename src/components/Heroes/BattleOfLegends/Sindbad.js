@@ -1,4 +1,3 @@
-
 import React, {useState} from "react";
 
 import {useNavigate} from "react-router";
@@ -16,12 +15,18 @@ import card7 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck
 import card8 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/riches-beyond-compare.png'
 import card9 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/toil-and-danger.png'
 import card10 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-home.png'
-import card11 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-cannibals-with-the-root-of-madness.png'
-import card12 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-city-of-the-king-of-serendib.png'
-import card13 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-city-of-the-man-eating-apes.png'
-import card14 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-creature-with-eyes-like-coals-of-fire.png'
-import card15 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-island-that-was-a-whale.png'
-import card16 from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-valley-of-the-giant-snakes.png'
+import card11
+    from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-cannibals-with-the-root-of-madness.png'
+import card12
+    from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-city-of-the-king-of-serendib.png'
+import card13
+    from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-city-of-the-man-eating-apes.png'
+import card14
+    from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-creature-with-eyes-like-coals-of-fire.png'
+import card15
+    from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-island-that-was-a-whale.png'
+import card16
+    from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-deck/voyage-to-the-valley-of-the-giant-snakes.png'
 
 //hero images
 import avatar from '../../../images/heroes/battleOfLegendsVol1/sinbad/sinbad-images/sinbad-in-sea.jpg'
@@ -80,7 +85,7 @@ const Sinbad = ({state}) => {
                 <div className={s.leftSidePartTwo}>
                     <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Tier:</span> {state.tier}</p>
-                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
                     <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
 
                 </div>

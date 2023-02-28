@@ -54,10 +54,10 @@ function App(props) {
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
+    // making sidebar collapsing and going to top after closing
     const handleToggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     }
-
     function closeNavbar() {
         setIsSidebarOpen(true);
         window.scrollTo({ top: 0, behavior: 'smooth'})
@@ -74,7 +74,6 @@ function App(props) {
 
                 <div className='main-content'>
                     <Routes>
-
                         <Route exact path='/' element={<AboutPage/>}/>
                         <Route path=' ' element={<AboutPage/>}/>
                         {/*{heroesList}*/}
@@ -139,13 +138,9 @@ function App(props) {
 
                     {/*    Companions:*/}
                         <Route path='/merlin' element={  <Merlin state={props.arthur}/>}/>
-
-
-
                     </Routes>
                 </div>
             </div>
-
     );
 }
 

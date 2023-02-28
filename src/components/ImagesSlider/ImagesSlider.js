@@ -1,5 +1,4 @@
 import s from './ImagesSlider.module.css'
-
 import React, {useState} from "react";
 
 
@@ -16,17 +15,16 @@ function ImageSlide(props) {
     };
 
     return (
-        <div className={s['zoomable-modal-image']}>
+        <div>
             <img className={s.zoomableImage}
                  onClick={handleImageClick}
                  src={props.url} alt="none"/>
             {isZoomed && (
-                <div onClick={handleClose} className={s['modal']}>
-
-          <span className={s['close-button']} onClick={handleModalClose}>
+                <div onClick={handleClose} className={s.modal}>
+          <span className={s.closeButton} onClick={handleModalClose}>
             &times;
           </span>
-                    <img className={s['modal-image']} src={props.url} alt='none'/>
+                    <img src={props.url} alt='none'/>
                 </div>
             )}
         </div>
@@ -38,7 +36,6 @@ function ImageSlider(props) {
     const nextSlide = () => {
         setCurrentSlide(currentSlide === props.imgUrls.length - 1 ? 0 : currentSlide + 1);
     };
-
     const prevSlide = () => {
         setCurrentSlide(currentSlide === 0 ? props.imgUrls.length - 1 : currentSlide - 1);
     };

@@ -55,29 +55,27 @@ const Medusa = ({state}) => {
             <div className={s.wrapper}>
                 <div className={s.middleSide}>
                     <p className={s.firstWord}>Companion:</p>
-                    <p><span className={s.firstWord}> Name:</span> {state.companionName}</p>
-                    <p><span className={s.firstWord}> Range:</span> {state.companionRange}</p>
-                    <p><span className={s.firstWord}> Start health:</span> {state.companionHealth}</p>
+                    <p><span className={s.firstWord}>Name:</span> {state.companionName}</p>
+                    <p><span className={s.firstWord}>Range:</span> {state.companionRange}</p>
+                    <p><span className={s.firstWord}>Start health:</span> {state.companionHealth}</p>
 
                     {/*Companion button will be later*/}
-
                     {/*<button className={s.companionButton} onClick={handleClick}>More about companion*/}
                     {/*</button>*/}
                 </div>
 
                 <div className={s.leftSidePartOne}>
-                    <p><span className={s.firstWord}> Name:</span> {state.heroName}</p>
-                    <p><span className={s.firstWord}> Range:</span> {state.heroRange}</p>
-                    <p><span className={s.firstWord}> Start health:</span> {state.heroHealth}</p>
-                    <p><span className={s.firstWord}> Movement:</span> {state.movement}</p>
+                    <p><span className={s.firstWord}>Name:</span> {state.heroName}</p>
+                    <p><span className={s.firstWord}>Range:</span> {state.heroRange}</p>
+                    <p><span className={s.firstWord}>Start health:</span> {state.heroHealth}</p>
+                    <p><span className={s.firstWord}>Movement:</span> {state.movement}</p>
                     <p><span className={s.firstWord}>Origin:</span> {state.origin}</p>
                 </div>
                 <div className={s.leftSidePartTwo}>
                     <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Tier:</span> {state.tier}</p>
-                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
                     <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
-
                 </div>
 
                 <div className={s.rightSide}>

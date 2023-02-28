@@ -28,27 +28,31 @@ import {useNavigate} from "react-router";
 import ImageSlider from "../../ImagesSlider/ImagesSlider";
 
 
-
-
 const Arthur = ({state}) => {
     const [showCards, setShowCards] = useState(false)
+
+    // After opening deck scroll down. Doesn't work. Maybe later will do it another way
     const handleToggleCards = () => {
         setShowCards(!showCards);
         window.scrollTo({top: 50000, behavior: 'smooth'})
     }
 
+    // hero images to pass to images carousel
     let imgUrls = [avatar, image1, image2]
 
+
+    // unique styles based on properties of hero that passed via props
     const myStyleBackground = {
         backgroundColor: state.backgroundColor,
         height: '100%'
     };
-
     const headersBackground = {
         backgroundColor: state.headersBackgroundColor,
         color: state.fontColor
     }
 
+
+    // Maybe i will add later separate companion's page
     const navigate = useNavigate()
 
     function handleClick() {
@@ -66,13 +70,10 @@ const Arthur = ({state}) => {
                     <p><span className={s.firstWord}>Name:</span> {state.companionName}</p>
                     <p><span className={s.firstWord}>Range:</span> {state.companionRange}</p>
                     <p><span className={s.firstWord}>Start health:</span> {state.companionHealth}</p>
-
                     {/*Companion button will be later*/}
-
                     {/*<button className={s.companionButton} onClick={handleClick}>More about companion*/}
                     {/*</button>*/}
                 </div>
-
                 {/*left and right gaps for big displays*/}
                 <div className={s.leftSideGap}>
                     {/*<img src="" alt=""></img>*/}
@@ -80,7 +81,6 @@ const Arthur = ({state}) => {
                 <div className={s.rightSideGap}>
                     {/*<img src="" alt=""></img>*/}
                 </div>
-
 
                 <div className={s.leftSidePartOne}>
                     <p><span className={s.firstWord}>Name:</span> {state.heroName}</p>
@@ -92,14 +92,13 @@ const Arthur = ({state}) => {
                 <div className={s.leftSidePartTwo}>
                     <div style={headersBackground} className={s.fanStatsHeader}><h3>Non official stats:</h3></div>
                     <p><span className={s.firstWord}>Tier:</span> {state.tier}</p>
-                    <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
+                    <p><span className={s.firstWord}>Difficulty:</span> {state.difficulty}</p>
                     <p><span className={s.firstWord}>Overall power:</span> {state.overallPower}</p>
-
                 </div>
 
                 <div className={s.rightSide}>
                     <div className={s.imageSlider}>
-                        <ImageSlider   headersBackground={headersBackground} imgUrls={imgUrls}/>
+                        <ImageSlider headersBackground={headersBackground} imgUrls={imgUrls}/>
                     </div>
 
                     <div>
@@ -125,6 +124,8 @@ const Arthur = ({state}) => {
 
             <div>
                 <div style={headersBackground}>
+
+                    {/*Cards place:*/}
                     <h2>Hero's cards</h2>
                 </div>
                 <div className={s.showCardsButton} onClick={handleToggleCards}>
@@ -133,7 +134,6 @@ const Arthur = ({state}) => {
             </div>
             <br/>
             <div className={`cards-wrapper ${showCards ? 'active' : ''}`}>
-
                 <div className={s.cards}>
                     <img src={card1} alt="none"/>
                     <img src={card2} alt="none"/>
