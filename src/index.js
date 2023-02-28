@@ -18,18 +18,22 @@ const heroesArr =
             heroName: 'Arthur',
             heroLink: '/arthur',
             heroRange: 'melee',
-            attack: "6-8",
+
             movement: '2',
             heroHealth: '18',
-            survivability: "8",
-            difficulty: '3',
-            overallPower: '6',
+
             heroTrait: 'When King Arthur attacks, you may BOOST that attack. Play the BOOST card, face down, along with your attack card.\n' +
                 'If your opponent cancels the effects on your attack card, the BOOST is discarded without effect. ',
             origin: 'Novel "King Arthur and knights of the Round Table". Author: Thomas Melory. ',
             description: "King Arthur is a legendary British leader who, according to medieval histories and romances, led the defence of Britain against Saxon invaders in the late 5th and early 6th centuries AD. The details of Arthur's story are mainly composed of folklore and literary invention, and his historical existence is debated and disputed by modern historians.\n  However, the legend of King Arthur has endured for centuries and has become an important part of British and world mythology. According to the legends, Arthur was born to King Uther Pendragon and Igraine, and was raised in secret by the wizard Merlin. He later pulled the sword Excalibur from a stone, proving his right to rule as king. With the help of his knights of the Round Table, Arthur fought and defeated many enemies, including the Saxon invaders and his own traitorous nephew Mordred.\n  Despite his many successes, Arthur was eventually mortally wounded in battle and taken to the mystical island of Avalon, where he is said to rest until the day he will return to save Britain once again.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
+
+           // fan stats:
+            difficulty: '3',
+            tier: 'D',
+            overallPower: '6',
+
             // style:
             backgroundColor: '#e8ccc6',
             headersBackgroundColor: '#d8b56b',
@@ -73,9 +77,8 @@ const heroesArr =
             headersBackgroundColor: '#810181',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "7-9",
-            survivability: "5",
             difficulty: '7',
+            tier: 'B',
             overallPower: '7',
             // companion:
             companionName: 'The Jabberwock',
@@ -114,10 +117,9 @@ const heroesArr =
             headersBackgroundColor: '#3D5169',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "8",
-            survivability: "6",
             difficulty: '2',
             overallPower: '9,5',
+            tier: 'S',
             // companion:
             companionName: 'Harpies x3)',
             companionRange: 'melee',
@@ -159,10 +161,9 @@ const heroesArr =
             fontColor: '#e8ccc6',
 
             //fan stats:
-            attack: "4 (at the beginning) - 9 (endgame)",
-            survivability: "7",
             difficulty: '5',
-            overallPower: '8',
+            overallPower: '6,8',
+            tier: 'B',
             // companion:
             companionName: 'The Porter',
             companionRange: 'melee',
@@ -202,10 +203,9 @@ const heroesArr =
             fontColor: '#e8ccc6',
 
             //fan stats:
-            attack: "8,5",
-            survivability: "5",
-            difficulty: '7',
-            overallPower: '7',
+            difficulty: '5',
+            overallPower: '6,3',
+            tier: 'C',
             // companion:
             companionName: 'None',
 
@@ -242,10 +242,9 @@ const heroesArr =
             headersBackgroundColor: '#A23921',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "8",
-            survivability: "6",
             difficulty: '3',
             overallPower: '8,5',
+            tier: 'S',
             // companion:
             companionName: 'The Jackalope',
             companionRange: 'melee',
@@ -283,10 +282,9 @@ const heroesArr =
             headersBackgroundColor: '#698552',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "7",
-            survivability: "5",
             difficulty: '6',
-            overallPower: '6,5',
+            overallPower: '6',
+            tier: 'C',
             // companion:
             companionName: 'Outlaws x4',
             companionRange: 'melee',
@@ -296,7 +294,7 @@ const heroesArr =
 
         {
             id: 1007,
-            elo: 2140,
+            elo: 2141,
             heroName: 'Robin Hood(experienced)'
         },
 
@@ -325,10 +323,9 @@ const heroesArr =
             headersBackgroundColor: '#7c4937',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "7-9",
-            survivability: "5",
             difficulty: '7',
-            overallPower: '6',
+            overallPower: '7',
+            tier: 'B',
             // companion:
             companionName: 'Ingen workers x3',
             companionRange: 'ranged',
@@ -367,10 +364,9 @@ const heroesArr =
             headersBackgroundColor: '#77CA55',
             fontColor: '',
             //fan stats:
-            attack: "7-9",
-            survivability: "5",
-            difficulty: '7',
-            overallPower: '7,5',
+            difficulty: '5',
+            overallPower: '6,5',
+            tier: 'C',
             // companion:
 
         },
@@ -404,10 +400,9 @@ const heroesArr =
             fontColor: '#e8ccc6',
 
             //fan stats:
-            attack: "8,5",
-            survivability: "4",
             difficulty: '7',
             overallPower: '7',
+            tier: 'A',
             // companion:
             companionName: 'The sisters x3',
             companionRange: 'melee',
@@ -451,10 +446,9 @@ const heroesArr =
             fontColor: '#e8ccc6',
 
             //fan stats:
-            attack: "4",
-            survivability: "5 (9 if you don't want to fight) ",
             difficulty: '8',
             overallPower: '5',
+            tier: 'D',
             // companion:
             companionName: 'None',
 
@@ -491,10 +485,9 @@ const heroesArr =
             fontColor: '#e8ccc6',
 
             //fan stats:
-            attack: "8",
-            survivability: "5",
-            difficulty: '8',
-            overallPower: '6',
+            difficulty: '7',
+            overallPower: '5',
+            tier: 'E',
             // companion:
             companionName: 'None',
 
@@ -531,10 +524,9 @@ const heroesArr =
             fontColor: '',
 
             //fan stats:
-            attack: "7",
-            survivability: "7",
-            difficulty: '5',
+            difficulty: '8',
             overallPower: '9',
+            tier: 'S',
             // companion:
             companionName: 'Dr. Watson',
             companionRange: 'melee',
@@ -545,7 +537,7 @@ const heroesArr =
 
         {
             id: 1013,
-            elo: 2090,
+            elo: 2290,
             heroName: 'Sherlock(experienced)'
         },
 
@@ -573,10 +565,9 @@ const heroesArr =
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "5",
             difficulty: '5',
-            overallPower: '3',
+            overallPower: '5',
+            tier: 'D',
             // companion:
             companionName: 'Giles or Xander',
             companionRange: 'melee',
@@ -615,10 +606,9 @@ const heroesArr =
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "5",
             difficulty: '5',
-            overallPower: '3',
+            overallPower: '4',
+            tier: 'E',
             // companion:
             companionName: 'Faith',
             companionRange: 'melee',
@@ -657,10 +647,9 @@ const heroesArr =
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "5",
             difficulty: '5',
             overallPower: '4',
+            tier: 'E',
             // companion:
             companionName: 'Drusila',
             companionRange: 'melee',
@@ -700,10 +689,9 @@ const heroesArr =
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "5",
-            difficulty: '5',
-            overallPower: '3',
+            difficulty: '5,5',
+            overallPower: '4,5',
+            tier: 'E',
             // companion:
             companionName: 'Tara',
             companionRange: 'ranged',
@@ -744,10 +732,9 @@ const heroesArr =
             headersBackgroundColor: '#d8b56b',
             fontColor: '',
             //fan stats:
-            attack: "5",
-            survivability: "5",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'B',
+            difficulty: '6',
+            overallPower: '7',
             // companion:
             companionName: 'Wiglaf',
             companionRange: 'melee',
@@ -786,10 +773,9 @@ const heroesArr =
             headersBackgroundColor: '#56091f',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "5",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'A',
+            difficulty: '8,5',
+            overallPower: '7,5',
             // companion:
             companionName: 'Huntsman',
             companionRange: 'ranged',
@@ -799,7 +785,7 @@ const heroesArr =
 
         {
             id: 1019,
-            elo: 2225,
+            elo: 2226,
             heroName: 'Little Red Riding Hood (experienced)'
         },
 
@@ -829,10 +815,9 @@ const heroesArr =
             headersBackgroundColor: '#100202',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'E',
+            difficulty: '6',
+            overallPower: '4',
             // companion:
             companionName: 'None',
 
@@ -869,10 +854,9 @@ const heroesArr =
             headersBackgroundColor: '#593010',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'A',
+            difficulty: '5,5',
+            overallPower: '7,8',
             // companion:
             companionName: 'Patroclus',
             companionRange: 'melee',
@@ -910,10 +894,9 @@ const heroesArr =
             headersBackgroundColor: '#770b24',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'D',
+            difficulty: '6',
+            overallPower: '5,5',
             // companion:
             companionName: 'None',
         },
@@ -949,10 +932,9 @@ const heroesArr =
             headersBackgroundColor: '#8a0e1e',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'A',
+            difficulty: '7',
+            overallPower: '8',
             // companion:
             companionName: 'Clones x3',
             companionRange: 'melee',
@@ -994,10 +976,9 @@ const heroesArr =
             headersBackgroundColor: '#4149bb',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'S',
+            difficulty: '9',
+            overallPower: '8,5',
             // companion:
             companionName: 'Archers x2',
             companionRange: 'ranged',
@@ -1038,10 +1019,9 @@ const heroesArr =
             headersBackgroundColor: 'rgba(236,218,69,0.6)',
             fontColor: '',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'A',
+            difficulty: '6,5',
+            overallPower: '7,5',
             // companion:
             companionName: 'Misty Knight',
             companionRange: 'ranged',
@@ -1083,10 +1063,9 @@ const heroesArr =
             headersBackgroundColor: '#f6643c',
             fontColor: '',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'C',
+            difficulty: '6',
+            overallPower: '6,5',
             // companion:
             companionName: 'None',
 
@@ -1132,10 +1111,9 @@ const heroesArr =
             headersBackgroundColor: '#174e8a',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'B',
+            difficulty: '7',
+            overallPower: '7',
             // companion:
             companionName: 'None'
 
@@ -1174,10 +1152,9 @@ const heroesArr =
             headersBackgroundColor: '#af0d0d',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'A',
+            difficulty: '9',
+            overallPower: '8',
             // companion:
             companionName: 'None'
 
@@ -1218,10 +1195,9 @@ const heroesArr =
             headersBackgroundColor: '#212e9a',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'C',
+            difficulty: '7',
+            overallPower: '6,5',
             // companion:
             companionName: 'None'
 
@@ -1262,9 +1238,8 @@ const heroesArr =
             headersBackgroundColor: '#91111c',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "7",
-            survivability: "9",
-            difficulty: '6',
+            tier: 'S',
+            difficulty: '7,5',
             overallPower: '9,5',
             // companion:
             companionName: 'The Hand x4',
@@ -1309,10 +1284,9 @@ const heroesArr =
             headersBackgroundColor: '#a93e6b',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
+            tier: 'C',
             difficulty: '5',
-            overallPower: '3',
+            overallPower: '6,8',
             // companion:
             companionName: 'Dr. Malcolm',
             companionRange: 'melee',
@@ -1355,10 +1329,9 @@ const heroesArr =
             headersBackgroundColor: '#524e4e',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'S',
+            difficulty: '4',
+            overallPower: '8,3',
             // companion:
             companionName: 'None',
 
@@ -1395,10 +1368,9 @@ const heroesArr =
             headersBackgroundColor: '#304b1e',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'B',
+            difficulty: '8',
+            overallPower: '7',
             // companion:
             companionName: 'Bess',
             companionRange: 'melee',
@@ -1441,14 +1413,11 @@ const heroesArr =
             headersBackgroundColor: '#810181',
             fontColor: '#e8ccc6',
             //fan stats:
-            attack: "5",
-            survivability: "2",
-            difficulty: '5',
-            overallPower: '3',
+            tier: 'B',
+            difficulty: '8',
+            overallPower: '7',
             // companion:
             companionName: 'None',
-
-
         },
 
         {

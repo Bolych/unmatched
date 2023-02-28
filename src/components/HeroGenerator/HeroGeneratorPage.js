@@ -5,31 +5,9 @@ import HeroesWindow from "./HeroesOfExpansionsList/HeroesWindow";
 import ResetButton from "./ResetButton/ResetButton";
 
 import s from './HeroGenerator.module.css'
-import {NavLink} from "react-router-dom";
 import {useNavigate} from "react-router";
 
-
-
-// const battleOfLegendsHeroes = [
-//     {name: 'Alice', link: '/alice'},
-//     {name: 'Arthur', link: '/arthur'},
-//     {name: 'Medusa', link: '/medusa'},
-//     {name: 'Sinbad', link: '/sinbad'}
-// ]
-// const cobbleAndFogHeroes = [
-//     {name: 'Dracula', link: '/dracula'},
-//     {name: 'Jackile', link: '/jackile'},
-//     {name: 'Invisible', link: '/invisible'},
-//     {name: 'Sherlock', link: '/sherlock'}
-// ]
-
-
-
-
-
-
-
-
+// arrays of expansions
 const battleOfLegendsHeroes = ['Alice', 'Medusa', 'Sinbad', 'Arthur']
 const cobbleAndFogHeroes = ['Jekyll', 'Scherlock', 'Drakula', 'Invisible']
 const robinHoodAndBigfootHeroes = ['Robin', 'Bigfoot']
@@ -45,23 +23,20 @@ const houdiniAndGenie = ['Houdini', 'The Genie']
 const bruceLee = ['Bruce Lee']
 const deadpool = ['Deadpool']
 
-
+// new array where will be all heroes
 let heroesArr = []
 
-
 // Generate Hero Function
-
-
 const HeroGeneratorPage = () => {
     const [visibleHeroes, setVisibleHeroes] = useState('heroes window')
     const [hero, setHero] = useState('')
 
+
+    // made generated hero as link
 const navigate = useNavigate()
     function handleClick() {
         navigate(`/${hero.toLowerCase().replace(/\s+/g, '-')}`);
     }
-
-
     return (
         <div className={s.content}>
 
@@ -105,6 +80,9 @@ const navigate = useNavigate()
                 <div className={s.heroResult}>
                     <div><h2>Your hero is:</h2></div>
                     <br/>
+
+
+
                 <div className={s.heroLinkResult} onClick={handleClick}><h2>{hero}</h2></div>
                     <br/>
                     <br/>
@@ -114,8 +92,6 @@ const navigate = useNavigate()
             </div>
         </div>
     )
-
-
 }
 
 export default HeroGeneratorPage

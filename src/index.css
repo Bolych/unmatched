@@ -21,3 +21,10 @@ a:visited { text-decoration: none; }
 li {
     list-style: none;
 }
+
+@media (min-width: 1550px) {
+
+    * {   font-size: 104%;}
+
+
+}

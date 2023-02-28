@@ -1,0 +1,16 @@
+
+.content {
+    white-space: pre-wrap;
+    text-align: justify;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: #d8b56b;
+    display: flex;
+    justify-content: center;
+}

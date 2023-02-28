@@ -1,0 +1,35 @@
+
+.contactForm {
+
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+    max-width: 90vw;
+}
+
+.messageForm {
+    height: 10em;
+    font-size: 1.2em;
+    border: #d8b56b solid 2px;
+
+}
+
+.mailForm {
+    font-size: 1.2em;
+border: #d8b56b solid 2px;
+}
+
+.submitButton {
+    margin: 1em auto 4em;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background-color: #d8b56b;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: 800;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+   max-width: 25vw
+}

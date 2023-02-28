@@ -1,4 +1,4 @@
-import {useContext, useState} from "react";
+import { useState} from "react";
 import EloProbability from "./ProbabilityCalculatorWindow";
 import s from './OddsCalculatorPage.module.css'
 
@@ -54,12 +54,15 @@ const OddsCalculatorPage = (props) => {
 
 
 
+// making alphabetically sorted list of heroes in <select>
+
+    const heroesInSelect = props.heroesArr.map(e => e.heroName).sort().map(name =>
+        {
+            const matchingHero = props.heroesArr.find(hero => hero.heroName === name);
+            return <option value={matchingHero.elo} key={matchingHero.id}>{name}</option>;
+        });
 
 
-    const heroesInSelect = props.heroesArr.map(e => {
-                return <option value={e.elo} key={e.id} >{e.heroName}</option>
-        }
-    )
 
     return (<div className={s.content}>
             <div className={s.header}>

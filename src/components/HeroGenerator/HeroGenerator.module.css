@@ -43,5 +43,6 @@ margin-right: 0.5em;
 }
 
 .heroLinkResult {
+    font-weight: bold;
     cursor: pointer;
 }
