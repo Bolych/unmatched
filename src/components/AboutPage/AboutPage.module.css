@@ -4,6 +4,10 @@
     text-align: justify;
 }
 
+.disclaimer {
+    font-size: 0.7em;
+}
+
 .feedback {
     display: flex;
     justify-content: center;

@@ -10,18 +10,18 @@ const AboutPage = () => {
             <br/>
             <p>&nbsp;This is Unmatched board game's fun site.</p>
             <br/>
-            <p>&nbsp;You can try hero random generator that depends on expansions you have. </p>
+            <p>&nbsp;Playing with friend and don't know what hero to chose? You can our try hero random generator that depends on expansions you have. </p>
             <br/>
-               <p>&nbsp;You can check in odds
-                calculator what chance of winning of particular hero versus another. Calculator is based on players
-                experience. </p>
-            <p>Hero you can find information about heroes. Not only game stats, but description and images of their prototypes, and also heroes stats based on players experience.</p>
+            <p>&nbsp;Wonder what hero is stronger? You can try our odds calculator. </p>
+            <br/>
+            <p>&nbsp;Also you can find information about heroes. Not only game stats, but their background and stats based on fans opinion.</p>
             <br/>
             <br/>
+            <div className={s.disclaimer}>
             <p>&nbsp;This site is just for fun, not for commercial purposes. And it is not affiliated with Restoration
                 Games or Mondo Games. If you have any suggestions or objections, found a mistake, or maybe you are owner of some art and
                 you don't want it to be here, just contact us.</p>
-
+            </div>
             <br/>
             <div className={s.feedback}>
                 <ContactForm/>
