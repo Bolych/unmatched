@@ -114,7 +114,7 @@ const heroesArr =
             origin: 'Greek mythology. Tales of Perseus',
             description: "Medusa was once a beautiful woman who served as a priestess in the temple of Athena. However, she was seduced by Poseidon and they had a sexual encounter in the temple. Athena was angered by this and punished Medusa by turning her into a Gorgon.",
             tactics: 'Just go and win.',
-            heroQuote: '“We\'re all mad here".',
+            heroQuote: '',
             // style:
             backgroundColor: '#bee7ae',
             headersBackgroundColor: '#3D5169',
@@ -155,8 +155,8 @@ const heroesArr =
             heroHealth: '15',
             heroTrait: 'When you maneuver, you may move your fighters +1 space for each VOYAGE card in your discard pile.',
             origin: 'Story-cycle of Middle Eastern. "One Thousand and One Nights" tales.',
-            description: "Medusa was once a beautiful woman who served as a priestess in the temple of Athena. However, she was seduced by Poseidon and they had a sexual encounter in the temple. Athena was angered by this and punished Medusa by turning her into a Gorgon.",
-            tactics: 'Be cunning first part of game and feed on wasted journey cards.',
+            description: "Sindbad (also spelled Sinbad) is a legendary sailor and adventurer who appears in numerous tales from the Middle Eastern collection of stories known as the Thousand and One Nights, or Arabian Nights. Sindbad is depicted as a skilled seafarer who embarks on a series of voyages to far-flung lands, encountering all manner of mythical beasts, exotic locales, and treacherous foes along the way.",
+            tactics: '...',
             heroQuote: '"Give that guy a raise!".',
             // style:
             backgroundColor: '#e78e5a',
@@ -197,7 +197,7 @@ const heroesArr =
             heroHealth: '14',
             heroTrait: 'At the end of your turn, you may move Bruce Lee 1 space.',
             origin: 'Bruce Lee.',
-            description: "Martial artist, actor.",
+            description: "Bruce Lee (1940-1973) was a martial artist, actor, filmmaker, and cultural icon.",
             tactics: 'K.O.',
             heroQuote: '“Do not pray for an easy life, pray for the strength to endure a difficult one.”',
             // style:
@@ -238,8 +238,8 @@ const heroesArr =
             heroTrait: 'At the end of your turn, if there are no opposing fighters in Bigfoot\'s zone, you may draw 1 card.',
             origin: '"City Legends"',
             description: "Bigfoot, also known as Sasquatch, is a legendary creature that is said to inhabit the forests of North America. It is described as a large, ape-like creature that stands at around 7 to 10 feet tall and has long, shaggy hair covering its body. Many sightings of Bigfoot have been reported over the years, but there is no concrete evidence to prove its existence. The legend of Bigfoot has become a popular cultural phenomenon, and has been featured in numerous books, movies, and TV shows. The search for Bigfoot continues to this day, with many people believing that the creature is real and waiting to be discovered.",
-            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
-            heroQuote: '"..."',
+            tactics: '...',
+            heroQuote: '',
             // style:
             backgroundColor: 'rgba(119,156,101,0.74)',
             headersBackgroundColor: '#A23921',
@@ -277,8 +277,8 @@ const heroesArr =
             heroHealth: '13',
             heroTrait: 'At the start of your turn, you may place a trap. Whenever one of your traps is returned to the box, draw a card. Muldoon starts with 8 traps.',
             origin: 'English folklore',
-            description: "Robin Hood is a legendary heroic outlaw from English folklore who is said to have lived during the reign of King Richard the Lionheart in the 12th century. He is often depicted as a skilled archer and swordsman who robbed from the rich to give to the poor. Robin Hood is said to have lived in Sherwood Forest with his band of Merry Men, which included characters such as Little John and Friar Tuck. Many stories and legends have been created around Robin Hood over the years, and he has been portrayed in numerous books, movies, and TV shows. The tale of Robin Hood remains a popular story of heroism and justice to this day.",
-            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            description: "Robin Hood is a legendary heroic outlaw from English folklore who is said to have lived during the reign of King Richard the Lionheart in the 12th century. He is often depicted as a skilled archer and swordsman who robbed from the rich to give to the poor. Robin Hood is said to have lived in Sherwood Forest with his band of Merry Men, which included characters such as Little John and Friar Tuck.",
+            tactics: '...',
             heroQuote: '"“What is done is done; and the cracked egg cannot be cured.”',
             // style:
             backgroundColor: 'rgba(159,178,134,0.74)',
@@ -323,7 +323,7 @@ const heroesArr =
                 "Muldoon is depicted as a skilled and experienced hunter, with a deep respect for the animals under his care. He is known for his caution and skepticism about the safety of the park, often warning other characters of the dangers posed by the cloned dinosaurs. His most iconic moment comes when he explains the nature of Velociraptors to the other characters, and famously warns, \"Clever girl.\"\n" +
                 "\n" +
                 "In both the book and the film, Muldoon meets his demise when he is attacked and killed by a pack of Velociraptors while attempting to lead Dr. Ellie Sattler to safety. His character has become a fan favorite, known for his no-nonsense attitude and memorable one-liners.",
-            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            tactics: '...',
             heroQuote: '“Clever girl.',
             // style:
             backgroundColor: 'rgba(204,179,136,0.74) ',
@@ -363,8 +363,8 @@ const heroesArr =
             heroTrait: 'Raptors add 1 to the value of their attack cards for each of your other Raptors adjacent to the\n' +
                 'defender.',
             origin: 'Movie "Jurassic Park"',
-            description: "Raptors",
-            tactics: 'Be aggressive.',
+            description: "The Raptors, short for Velociraptors. They are depicted as highly intelligent, fast, and deadly predators that hunt in packs. In the first Jurassic Park film, they escape their containment and terrorize the human characters.",
+            tactics: '...',
             heroQuote: '"They\'re lethal at 8 months, and I do mean lethal." - Robert Muldoon.',
             // style:
             backgroundColor: 'rgba(119,174,105,0.4)',
@@ -399,7 +399,7 @@ const heroesArr =
             heroTrait: 'At the start of your turn, you may deal 1 damage to a fighter adjacent to Dracula. If you do, draw a card.',
             origin: 'Novel "Dracula". Author: Bram Stoker. Inspired by  inspired by 15th-century Romanian prince Vlad Tepes.',
             description: "Vlad Dracula, also known as Vlad the Impaler, was a 15th-century ruler of Wallachia known for his cruelty and use of impalement as punishment. He ruled Wallachia three times and was a skilled military leader who defended his country against the Ottoman Empire. Vlad is celebrated as a hero in Romania for his efforts to protect his people, but is also infamous for his brutality. He is often associated with the myth of vampires, which was popularized in Bram Stoker's novel \"Dracula\" but is not based on historical fact. Vlad Dracula remains a controversial and complex figure in Romanian history.",
-            tactics: 'Dracula has very low life and defensive cards. Just smash your opponent at right moment.',
+            tactics: '...',
             heroQuote: '"Blood is the life ... and it shall be mine".',
             // style:
             backgroundColor: 'darkgrey',
@@ -444,8 +444,8 @@ const heroesArr =
                 '\n' +
                 'Invisible Man may move between two spaces with fog tokens as if they were adjacent.',
             origin: 'Novel "The Invisible Man". Author: H.G. Wells.',
-            description: "The Invisible Man is a science fiction novel by H.G. Wells. The story follows Griffin, a scientist who has discovered the secret of invisibility but is unable to reverse the process. He becomes an outcast, isolated from society and consumed by his own power. Griffin struggles with the consequences of his actions, including the inability to interact with others and the temptation to use his power for personal gain. As the novel progresses, Griffin becomes increasingly unstable and violent, leading to a dramatic and tragic conclusion. The Invisible Man is a commentary on the dangers of unchecked scientific progress and the isolation and alienation that can result from pursuing knowledge at any cost.",
-            tactics: 'Hit and run.',
+            description: "The Invisible Man is a science fiction novel by H.G. Wells. The story follows Griffin, a scientist who has discovered the secret of invisibility but is unable to reverse the process. He becomes an outcast, isolated from society and consumed by his own power. Griffin struggles with the consequences of his actions, including the inability to interact with others and the temptation to use his power for personal gain. As the novel progresses, Griffin becomes increasingly unstable and violent, leading to a dramatic and tragic conclusion.",
+            tactics: '...',
             heroQuote: '""The fact is, I\'m all here:head, hands, legs, and all the rest of it, but it happens I\'m invisible. It\'s a confounded nuisance, but I am.".',
             // style:
             backgroundColor: 'lightgrey',
@@ -483,8 +483,8 @@ const heroesArr =
                 'While Mr. Hyde: After you Maneuver, take 1 damage.\n' +
                 'Use the transformation token to indicate what he currently is.',
             origin: 'Novel "Strange Case of Dr Jekyll and Mr Hyde". Author: Robert Louis Stevenson.',
-            description: "Dr. Jekyll and Mr. Hyde is a novella by Robert Louis Stevenson. The story follows Dr. Henry Jekyll, a respected London doctor who experiments with a potion that transforms him into his evil alter-ego, Mr. Edward Hyde. Jekyll is a mild-mannered man with a good reputation, while Hyde is a violent and malevolent persona who commits horrific acts. As the story progresses, Jekyll struggles to control his transformations and ultimately succumbs to the power of Hyde. The tale is a psychological exploration of the duality of human nature and the consequences of repression and desire.",
-            tactics: 'Predict the right time to change your form.',
+            description: "Dr. Jekyll and Mr. Hyde is a novella by Robert Louis Stevenson. The story follows Dr. Henry Jekyll, a respected London doctor who experiments with a potion that transforms him into his evil alter-ego, Mr. Edward Hyde. Jekyll is a mild-mannered man with a good reputation, while Hyde is a violent and malevolent persona who commits horrific acts. As the story progresses, Jekyll struggles to control his transformations and ultimately succumbs to the power of Hyde.",
+            tactics: '...',
             heroQuote: '“You must suffer me to go my own dark way.”',
             // style:
             backgroundColor: 'darkgrey',
@@ -523,7 +523,7 @@ const heroesArr =
                 '(Effects on ANY cards can be cancelled.)',
             origin: 'Novels about Sherlock Holmes. Author: Arthur Conan Doyle.',
             description: "Sherlock Holmes is a fictional detective created by Sir Arthur Conan Doyle. He is known for his exceptional powers of observation, deduction, and reasoning, which he uses to solve complex cases. Holmes has a tall, lean build and piercing grey eyes. He wears a deerstalker hat and an Inverness cape, which have become iconic elements of his appearance. Holmes has a cool and detached demeanor, often expressing a lack of interest in the social niceties of Victorian society. He is a master of disguises and has a deep knowledge of chemistry, anatomy, and other sciences, which he employs in his investigations.",
-            tactics: 'Go and win.',
+            tactics: '...',
             heroQuote: '“There is nothing more deceptive than an obvious fact”.',
             // style:
             backgroundColor: 'lightgrey',
@@ -564,8 +564,8 @@ const heroesArr =
             heroHealth: '14',
             heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
             origin: 'TV series "Buffy the Vampire Slayer"',
-            description: "Buffy is a fictional character and the protagonist of the television series \"Buffy the Vampire Slayer.\" The show, created by Joss Whedon, aired from 1997 to 2003 and followed Buffy as she fought against supernatural forces in her role as the \"Slayer.\" Buffy was portrayed by actress Sarah Michelle Gellar and was known for her strength, wit, and courage. Throughout the series, Buffy faced a variety of supernatural threats, from vampires to demons to evil gods, and often worked alongside a group of trusted allies known as the \"Scooby Gang.\" Buffy has become a pop culture icon and a symbol of female empowerment in popular media.",
-            tactics: 'Buffu.',
+            description: "Buffy is a fictional character and the protagonist of the television series \"Buffy the Vampire Slayer.\" The show, created by Joss Whedon, aired from 1997 to 2003 and followed Buffy as she fought against supernatural forces in her role as the \"Slayer.\" Buffy was portrayed by actress Sarah Michelle Gellar and was known for her strength, wit, and courage. Throughout the series, Buffy faced a variety of supernatural threats, from vampires to demons to evil gods, and often worked alongside a group of trusted allies known as the \"Scooby Gang.\"",
+            tactics: '...',
             heroQuote: '"In every generation, there is a chosen one…"',
             // style:
             backgroundColor: 'rgba(255,199,202,0.99)',
@@ -605,7 +605,7 @@ const heroesArr =
             heroHealth: '14',
             heroTrait: 'After Angel or Faith attacks, if you lost the combat, draw 1 card.',
             origin: 'TV series "Buffy the Vampire Slayer"',
-            description: "Angel is a fictional character in the television series \"Buffy the Vampire Slayer.\" He is a vampire with a soul who, after years of torment and guilt over his past actions, seeks redemption by helping Buffy and her friends fight evil forces. Angel is portrayed by actor David Boreanaz and first appears in the first season of \"Buffy\" before becoming a main character in his own spin-off series, \"Angel.\" He is known for his brooding demeanor, complicated relationship with Buffy, and his own struggles with his inner demons. Angel remains a popular character in the \"Buffyverse\" and has continued to appear in various forms of media since the end of the original series.",
+            description: "Angel is a fictional character in the television series \"Buffy the Vampire Slayer.\" He is a vampire with a soul who, after years of torment and guilt over his past actions, seeks redemption by helping Buffy and her friends fight evil forces. Angel is portrayed by actor David Boreanaz and first appears in the first season of \"Buffy\" before becoming a main character in his own spin-off series, \"Angel.\" He is known for his brooding demeanor, complicated relationship with Buffy, and his own struggles with his inner demons.",
             tactics: 'Angel.',
             heroQuote: '"I\'m a vampire. I know something about evil. And you\'re not it."',
             // style:
@@ -730,8 +730,12 @@ const heroesArr =
             heroTrait: 'Beowulf starts with 1 Rage.\n' +
                 'When Beowulf is dealt damage, he gains 1 Rage.\n' +
                 'Beowulf has a maximum of 3 rage.',
-            origin: 'Folclore"',
-            description: "Beowulf",
+            origin: 'Old English poem "Beowulf" (between the 8th and 11th centuries)',
+            description: "Beowulf is the protagonist of the Old English epic poem \"Beowulf\". The poem tells the story of Beowulf's heroic feats, which include battling various monsters and protecting his people from harm.\n" +
+                "\n" +
+                "Beowulf's backstory is not fully described in the poem, but it is mentioned that he is the son of the warrior Ecgtheow, and that he comes from the land of the Geats, which is located in present-day Sweden. Beowulf first comes to the aid of the Danish king Hrothgar, who is being terrorized by the monster Grendel. Beowulf defeats Grendel and then also battles and kills Grendel's mother.\n" +
+                "\n" +
+                "Later in the poem, Beowulf becomes king of the Geats and continues to defend his people against various monsters, including a dragon. Beowulf ultimately dies in battle with the dragon, but his bravery and honor are celebrated by his people.",
             tactics: 'Rage rage.',
             heroQuote: '“I shall gain glory or die.”',
             // style:
@@ -771,9 +775,9 @@ const heroesArr =
             movement: '2',
             heroHealth: '14',
             heroTrait: 'Resolve an effect on a card you play if the symbol next to the effect matches the item in your basket. At the start of the game, place LITTLE RED\'s BASKET in your discard pile. Little Red\'s Basket: This starts in your discard pile. It does not count as a card. (🌟 counts as any one 🐺🌹⚔️ symbol.)',
-            origin: 'Folclore"',
-            description: "Beowulf",
-            tactics: 'Red hood tactics',
+            origin: 'European folclore"',
+            description: "In the classic version of the story, Little Red Riding Hood is sent by her mother to deliver food to her sick grandmother who lives in the woods. Along the way, she encounters a cunning wolf who tricks her into revealing the location of her grandmother's house. The wolf then goes to the grandmother's house, eats her, and disguises himself in her clothing before tricking Little Red Riding Hood and attempting to eat her as well. In most versions of the story, Little Red Riding Hood is eventually rescued by a hunter who kills the wolf and saves her and her grandmother.",
+            tactics: 'Hard to play character. You must calculate card rotating to make powerful combinations.',
             heroQuote: '"Grandmother dear, what big legs you have!" ',
             // style:
             backgroundColor: '#7a7373',
@@ -814,8 +818,10 @@ const heroesArr =
                 '\n' +
                 'Also, if your opponent\'s real name is Logan, all your attacks are +5.',
             origin: 'Marvel',
-            description: "Deadpool",
-            tactics: 'deadpool',
+            description: "His real name is Wade Wilson, and he is a former Special Forces operative turned mercenary who gains accelerated healing powers after undergoing a dangerous experimental treatment. However, his powers come at a great cost, as they also cause him intense physical and emotional pain.\n" +
+                "Deadpool is known for his irreverent and self-referential humor, as well as his tendency to break the fourth wall and directly address the reader.\n" +
+                "Despite his humorous demeanor, Deadpool is also a deeply troubled and tragic character. He struggles with mental illness, including multiple personality disorder and suicidal thoughts. He is also haunted by his past, which includes a difficult childhood and a failed marriage.\n",
+            tactics: '...',
             heroQuote: '"House blowing up builds character." ',
             // style:
             backgroundColor: '#b76767',
