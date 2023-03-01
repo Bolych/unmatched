@@ -237,9 +237,9 @@ const heroesArr =
             heroHealth: '16',
             heroTrait: 'At the end of your turn, if there are no opposing fighters in Bigfoot\'s zone, you may draw 1 card.',
             origin: '"City Legends"',
-            description: "",
+            description: "Bigfoot, also known as Sasquatch, is a legendary creature that is said to inhabit the forests of North America. It is described as a large, ape-like creature that stands at around 7 to 10 feet tall and has long, shaggy hair covering its body. Many sightings of Bigfoot have been reported over the years, but there is no concrete evidence to prove its existence. The legend of Bigfoot has become a popular cultural phenomenon, and has been featured in numerous books, movies, and TV shows. The search for Bigfoot continues to this day, with many people believing that the creature is real and waiting to be discovered.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
-            heroQuote: '"Do they exist? (about people)".',
+            heroQuote: '"..."',
             // style:
             backgroundColor: 'rgba(119,156,101,0.74)',
             headersBackgroundColor: '#A23921',
@@ -277,9 +277,9 @@ const heroesArr =
             heroHealth: '13',
             heroTrait: 'At the start of your turn, you may place a trap. Whenever one of your traps is returned to the box, draw a card. Muldoon starts with 8 traps.',
             origin: 'English folklore',
-            description: "Robin Hood",
+            description: "Robin Hood is a legendary heroic outlaw from English folklore who is said to have lived during the reign of King Richard the Lionheart in the 12th century. He is often depicted as a skilled archer and swordsman who robbed from the rich to give to the poor. Robin Hood is said to have lived in Sherwood Forest with his band of Merry Men, which included characters such as Little John and Friar Tuck. Many stories and legends have been created around Robin Hood over the years, and he has been portrayed in numerous books, movies, and TV shows. The tale of Robin Hood remains a popular story of heroism and justice to this day.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
-            heroQuote: '"Robin Hood".',
+            heroQuote: '"“What is done is done; and the cracked egg cannot be cured.”',
             // style:
             backgroundColor: 'rgba(159,178,134,0.74)',
             headersBackgroundColor: '#698552',
@@ -318,9 +318,13 @@ const heroesArr =
             heroHealth: '14',
             heroTrait: 'At the start of your turn, you may place a trap. Whenever one of your traps is returned to the box, draw a card. Muldoon starts with 8 traps.',
             origin: 'Movie "Jurassic Park"',
-            description: "",
+            description: "Robert Muldoon is a fictional character in Michael Crichton's 1990 novel \"Jurassic Park\" and Steven Spielberg's 1993 film adaptation of the same name. He is portrayed as the game warden and chief of security for the dinosaur park on Isla Nublar, responsible for overseeing the safety of both the park staff and visitors.\n" +
+                "\n" +
+                "Muldoon is depicted as a skilled and experienced hunter, with a deep respect for the animals under his care. He is known for his caution and skepticism about the safety of the park, often warning other characters of the dangers posed by the cloned dinosaurs. His most iconic moment comes when he explains the nature of Velociraptors to the other characters, and famously warns, \"Clever girl.\"\n" +
+                "\n" +
+                "In both the book and the film, Muldoon meets his demise when he is attacked and killed by a pack of Velociraptors while attempting to lead Dr. Ellie Sattler to safety. His character has become a fan favorite, known for his no-nonsense attitude and memorable one-liners.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
-            heroQuote: '“We\'re all mad here".',
+            heroQuote: '“Clever girl.',
             // style:
             backgroundColor: 'rgba(204,179,136,0.74) ',
             headersBackgroundColor: '#7c4937',
@@ -559,10 +563,10 @@ const heroesArr =
             movement: '3',
             heroHealth: '14',
             heroTrait: 'Buffy may move through spaces containing opposing fighters (including when she is moved by effects).',
-            origin: 'TV show "Buffy the vampire slayer"',
-            description: "",
+            origin: 'TV series "Buffy the Vampire Slayer"',
+            description: "Buffy is a fictional character and the protagonist of the television series \"Buffy the Vampire Slayer.\" The show, created by Joss Whedon, aired from 1997 to 2003 and followed Buffy as she fought against supernatural forces in her role as the \"Slayer.\" Buffy was portrayed by actress Sarah Michelle Gellar and was known for her strength, wit, and courage. Throughout the series, Buffy faced a variety of supernatural threats, from vampires to demons to evil gods, and often worked alongside a group of trusted allies known as the \"Scooby Gang.\" Buffy has become a pop culture icon and a symbol of female empowerment in popular media.",
             tactics: 'Buffu.',
-            heroQuote: '“quote for buffy".',
+            heroQuote: '"In every generation, there is a chosen one…"',
             // style:
             backgroundColor: 'rgba(255,199,202,0.99)',
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
@@ -600,10 +604,10 @@ const heroesArr =
             movement: '3',
             heroHealth: '14',
             heroTrait: 'After Angel or Faith attacks, if you lost the combat, draw 1 card.',
-            origin: 'TV show "Buffy the vampire slayer"',
-            description: "",
+            origin: 'TV series "Buffy the Vampire Slayer"',
+            description: "Angel is a fictional character in the television series \"Buffy the Vampire Slayer.\" He is a vampire with a soul who, after years of torment and guilt over his past actions, seeks redemption by helping Buffy and her friends fight evil forces. Angel is portrayed by actor David Boreanaz and first appears in the first season of \"Buffy\" before becoming a main character in his own spin-off series, \"Angel.\" He is known for his brooding demeanor, complicated relationship with Buffy, and his own struggles with his inner demons. Angel remains a popular character in the \"Buffyverse\" and has continued to appear in various forms of media since the end of the original series.",
             tactics: 'Angel.',
-            heroQuote: '“quote for angel."',
+            heroQuote: '"I\'m a vampire. I know something about evil. And you\'re not it."',
             // style:
             backgroundColor: 'rgba(255,199,202,0.99)',
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
@@ -641,10 +645,10 @@ const heroesArr =
             movement: '2',
             heroHealth: '15',
             heroTrait: 'At the start of your turn, you may place a Shadow token in any space adjacent to Spike or Drusilla.',
-            origin: 'TV show "Buffy the vampire slayer"',
-            description: "",
-            tactics: 'spike.',
-            heroQuote: '“quote for spike".',
+            origin: 'TV series "Buffy the Vampire Slayer"',
+            description: "Spike is a fictional character in the television series \"Buffy the Vampire Slayer.\" He is a vampire with bleached blonde hair and British accent, known for his cocky attitude, love of violence, and rebellious nature. Spike is initially introduced as a villain in Season 2, but later becomes a love interest for Buffy and a member of the Scooby Gang. He is portrayed by actor James Marsters and is a popular character in the \"Buffyverse.\" Spike also appears in the spin-off series \"Angel\" and has continued to appear in various comic book series and other media since the end of the original show.",
+            tactics: '...',
+            heroQuote: '"Out for a walk... bitch."',
             // style:
             backgroundColor: 'rgba(255,199,202,0.99)',
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
@@ -683,10 +687,10 @@ const heroesArr =
             heroTrait: 'When Willow or Tara is dealt damage, Willow becomes Dark Willow.\n' +
                 '\n' +
                 'At the end of your turn, if Dark Willow is adjacent to Tara, she becomes Willow.',
-            origin: 'TV show "Buffy the vampire slayer"',
-            description: "",
-            tactics: 'Buffu.',
-            heroQuote: '“quote for buffy".',
+            origin: 'TV series "Buffy the Vampire Slayer"',
+            description: "Willow Rosenberg is a fictional character from the television series \"Buffy the Vampire Slayer.\" She is portrayed by Alyson Hannigan and is one of the core members of the Scooby Gang. Willow begins the series as a shy and nerdy high school student who is best friends with Buffy. As the series progresses, she becomes more confident and powerful, eventually becoming a skilled witch. Willow is known for her intelligence, loyalty, and sense of humor. She also has several romantic relationships throughout the series, including with her best friend Xander and fellow witch Tara.",
+            tactics: '...',
+            heroQuote: '"The earth is definitely doomed."',
             // style:
             backgroundColor: 'rgba(255,199,202,0.99)',
             headersBackgroundColor: 'rgba(35,7,44,0.84)',
