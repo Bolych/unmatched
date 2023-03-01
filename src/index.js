@@ -318,7 +318,7 @@ const heroesArr =
             movement: '3',
             heroHealth: '14',
             heroTrait: 'At the start of your turn, you may place a trap. Whenever one of your traps is returned to the box, draw a card. Muldoon starts with 8 traps.',
-            origin: 'Movie "Jurassic Park"',
+            origin: 'Jurassic Park',
             description: "Robert Muldoon is a fictional character in Michael Crichton's 1990 novel \"Jurassic Park\" and Steven Spielberg's 1993 film adaptation of the same name. He is portrayed as the game warden and chief of security for the dinosaur park on Isla Nublar, responsible for overseeing the safety of both the park staff and visitors.\n" +
                 "\n" +
                 "Muldoon is depicted as a skilled and experienced hunter, with a deep respect for the animals under his care. He is known for his caution and skepticism about the safety of the park, often warning other characters of the dangers posed by the cloned dinosaurs. His most iconic moment comes when he explains the nature of Velociraptors to the other characters, and famously warns, \"Clever girl.\"\n" +
@@ -363,7 +363,7 @@ const heroesArr =
             heroHealth: '7 x3',
             heroTrait: 'Raptors add 1 to the value of their attack cards for each of your other Raptors adjacent to the\n' +
                 'defender.',
-            origin: 'Movie "Jurassic Park"',
+            origin: 'Jurassic Park',
             description: "The Raptors, short for Velociraptors. They are depicted as highly intelligent, fast, and deadly predators that hunt in packs. In the first Jurassic Park film, they escape their containment and terrorize the human characters.",
             tactics: '...',
             heroQuote: '"They\'re lethal at 8 months, and I do mean lethal." - Robert Muldoon.',
@@ -1032,6 +1032,7 @@ const heroesArr =
                 '\n' +
                 '(When defending, Luke Cage wins combat if he takes no damage, even if he didn\'t play a card.)\n' +
                 '\n',
+            origin: 'Marvel universe',
             description: "Luke Cage is a Marvel Comics superhero created in 1972 by Archie Goodwin, John Romita Sr., and George Tuska. He is a street-smart, tough, and bulletproof Black man from Harlem, New York City. Originally framed for a crime he didn't commit, Cage was experimented on in prison and gained his superhuman strength and indestructible skin. He uses his abilities to fight crime and protect the people of Harlem. Luke Cage has been featured in several comic book series and adaptations, including a popular Netflix television series, where he is portrayed by actor Mike Colter.",
             tactics: '...',
             heroQuote: '"You can\'t burn me, you can\'t blast me, and you definitely can\'t break me. You wanna test me? Step up. I\'m right here." ',
@@ -1076,6 +1077,7 @@ const heroesArr =
                 'Notes\n' +
                 'If you spend a Hellfire to use Ghost Rider\'s ability, your movement value is set to 4, and cannot be increased by BOOSTING your maneuver.\n' +
                 '\n',
+            origin: 'Marvel universe',
             description: "Ghost Rider is a Marvel Comics superhero who first appeared in 1972. The character is known for his fiery skull and motorcycle, as well as his supernatural abilities. The original Ghost Rider, Johnny Blaze, was a stunt motorcyclist who made a deal with the demon Mephisto to save the life of his father. As a result, Blaze became bonded with the demonic entity Zarathos, gaining the ability to transform into Ghost Rider and wield supernatural powers. The character is known for his dark, brooding demeanor and intense battles against evil forces.",
             tactics: '...',
             heroQuote: '"I am vengeance. I am retribution. Fear me, for I am the Ghost Rider." ',
@@ -1124,6 +1126,7 @@ const heroesArr =
                 'Mr. Knight adds +1 to all his defense values.\n' +
                 '\n' +
                 'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).',
+            origin: 'Marvel universe',
             description: "Moon Knight is a Marvel Comics superhero who first appeared in 1975. The character is known for his multiple personalities and mystical powers, as well as his signature all-white costume. Moon Knight's real name is Marc Spector, a former mercenary who was left for dead in the Egyptian desert. He was rescued by the Egyptian moon god, Khonshu, and given a new lease on life as Moon Knight. As a superhero, Moon Knight fights crime using his enhanced strength and agility, as well as his arsenal of weapons and gadgets. He is often depicted as a complex and troubled character, struggling with his own identity and the demands of being a hero.",
             tactics: '...',
             heroQuote: '"I have a god in me. I am the god of vengeance." ',
@@ -1167,6 +1170,7 @@ const heroesArr =
                 'When you BLIND BOOST, you discard the top card of your deck and add its BOOST value onto the card you played in combat. Daredevil\'s ability cannot be canceled. Follow the normal resolution rules: Defender resolves first.',
             description: "Daredevil is a Marvel Comics superhero who first appeared in 1964. The character is known for his blindness and his use of heightened senses to fight crime as a lawyer and vigilante. Daredevil's real name is Matt Murdock, a blind lawyer from Hell's Kitchen, New York City. After a childhood accident involving toxic waste, Murdock's other senses were enhanced to superhuman levels, allowing him to \"see\" without sight. As a superhero, Daredevil uses his acrobatic and martial arts skills to fight crime and protect the people of Hell's Kitchen. He is often depicted as a complex and conflicted character, struggling with his Catholic faith and his dual identities.",
             tactics: '...',
+            origin: 'Marvel universe',
             heroQuote: '"I have shown you violence, and you did not heed my warning. Now, you will feel its cold embrace." ',
             // style:
             backgroundColor: '#dc7272',
@@ -1210,6 +1214,7 @@ const heroesArr =
                 'When you BLIND BOOST, you discard the top card of your deck and add its BOOST value onto the card you played in combat. Daredevil\'s ability cannot be canceled. Follow the normal resolution rules: Defender resolves first.',
             description: "ullseye is a Marvel Comics supervillain who first appeared in 1976. The character is known for his expert marksmanship and deadly accuracy with any projectile weapon. Bullseye's real name is Lester, and he has a troubled past as a child killer and professional assassin. He is often portrayed as a hired gun for various criminal organizations, taking on assignments to eliminate anyone who stands in his employers' way. Bullseye has had numerous clashes with various Marvel superheroes, including Daredevil, Spider-Man, and the Punisher. He is a ruthless and sadistic villain who takes pleasure in killing and causing chaos.",
             tactics: '...',
+            origin: 'Marvel universe',
             heroQuote: '"I like to kill people slow, to honor their last moments."',
             // style:
             backgroundColor: '#c6c4ea',
@@ -1253,6 +1258,7 @@ const heroesArr =
                 'Place Elektra and all Hand back onto the board with each fighter in a different zone. (You must resolve effects with the RESURRECTED symbol).',
             description: "Elektra is a Marvel Comics superheroine and occasional villain who first appeared in 1981. The character is known for her exceptional martial arts skills and her proficiency in using various weapons, including her signature twin sai. Elektra's real name is Elektra Natchios, and she has a complicated history as a trained assassin and the former lover of Daredevil. She is often portrayed as a morally ambiguous character, working as a hired killer for various criminal organizations but also showing a desire to help those in need. Elektra has had numerous clashes with various Marvel superheroes, including Daredevil, Wolverine, and Spider-Man. She is a skilled and deadly fighter who is not to be underestimated.",
             tactics: 'Luke',
+            origin: 'Marvel universe',
             heroQuote: '"Sometimes you have to fight for what you believe in. Sometimes you have to fight for your own survival. Sometimes you have to fight for what\'s right. And sometimes... you just have to fight." ',
             // style:
             backgroundColor: '#FFDFC4',
@@ -1299,6 +1305,7 @@ const heroesArr =
                 'If you would place an insight token but don\'t have any in your supply, nothing happens..',
             description: "Dr. Ellie Sattler is a character from the Jurassic Park franchise. She is a paleobotanist and a close colleague of Dr. Alan Grant, with whom she has a romantic relationship. Ellie is a strong and intelligent character who is not afraid to speak her mind. She is resourceful and quick-witted, using her knowledge of botany to survive various dangerous situations in the Jurassic Park films. Ellie is portrayed as a compassionate and caring character, especially towards the dinosaurs in the park. She is a key member of the team that tries to contain the dinosaur outbreak in the first film and plays a crucial role in subsequent installments of the franchise.",
             tactics: 'Luke',
+            origin: 'Jurassic Park',
             heroQuote: '"Dinosaurs eat man. Woman inherits the earth." ',
             // style:
             backgroundColor: '#9a8298',
@@ -1345,6 +1352,7 @@ const heroesArr =
             description: "Tyrannosaurus rex, often referred to as T-rex, is a species of dinosaur that lived during the late Cretaceous period, approximately 68 to 66 million years ago. It was one of the largest carnivorous dinosaurs, growing up to 40 feet in length and weighing up to 14 tons. T-rex is known for its powerful jaws, which could exert a force of up to 12,800 pounds, making it one of the strongest biters of any terrestrial animal that ever existed. In the Jurassic Park franchise, T-rex is featured as one of the main attractions of the dinosaur park and is one of the most iconic and memorable creatures in the series.",
             tactics: '...',
             heroQuote: '',
+            origin: 'Jurassic Park',
             // style:
             backgroundColor: '#918491',
             headersBackgroundColor: '#524e4e',
@@ -1380,6 +1388,7 @@ const heroesArr =
             heroRange: 'melee',
             movement: '2',
             heroHealth: '14',
+            origin: 'Real person',
             heroTrait: 'When you take the maneuver action and BOOST, you may place Houdini in any space instead of moving. (Bess moves as normal.)',
             description: "Harry Houdini, born Erik Weisz, was a Hungarian-born American illusionist and escape artist who lived from 1874 to 1926. He is widely regarded as one of the most famous magicians and performers in history, known for his daring and death-defying feats such as escaping from locked water tanks, straitjackets, and handcuffs. Houdini also performed acts of levitation and other illusions, and he was known for his skill in exposing fraudulent spiritualist mediums. His legacy as a master showman and innovator of magic and escapology continues to inspire and captivate audiences to this day.",
             tactics: '...',
