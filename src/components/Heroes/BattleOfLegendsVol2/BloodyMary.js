@@ -22,9 +22,7 @@ import card13 from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/blood
 
 //hero images
 import avatar from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/bloody-mary-images/bloody-mary-ghost.webp'
-import image1
-    from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/bloody-mary-images/bloody-mary-minifigure.jpg'
-import image2 from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/bloody-mary-images/bloody-queen.jpg'
+import image1 from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/bloody-mary-images/bloody-mary-minifigure.jpg'
 import image3 from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/bloody-mary-images/28.jpg'
 import image4 from '../../../images/heroes/battleOfLegendsVol2/bloody-mary/bloody-mary-images/54.png'
 
@@ -36,7 +34,7 @@ const BloodyMary = ({state}) => {
         window.scrollTo({top: 50000, behavior: 'smooth'})
     }
 
-    let imgUrls = [avatar, image1, image2, image3, image4]
+    let imgUrls = [avatar, image1, image3, image4]
 
     const myStyleBackground = {
         backgroundColor: state.backgroundColor,
@@ -102,8 +100,7 @@ const BloodyMary = ({state}) => {
                     </div>
 
                     <div>
-                        <p className={s.quote}>{state.heroQuote}</p>
-                    </div>
+                        <blockquote className={s.quote}>{state.heroQuote}</blockquote>                    </div>
                 </div>
                 <div className={s.downSide}>
                     <div style={headersBackground}>

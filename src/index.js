@@ -26,8 +26,8 @@ const heroesArr =
                 'If your opponent cancels the effects on your attack card, the BOOST is discarded without effect. ',
             origin: 'Novel "King Arthur and knights of the Round Table". Author: Thomas Melory. ',
             description: "  King Arthur is a legendary British leader who, according to medieval histories and romances, led the defence of Britain against Saxon invaders in the late 5th and early 6th centuries AD. " +
-                "The details of Arthur's story are mainly composed of folklore and literary invention, and his historical existence is debated and disputed by modern historians.\n  However, the legend of King Arthur has endured for centuries and has become an important part of British and world mythology. " +
-                "According to the legends, Arthur was born to King Uther Pendragon and Igraine, and was raised in secret by the wizard Merlin. He later pulled the sword Excalibur from a stone, proving his right to rule as king. " +
+                "The details of Arthur's story are mainly composed of folklore and literary invention, and his historical existence is debated and disputed by modern historians.\n" +
+                "  According to the legends, Arthur was born to King Uther Pendragon and Igraine, and was raised in secret by the wizard Merlin. He later pulled the sword Excalibur from a stone, proving his right to rule as king. " +
                 "\n  With the help of his Knights of the Round Table, Arthur fought and defeated many enemies, including the Saxon invaders and his traitorous nephew Mordred, but he himself was mortally wounded at the hands of the latter. The dying king was taken by boat to the Isle of Avalon. According to legend, Arthur slumbers on Avalon, waiting for the day of great need, when he will rise from his sleep to save Britain.",
             tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
             heroQuote: '“I was never your father nor of your blood, but I wote well ye are of an higher blood than I wend ye were".',
@@ -71,9 +71,10 @@ const heroesArr =
             heroTrait: 'When you place Alice, choose whether she starts the game BIG or SMALL.\n' +
                 'When Alice is BIG, add 2 to the value of her attack cards.\n' +
                 'When Alice is SMALL, add 1 to the value of her defense cards.',
-            origin: ' Novel "Alice in wonderland". Author: Lewis Carroll',
-            description: "",
-            tactics: 'Collect cards and use them on attack enhancement. Arthur is straightforward and for experienced players it is usually not hard to counter Arthur.',
+            origin: 'Novel "Alice in wonderland"(1865). Author: Lewis Carroll',
+            description: "The character of Alice was inspired by the real-life Alice Liddell, a young girl who was a friend of Lewis Carroll. Fictional Alice is is known for her curious and adventurous spirit, as well as her ability to navigate the bizarre and unpredictable world of Wonderland. Throughout the story, Alice meets a variety of strange and eccentric characters.\n" +
+                "Alice than appeared in multiple works of literature and media and her personality varies. In movies she is closer to original. In \"American McGee's Alice\" she is insane and Wonderland is just her imagination. In Unmatched Board game she is mature, strong and dangerous.",
+            tactics: 'Control Alice\'s size, chose time when to defend and when to attack. Strong against: Daredevil. Weak against: Sun Wukong ',
             heroQuote: '“We\'re all mad here".',
             // style:
             backgroundColor: 'lightblue',
@@ -113,7 +114,7 @@ const heroesArr =
             heroTrait: 'At the start of your turn, you may deal 1 damage to an opposing fighter in Medusa\'s zone.',
             origin: 'Greek mythology. Tales of Perseus',
             description: "Medusa was once a beautiful woman who served as a priestess in the temple of Athena. However, she was seduced by Poseidon and they had a sexual encounter in the temple. Athena was angered by this and punished Medusa by turning her into a Gorgon.",
-            tactics: 'Just go and win.',
+            tactics: 'One of the strongest characters. She can devastate any hero but have troubles with T-rex, Daredevil, Ghost Rider',
             heroQuote: '',
             // style:
             backgroundColor: '#bee7ae',
@@ -156,7 +157,7 @@ const heroesArr =
             heroTrait: 'When you maneuver, you may move your fighters +1 space for each VOYAGE card in your discard pile.',
             origin: 'Story-cycle of Middle Eastern. "One Thousand and One Nights" tales.',
             description: "Sindbad (also spelled Sinbad) is a legendary sailor and adventurer who appears in numerous tales from the Middle Eastern collection of stories known as the Thousand and One Nights, or Arabian Nights. Sindbad is depicted as a skilled seafarer who embarks on a series of voyages to far-flung lands, encountering all manner of mythical beasts, exotic locales, and treacherous foes along the way.",
-            tactics: '...',
+            tactics: 'Collect Voyage cards, spend them on attack and be tricky before Sinbad will be strong enough. Strong against: Bruce Lee. Weak against: Sun Wukong.',
             heroQuote: '"Give that guy a raise!".',
             // style:
             backgroundColor: '#e78e5a',
@@ -196,9 +197,9 @@ const heroesArr =
             movement: '2',
             heroHealth: '14',
             heroTrait: 'At the end of your turn, you may move Bruce Lee 1 space.',
-            origin: 'Bruce Lee.',
+            origin: 'Real person',
             description: "Bruce Lee (1940-1973) was a martial artist, actor, filmmaker, and cultural icon.",
-            tactics: 'K.O.',
+            tactics: 'Set up lethal chains of actions.  Weak against: characters who has lot of canceling cards, such as feint.',
             heroQuote: '“Do not pray for an easy life, pray for the strength to endure a difficult one.”',
             // style:
             backgroundColor: ' #ccc167',
@@ -819,8 +820,8 @@ const heroesArr =
                 'Also, if your opponent\'s real name is Logan, all your attacks are +5.',
             origin: 'Marvel',
             description: "His real name is Wade Wilson, and he is a former Special Forces operative turned mercenary who gains accelerated healing powers after undergoing a dangerous experimental treatment. However, his powers come at a great cost, as they also cause him intense physical and emotional pain.\n" +
-                "Deadpool is known for his irreverent and self-referential humor, as well as his tendency to break the fourth wall and directly address the reader.\n" +
-                "Despite his humorous demeanor, Deadpool is also a deeply troubled and tragic character. He struggles with mental illness, including multiple personality disorder and suicidal thoughts. He is also haunted by his past, which includes a difficult childhood and a failed marriage.\n",
+                "  Deadpool is known for his irreverent and self-referential humor, as well as his tendency to break the fourth wall and directly address the reader.\n" +
+                "  Despite his humorous demeanor, Deadpool is also a deeply troubled and tragic character. He struggles with mental illness, including multiple personality disorder and suicidal thoughts. He is also haunted by his past, which includes a difficult childhood and a failed marriage.\n",
             tactics: '...',
             heroQuote: '"House blowing up builds character." ',
             // style:
@@ -858,9 +859,10 @@ const heroesArr =
             movement: '2',
             heroHealth: '18',
             heroTrait: 'When Patroclus is defeated, discard 2 random cards. While Patroclus is defeated: Add +2 to the value of all Achilles\'s attacks. If Achilles wins combat, draw 1 card.',
-            origin: 'Illiad',
-            description: "Achilles",
-            tactics: 'achilles',
+            origin: 'Illiad (8th century BC). Author: Homer.',
+            description: "Achilles is a character from Greek mythology, known for his great strength and fighting skills. He was the son of the sea nymph Thetis and the mortal Peleus. Legend has it that his mother dipped him in the river Styx as a baby, making him invulnerable except for his heel. Thus, his \"Achilles' heel\" became his only weakness. \n" +
+                "  Achilles was known for his bravery and strength, and became the greatest warrior among the Greeks during the Trojan War. On this war Trojan prince Hector had killed Achilles' friend Patroclus. Achilles became grief-stricken and sought revenge, finally defeated Hector and dragged his body behind his chariot. However, Achilles himself was killed when Paris, a Trojan prince, shot an arrow into his heel – his only weak spot. This has become the origin of the phrase \"Achilles' heel\" meaning a person's vulnerability or weakness.\n",
+            tactics: '...',
             heroQuote: '"I\'ll tell you a secret. Something they don\'t teach you in your temple. The Gods envy us. They envy us because we\'re mortal, because any moment might be our last." ',
             // style:
             backgroundColor: '#b99d77',
@@ -899,8 +901,8 @@ const heroesArr =
             heroHealth: '16',
             heroTrait: 'At the start of your turn, if you have exactly 3 cards in hand, gain 1 action.',
             origin: 'City legends',
-            description: "Bloody Mary",
-            tactics: 'bloody mary',
+            description: "Bloody Mary is a legendary ghost or spirit often associated with a ritual performed in front of a mirror. According to the urban legend, if you say her name three times while looking into a mirror in a dark room, she will appear and may harm or kill you. The origins of the legend are unclear, but it has been passed down through generations as a scary story told at sleepovers and around campfires. Some variations of the legend suggest that Bloody Mary was a woman who was executed for committing a crime, while others claim she was a witch or a vengeful spirit seeking revenge.",
+            tactics: '...',
             heroQuote: '"Bloody Mary. Bloody Mary. Bloody Mary." ',
             // style:
             backgroundColor: '#a69293',
@@ -936,9 +938,15 @@ const heroesArr =
             heroHealth: '17',
             heroTrait: 'At the start of your turn, you may take 1 damage to summon a Clone in an empty space adjacent to Sun Wukong.\n' +
                 'Do not start with any Clones on the board.',
-            origin: 'Marvel',
-            description: "Обезьяны круты",
-            tactics: 'Sun wukong',
+            origin: 'Chinese folklore',
+            description: '  Sun Wukong, also known as the Monkey King, is a prominent figure in ancient Chinese folklore. His story first appeared in the 16th century novel "Journey to the West," but his origins can be traced back to earlier Chinese legends and myths.\n' +
+                '\n' +
+                '  In ancient Chinese folklore, Sun Wukong was said to have been born from a stone egg that was incubated by the elements of nature. He possessed immense strength and supernatural powers, including the ability to fly, transform himself into other forms, and summon a magical staff that could change size and shape.\n' +
+                '\n' +
+                '  Sun Wukong was known for his rebellious nature and his constant challenges to authority. In one ancient tale, he even challenges the Jade Emperor of Heaven and causes chaos in the celestial realm.\n' +
+                '\n' +
+                '  Despite his mischievous and sometimes destructive nature, Sun Wukong was also revered as a protector and a champion of the underdog. He was often depicted as a defender of the innocent and a champion of justice.',
+            tactics: '...',
             heroQuote: '"Uh-uh-ah-ah" ',
             // style:
             backgroundColor: '#d9ae8c',
@@ -980,9 +988,9 @@ const heroesArr =
                 '\n' +
                 'Notes\n' +
                 'If damage would be dealt to Yennenga and an Archer at the same time, Yennenga cannot assign damage from herself to that Archer if the Archer would already be defeated by the damage it took. (Yennenga cannot use her ability to make damage disappear.)',
-            origin: 'Marvel',
-            description: "Yennenga",
-            tactics: 'yennenga',
+            origin: 'Real person',
+            description: "  Yennenga was a legendary warrior princess and the founder of the Mossi Kingdom in West Africa. According to the legend, she was born in the 12th century to a king in the Dagomba Kingdom, now part of modern-day Ghana. She became a skilled warrior and rode into battle on horseback, leading her own army. She later fell in love with Riale, a hunter from the neighboring Bobo people, and they had a son named Ouédraogo, who went on to become the first emperor of the Mossi Kingdom. Yennenga is celebrated as a symbol of strength and courage in West African folklore, and her legacy lives on as an inspiration to women and girls in the region.",
+            tactics: '...',
             heroQuote: '"The three things are: to see beauty in the world and say that it is ugly; to get up in the morning and do what you cannot do; and finally to give free rein to your dreams, because whoever dreams too much becomes a victim of his dreams." ',
             // style:
             backgroundColor: '#c9c585',
@@ -1024,9 +1032,9 @@ const heroesArr =
                 '\n' +
                 '(When defending, Luke Cage wins combat if he takes no damage, even if he didn\'t play a card.)\n' +
                 '\n',
-            description: "Luke",
-            tactics: 'Luke',
-            heroQuote: '"I am Luke and i am your son." ',
+            description: "Luke Cage is a Marvel Comics superhero created in 1972 by Archie Goodwin, John Romita Sr., and George Tuska. He is a street-smart, tough, and bulletproof Black man from Harlem, New York City. Originally framed for a crime he didn't commit, Cage was experimented on in prison and gained his superhuman strength and indestructible skin. He uses his abilities to fight crime and protect the people of Harlem. Luke Cage has been featured in several comic book series and adaptations, including a popular Netflix television series, where he is portrayed by actor Mike Colter.",
+            tactics: '...',
+            heroQuote: '"You can\'t burn me, you can\'t blast me, and you definitely can\'t break me. You wanna test me? Step up. I\'m right here." ',
             // style:
             backgroundColor: '#b0ab9a',
             headersBackgroundColor: 'rgba(236,218,69,0.6)',
@@ -1068,9 +1076,9 @@ const heroesArr =
                 'Notes\n' +
                 'If you spend a Hellfire to use Ghost Rider\'s ability, your movement value is set to 4, and cannot be increased by BOOSTING your maneuver.\n' +
                 '\n',
-            description: "Luke",
-            tactics: 'Luke',
-            heroQuote: '"I am Luke and i am your son." ',
+            description: "Ghost Rider is a Marvel Comics superhero who first appeared in 1972. The character is known for his fiery skull and motorcycle, as well as his supernatural abilities. The original Ghost Rider, Johnny Blaze, was a stunt motorcyclist who made a deal with the demon Mephisto to save the life of his father. As a result, Blaze became bonded with the demonic entity Zarathos, gaining the ability to transform into Ghost Rider and wield supernatural powers. The character is known for his dark, brooding demeanor and intense battles against evil forces.",
+            tactics: '...',
+            heroQuote: '"I am vengeance. I am retribution. Fear me, for I am the Ghost Rider." ',
             // style:
             backgroundColor: '#837575',
             headersBackgroundColor: '#f6643c',
@@ -1116,9 +1124,9 @@ const heroesArr =
                 'Mr. Knight adds +1 to all his defense values.\n' +
                 '\n' +
                 'At the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).',
-            description: "Moon",
-            tactics: 'Moon',
-            heroQuote: '"Can\'t fight the moonlight." ',
+            description: "Moon Knight is a Marvel Comics superhero who first appeared in 1975. The character is known for his multiple personalities and mystical powers, as well as his signature all-white costume. Moon Knight's real name is Marc Spector, a former mercenary who was left for dead in the Egyptian desert. He was rescued by the Egyptian moon god, Khonshu, and given a new lease on life as Moon Knight. As a superhero, Moon Knight fights crime using his enhanced strength and agility, as well as his arsenal of weapons and gadgets. He is often depicted as a complex and troubled character, struggling with his own identity and the demands of being a hero.",
+            tactics: '...',
+            heroQuote: '"I have a god in me. I am the god of vengeance." ',
             // style:
             backgroundColor: '#bbc8ce',
             headersBackgroundColor: '#174e8a',
@@ -1157,9 +1165,9 @@ const heroesArr =
                 '\n' +
                 'Notes\n' +
                 'When you BLIND BOOST, you discard the top card of your deck and add its BOOST value onto the card you played in combat. Daredevil\'s ability cannot be canceled. Follow the normal resolution rules: Defender resolves first.',
-            description: "Moon",
-            tactics: 'Moon',
-            heroQuote: '"Can\'t fight the moonlight." ',
+            description: "Daredevil is a Marvel Comics superhero who first appeared in 1964. The character is known for his blindness and his use of heightened senses to fight crime as a lawyer and vigilante. Daredevil's real name is Matt Murdock, a blind lawyer from Hell's Kitchen, New York City. After a childhood accident involving toxic waste, Murdock's other senses were enhanced to superhuman levels, allowing him to \"see\" without sight. As a superhero, Daredevil uses his acrobatic and martial arts skills to fight crime and protect the people of Hell's Kitchen. He is often depicted as a complex and conflicted character, struggling with his Catholic faith and his dual identities.",
+            tactics: '...',
+            heroQuote: '"I have shown you violence, and you did not heed my warning. Now, you will feel its cold embrace." ',
             // style:
             backgroundColor: '#dc7272',
             headersBackgroundColor: '#af0d0d',
@@ -1200,9 +1208,9 @@ const heroesArr =
                 '\n' +
                 'Notes\n' +
                 'When you BLIND BOOST, you discard the top card of your deck and add its BOOST value onto the card you played in combat. Daredevil\'s ability cannot be canceled. Follow the normal resolution rules: Defender resolves first.',
-            description: "Moon",
-            tactics: 'Moon',
-            heroQuote: '"Can\'t fight the moonlight." ',
+            description: "ullseye is a Marvel Comics supervillain who first appeared in 1976. The character is known for his expert marksmanship and deadly accuracy with any projectile weapon. Bullseye's real name is Lester, and he has a troubled past as a child killer and professional assassin. He is often portrayed as a hired gun for various criminal organizations, taking on assignments to eliminate anyone who stands in his employers' way. Bullseye has had numerous clashes with various Marvel superheroes, including Daredevil, Spider-Man, and the Punisher. He is a ruthless and sadistic villain who takes pleasure in killing and causing chaos.",
+            tactics: '...',
+            heroQuote: '"I like to kill people slow, to honor their last moments."',
             // style:
             backgroundColor: '#c6c4ea',
             headersBackgroundColor: '#212e9a',
@@ -1243,9 +1251,9 @@ const heroesArr =
                 'When Elektra Resurrects: Flip your health dial. Shuffle your discard pile into your deck.\n' +
                 '\n' +
                 'Place Elektra and all Hand back onto the board with each fighter in a different zone. (You must resolve effects with the RESURRECTED symbol).',
-            description: "Luke",
+            description: "Elektra is a Marvel Comics superheroine and occasional villain who first appeared in 1981. The character is known for her exceptional martial arts skills and her proficiency in using various weapons, including her signature twin sai. Elektra's real name is Elektra Natchios, and she has a complicated history as a trained assassin and the former lover of Daredevil. She is often portrayed as a morally ambiguous character, working as a hired killer for various criminal organizations but also showing a desire to help those in need. Elektra has had numerous clashes with various Marvel superheroes, including Daredevil, Wolverine, and Spider-Man. She is a skilled and deadly fighter who is not to be underestimated.",
             tactics: 'Luke',
-            heroQuote: '"I am Luke and i am your son." ',
+            heroQuote: '"Sometimes you have to fight for what you believe in. Sometimes you have to fight for your own survival. Sometimes you have to fight for what\'s right. And sometimes... you just have to fight." ',
             // style:
             backgroundColor: '#FFDFC4',
             headersBackgroundColor: '#91111c',
@@ -1289,9 +1297,9 @@ const heroesArr =
                 'Whenever either of your fighters moves to a new space, place and insight token in their new space. Tokens may be placed in spaces with other tokens, including other insight tokens.\n' +
                 'There tokens have no effect themselves but any of your cards interact with them. When you remove insight tokens from the board, return them to your supply. You can place them on the board again in the future.\n' +
                 'If you would place an insight token but don\'t have any in your supply, nothing happens..',
-            description: "Luke",
+            description: "Dr. Ellie Sattler is a character from the Jurassic Park franchise. She is a paleobotanist and a close colleague of Dr. Alan Grant, with whom she has a romantic relationship. Ellie is a strong and intelligent character who is not afraid to speak her mind. She is resourceful and quick-witted, using her knowledge of botany to survive various dangerous situations in the Jurassic Park films. Ellie is portrayed as a compassionate and caring character, especially towards the dinosaurs in the park. She is a key member of the team that tries to contain the dinosaur outbreak in the first film and plays a crucial role in subsequent installments of the franchise.",
             tactics: 'Luke',
-            heroQuote: '"Sattler." ',
+            heroQuote: '"Dinosaurs eat man. Woman inherits the earth." ',
             // style:
             backgroundColor: '#9a8298',
             headersBackgroundColor: '#a93e6b',
@@ -1334,9 +1342,9 @@ const heroesArr =
                 'Notes\n' +
                 'Large fighters have an extended base that can occupy up to two spaces. Large fighters may start moving from any space they are in. When they do, rotate them so that the head is moving into the new space. Their tail always follows behind their head, entering the space the left. Large fighters also ignore one-way arrows on maps and cannot use secret passages.\n' +
                 'Large fighters can attack up to 2 spaces away, even over fighters that occupy one of those spaces..',
-            description: "Luke",
-            tactics: 'Luke',
-            heroQuote: '"..." ',
+            description: "Tyrannosaurus rex, often referred to as T-rex, is a species of dinosaur that lived during the late Cretaceous period, approximately 68 to 66 million years ago. It was one of the largest carnivorous dinosaurs, growing up to 40 feet in length and weighing up to 14 tons. T-rex is known for its powerful jaws, which could exert a force of up to 12,800 pounds, making it one of the strongest biters of any terrestrial animal that ever existed. In the Jurassic Park franchise, T-rex is featured as one of the main attractions of the dinosaur park and is one of the most iconic and memorable creatures in the series.",
+            tactics: '...',
+            heroQuote: '',
             // style:
             backgroundColor: '#918491',
             headersBackgroundColor: '#524e4e',
@@ -1373,9 +1381,9 @@ const heroesArr =
             movement: '2',
             heroHealth: '14',
             heroTrait: 'When you take the maneuver action and BOOST, you may place Houdini in any space instead of moving. (Bess moves as normal.)',
-            description: "Luke",
-            tactics: 'Luke',
-            heroQuote: '"Houdini." ',
+            description: "Harry Houdini, born Erik Weisz, was a Hungarian-born American illusionist and escape artist who lived from 1874 to 1926. He is widely regarded as one of the most famous magicians and performers in history, known for his daring and death-defying feats such as escaping from locked water tanks, straitjackets, and handcuffs. Houdini also performed acts of levitation and other illusions, and he was known for his skill in exposing fraudulent spiritualist mediums. His legacy as a master showman and innovator of magic and escapology continues to inspire and captivate audiences to this day.",
+            tactics: '...',
+            heroQuote: '"My brain is the key that sets me free." ',
             // style:
             backgroundColor: 'rgba(213,195,184,0.88)',
             headersBackgroundColor: '#304b1e',
@@ -1415,7 +1423,7 @@ const heroesArr =
             movement: '3',
             heroHealth: '16',
             heroTrait: 'At the start of your turn, you may discard 1 card to gain 1 action.',
-            description: "Genie",
+            description: "Genie, also known as the Genie of the Lamp, is a fictional character from the Middle Eastern folk tale Aladdin. In the story, he is a magical being who is confined to an oil lamp and can be summoned by the person who possesses the lamp. The Genie is known for his ability to grant wishes, often with humorous and unexpected results. In some versions of the story, the Genie is portrayed as a trickster character who enjoys playing pranks on his masters. The Genie has since become a popular character in various adaptations of the Aladdin story, including the Disney animated film of the same name.",
             tactics: 'Luke',
             heroQuote: '"If you wanna be with me\n' +
                 'Baby, there\'s a price to pay\n' +

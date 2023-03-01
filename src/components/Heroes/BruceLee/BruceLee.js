@@ -102,7 +102,7 @@ const BruceLee = ({state}) => {
                     </div>
 
                     <div>
-                        <p className={s.quote}>{state.heroQuote}</p>
+                        <blockquote className={s.quote}>{state.heroQuote}</blockquote>
                     </div>
                 </div>
                 <div className={s.downSide}>

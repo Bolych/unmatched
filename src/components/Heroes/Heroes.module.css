@@ -256,18 +256,29 @@ grid-area: right;
     .middleSide {
         margin-top: 1em;
         grid-area: middle;
-
-
     }
 
     .downSide {
         grid-area: down;
     }
-
-
 }
 
-/*my color for headings*/
-/*background-color: #d8b56b;*/
-/* font color navbar      color: #e8ccc6;*/
-/* navbar   background-color: #111924;*/
+@media (max-width: 320px) {
+    .rightSide {
+        grid-area: right;
+margin-left: -0.1em;
+    }
+
+    .middleSide {
+        margin-top: 1em;
+        grid-area: middle;
+        margin-left: 0.4em;
+    }
+    }
+
+@media (max-width: 290px) {
+* {
+    font-size: 98%;
+}
+}
+

@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import s from './FeedbackForm.module.css'
 
-
+// this is external library to receive messages from users on my email
 function ContactForm() {
     const [state, handleSubmit] = useForm("xlekngwa");
     if (state.succeeded) {

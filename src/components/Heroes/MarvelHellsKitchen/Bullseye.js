@@ -85,8 +85,7 @@ const Bullseye = ({state}) => {
                     </div>
 
                     <div>
-                        <p className={s.quote}>{state.heroQuote}</p>
-                    </div>
+                        <blockquote className={s.quote}>{state.heroQuote}</blockquote>                    </div>
                 </div>
                 <div className={s.downSide}>
                     <div style={headersBackground}>
