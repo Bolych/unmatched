@@ -84,13 +84,13 @@ position: relative;
     .navbar {
 height: 100%;
         position: fixed;
-        top: 22px;
+        top: 1.4em;
         transform: translateX(0em);
         transition: transform 0.25s ease-in-out;
     }
 
     .navbar.active {
-        transform: translateX(-15em);
+        transform: translateX(-22em);
         transition: transform 0.25s ease-in-out;
     }
 
