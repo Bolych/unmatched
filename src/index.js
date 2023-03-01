@@ -325,7 +325,7 @@ const heroesArr =
                 "\n" +
                 "In both the book and the film, Muldoon meets his demise when he is attacked and killed by a pack of Velociraptors while attempting to lead Dr. Ellie Sattler to safety. His character has become a fan favorite, known for his no-nonsense attitude and memorable one-liners.",
             tactics: '...',
-            heroQuote: '“Clever girl.',
+            heroQuote: '“Clever girl."',
             // style:
             backgroundColor: 'rgba(204,179,136,0.74) ',
             headersBackgroundColor: '#7c4937',
