@@ -1,7 +1,13 @@
-This is React SPA about Unmatched board game. There are odds calculator (what ), generator and descriptions of all heroes.
+## Single page application about "Unmatched" board game.
+Application is adaptive and properly works on any display.
+
+Access it on https://unmatched-f89c6.firebaseapp.com/
+
+### Features:
+
+* Random hero generator, based on expansions you have.
+* Odds probability calculator.
+* Heroes encyclopedia.
 
 
-Bundled by create-react-app.
-
-Index.js stores data. This data is array of objects(unmatched heroes with a lot of properties).
-All heroes components are same with minimal differences. Data (besides images) in these components is passed from  index.js 
+#### Project is in progress, but most of work is adding information and polishing heroes stats.
