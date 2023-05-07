@@ -1,6 +1,6 @@
 ## Single page application about "Unmatched" board game.
 Application is adaptive and properly works on any display.
-
+Access app on https://bolych.github.io/unmatched/
 ### Features:
 
 * Random hero generator, based on expansions you have.
