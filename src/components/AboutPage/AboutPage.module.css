@@ -26,3 +26,15 @@
     background-color: #d8b56b;
     display: block;
 }
+
+.navbutton {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 0.1em;
+    background-color: #d8b56b;
+    color: rgb(60, 66, 87);
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 800;
+    overflow: auto;}
