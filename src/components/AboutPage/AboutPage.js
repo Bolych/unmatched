@@ -12,7 +12,7 @@ const AboutPage = () => {
             <br/>
             <p>&nbsp;This is Unmatched board game's fun site.</p>
             <br/>
-            <p>&nbsp;Playing with friend and don't know what hero to chose? You can try our hero  <NavLink to='/calculator' className={s.navbutton}>Random generator</NavLink> that depends on expansions you have. </p>
+            <p>&nbsp;Playing with friend and don't know what hero to chose? You can try our hero  <NavLink to='/generator' className={s.navbutton}>Random generator</NavLink> that depends on expansions you have. </p>
 
             <br/>
             <p>&nbsp;Wonder what hero is stronger? You can try our <NavLink to='/calculator' className={s.navbutton}>Odds Calculator </NavLink></p>
